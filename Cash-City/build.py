@@ -163,9 +163,12 @@ for index,anchor in enumerate(winter['doorAnchors']):
 lounge_preview=item(winter_preview,'Model','ArrivalLounge')
 for b in json.loads((P/'data/arrival_lounge_preview.json').read_text()):
  node=primitive(lounge_preview,b);prop(node,'bool','CastShadow','false')
+ if b['name']=='OriginalIndoorFoliage':prop(node,'bool','CanQuery','false')
  if b['cls']=='Seat':prop(node,'bool','Disabled','false')
  if b.get('light'):
   light=item(node,'PointLight','ArrivalLight')
+  colorValue=prop(light,'Color3','Color','')
+  for key,value in zip('RGB',[1,235/255,200/255]):ET.SubElement(colorValue,key).text=str(value)
   prop(light,'float','Brightness',b['light']['brightness']);prop(light,'float','Range',b['light']['range']);prop(light,'bool','Shadows','false')
  if b.get('signText'):
   for face in (5,2): # Roblox Front and Back; readable from either approach.

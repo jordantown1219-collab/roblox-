@@ -27,3 +27,7 @@ Building-part polygons are exterior outlines, not access diagrams. Their touchin
 4. Later raised-lobby access needs an explicit, independently tested lift/ramp/stair design and its own approval scope; do not imply it already exists. Current Step 1 adds no stairs and does not replace the game's existing spawn/match lobby.
 
 Open dependencies: confirm source-part adjacency, current interior/floor plan, actual entrance positions, vertical datum/floor elevations, traversable connection dimensions at all player sizes, and multiplayer door/lift behavior. Current evidence supports reference-inspired public-arrival architecture; it does not support an exact replica of current tenant interiors or branded hotel facilities.
+
+
+## 2026-10-24 primary-plan visual review
+Lead downloaded/cached the 2017 ACI program and actually rendered/viewed PDF indices9/10 (printed8/9) at work/reference_cache/ACI_plan_9.png andACI_plan_10.png. Source: https://www.concrete.org/Portals/0/Files/PDF/ACI_S17_DetroitProgram.pdf . Level1 drawing places Wintergarden below central circulation with paired escalators; Level2 marks the next hotel escalator on that river-facing side; Level3 drawing places main hotel lobby to the left of the central circulation/elevator core. HotelMaps page corroborates annular circulation and a lobby wing. These are historical schematics explicitly not-to-scale. No metric elevation/corridor width or2026tenantplan established. Use original generic signage, not the plan's real businesses/art/names.

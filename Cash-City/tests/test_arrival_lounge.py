@@ -27,3 +27,14 @@ class ArrivalLounge(unittest.TestCase):
   for surface in surfaces:
    label=surface.find("Item[@class='TextLabel']")
    self.assertEqual(label.find("Properties/string[@name='Text']").text,'RIVERFRONT ATRIUM')
+
+ def test_finish_parts_stay_inside_reviewed_furniture_zones(self):
+  import math
+  records=json.loads((P/'data/arrival_lounge_preview.json').read_text())
+  anchors=json.loads((P/'data/arrival_lounge.json').read_text())['seats']
+  self.assertEqual(len(records),23)
+  self.assertEqual(sum(r['name']=='OriginalIndoorFoliage' for r in records),6)
+  for r in records:
+   self.assertTrue(any(math.hypot(r['pos'][0]-a['pos'][0],r['pos'][2]-a['pos'][2])+math.hypot(r['size'][0],r['size'][2])/2<9 for a in anchors))
+  self.assertTrue(all(not r['collide'] for r in records if r['name'] in ['OriginalIndoorFoliage','ArrivalLightDiffuser','PlanterSoil']))
+  self.assertTrue(all(r['material']=='WoodPlanks' for r in records if r['name']=='BenchBack'))

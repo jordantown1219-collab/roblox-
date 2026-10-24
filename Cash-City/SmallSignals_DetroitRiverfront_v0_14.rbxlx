@@ -669893,12 +669893,12 @@
                 <R21>0</R21>
                 <R22>1</R22>
               </CoordinateFrame>
-              <Color3uint8 name="Color3uint8">6254705</Color3uint8>
+              <Color3uint8 name="Color3uint8">7362365</Color3uint8>
               <bool name="Anchored">true</bool>
               <bool name="CanCollide">true</bool>
               <bool name="CanTouch">false</bool>
               <float name="Transparency">0</float>
-              <token name="Material">1088</token>
+              <token name="Material">528</token>
               <token name="TopSurface">0</token>
               <token name="BottomSurface">0</token>
               <bool name="CastShadow">false</bool>
@@ -669939,6 +669939,11 @@
             <Item class="PointLight" referent="RF09_41054">
               <Properties>
                 <string name="Name">ArrivalLight</string>
+                <Color3 name="Color">
+                  <R>1</R>
+                  <G>0.9215686274509803</G>
+                  <B>0.7843137254901961</B>
+                </Color3>
                 <float name="Brightness">0.6000000238418579</float>
                 <float name="Range">14</float>
                 <bool name="Shadows">false</bool>
@@ -670068,12 +670073,12 @@
                 <R21>0</R21>
                 <R22>1</R22>
               </CoordinateFrame>
-              <Color3uint8 name="Color3uint8">6254705</Color3uint8>
+              <Color3uint8 name="Color3uint8">7362365</Color3uint8>
               <bool name="Anchored">true</bool>
               <bool name="CanCollide">true</bool>
               <bool name="CanTouch">false</bool>
               <float name="Transparency">0</float>
-              <token name="Material">1088</token>
+              <token name="Material">528</token>
               <token name="TopSurface">0</token>
               <token name="BottomSurface">0</token>
               <bool name="CastShadow">false</bool>
@@ -670114,6 +670119,11 @@
             <Item class="PointLight" referent="RF09_41060">
               <Properties>
                 <string name="Name">ArrivalLight</string>
+                <Color3 name="Color">
+                  <R>1</R>
+                  <G>0.9215686274509803</G>
+                  <B>0.7843137254901961</B>
+                </Color3>
                 <float name="Brightness">0.6000000238418579</float>
                 <float name="Range">14</float>
                 <bool name="Shadows">false</bool>
@@ -670213,14 +670223,416 @@
               </Item>
             </Item>
           </Item>
+          <Item class="Part" referent="RF09_41066">
+            <Properties>
+              <string name="Name">LoungePlanter</string>
+              <Vector3 name="size">
+                <X>1.8</X>
+                <Y>1.4</Y>
+                <Z>1.8</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>189.5</X>
+                <Y>1.0499999999999998</Y>
+                <Z>248</Z>
+                <R00>1.0</R00>
+                <R01>-0.0</R01>
+                <R02>0</R02>
+                <R10>0.0</R10>
+                <R11>1.0</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">11644836</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">true</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">816</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41067">
+            <Properties>
+              <string name="Name">PlanterSoil</string>
+              <Vector3 name="size">
+                <X>1.5</X>
+                <Y>0.12</Y>
+                <Z>1.5</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>189.5</X>
+                <Y>1.7799999999999998</Y>
+                <Z>248</Z>
+                <R00>1.0</R00>
+                <R01>-0.0</R01>
+                <R02>0</R02>
+                <R10>0.0</R10>
+                <R11>1.0</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">4274474</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">1360</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41068">
+            <Properties>
+              <string name="Name">OriginalIndoorFoliage</string>
+              <Vector3 name="size">
+                <X>0.7</X>
+                <Y>1.8</Y>
+                <Z>0.65</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>189.05</X>
+                <Y>2.4</Y>
+                <Z>248</Z>
+                <R00>0.92106099</R00>
+                <R01>-0.38941834</R01>
+                <R02>0</R02>
+                <R10>0.38941834</R10>
+                <R11>0.92106099</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">4547646</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">1280</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+              <bool name="CanQuery">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41069">
+            <Properties>
+              <string name="Name">OriginalIndoorFoliage</string>
+              <Vector3 name="size">
+                <X>0.7</X>
+                <Y>1.8</Y>
+                <Z>0.65</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>189.9</X>
+                <Y>2.65</Y>
+                <Z>248.25</Z>
+                <R00>0.93937271</R00>
+                <R01>0.34289781</R01>
+                <R02>0</R02>
+                <R10>-0.34289781</R10>
+                <R11>0.93937271</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">4547646</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">1280</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+              <bool name="CanQuery">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41070">
+            <Properties>
+              <string name="Name">OriginalIndoorFoliage</string>
+              <Vector3 name="size">
+                <X>0.7</X>
+                <Y>1.8</Y>
+                <Z>0.65</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>189.5</X>
+                <Y>2.95</Y>
+                <Z>247.7</Z>
+                <R00>0.98877108</R00>
+                <R01>-0.14943813</R01>
+                <R02>0</R02>
+                <R10>0.14943813</R10>
+                <R11>0.98877108</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">4547646</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">1280</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+              <bool name="CanQuery">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41071">
+            <Properties>
+              <string name="Name">ArrivalLightDiffuser</string>
+              <Vector3 name="size">
+                <X>0.8</X>
+                <Y>0.3</Y>
+                <Z>0.8</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>198.5</X>
+                <Y>4.3999999999999995</Y>
+                <Z>248</Z>
+                <R00>1.0</R00>
+                <R01>-0.0</R01>
+                <R02>0</R02>
+                <R10>0.0</R10>
+                <R11>1.0</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">15919311</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">272</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41072">
+            <Properties>
+              <string name="Name">LoungePlanter</string>
+              <Vector3 name="size">
+                <X>1.8</X>
+                <Y>1.4</Y>
+                <Z>1.8</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>205.5</X>
+                <Y>1.0499999999999998</Y>
+                <Z>232</Z>
+                <R00>1.0</R00>
+                <R01>-0.0</R01>
+                <R02>0</R02>
+                <R10>0.0</R10>
+                <R11>1.0</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">11644836</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">true</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">816</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41073">
+            <Properties>
+              <string name="Name">PlanterSoil</string>
+              <Vector3 name="size">
+                <X>1.5</X>
+                <Y>0.12</Y>
+                <Z>1.5</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>205.5</X>
+                <Y>1.7799999999999998</Y>
+                <Z>232</Z>
+                <R00>1.0</R00>
+                <R01>-0.0</R01>
+                <R02>0</R02>
+                <R10>0.0</R10>
+                <R11>1.0</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">4274474</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">1360</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41074">
+            <Properties>
+              <string name="Name">OriginalIndoorFoliage</string>
+              <Vector3 name="size">
+                <X>0.7</X>
+                <Y>1.8</Y>
+                <Z>0.65</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>205.05</X>
+                <Y>2.4</Y>
+                <Z>232</Z>
+                <R00>0.92106099</R00>
+                <R01>-0.38941834</R01>
+                <R02>0</R02>
+                <R10>0.38941834</R10>
+                <R11>0.92106099</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">4547646</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">1280</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+              <bool name="CanQuery">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41075">
+            <Properties>
+              <string name="Name">OriginalIndoorFoliage</string>
+              <Vector3 name="size">
+                <X>0.7</X>
+                <Y>1.8</Y>
+                <Z>0.65</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>205.9</X>
+                <Y>2.65</Y>
+                <Z>232.25</Z>
+                <R00>0.93937271</R00>
+                <R01>0.34289781</R01>
+                <R02>0</R02>
+                <R10>-0.34289781</R10>
+                <R11>0.93937271</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">4547646</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">1280</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+              <bool name="CanQuery">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41076">
+            <Properties>
+              <string name="Name">OriginalIndoorFoliage</string>
+              <Vector3 name="size">
+                <X>0.7</X>
+                <Y>1.8</Y>
+                <Z>0.65</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>205.5</X>
+                <Y>2.95</Y>
+                <Z>231.7</Z>
+                <R00>0.98877108</R00>
+                <R01>-0.14943813</R01>
+                <R02>0</R02>
+                <R10>0.14943813</R10>
+                <R11>0.98877108</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">4547646</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">1280</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+              <bool name="CanQuery">false</bool>
+            </Properties>
+          </Item>
+          <Item class="Part" referent="RF09_41077">
+            <Properties>
+              <string name="Name">ArrivalLightDiffuser</string>
+              <Vector3 name="size">
+                <X>0.8</X>
+                <Y>0.3</Y>
+                <Z>0.8</Z>
+              </Vector3>
+              <CoordinateFrame name="CFrame">
+                <X>214.5</X>
+                <Y>4.3999999999999995</Y>
+                <Z>232</Z>
+                <R00>1.0</R00>
+                <R01>-0.0</R01>
+                <R02>0</R02>
+                <R10>0.0</R10>
+                <R11>1.0</R11>
+                <R12>0</R12>
+                <R20>0</R20>
+                <R21>0</R21>
+                <R22>1</R22>
+              </CoordinateFrame>
+              <Color3uint8 name="Color3uint8">15919311</Color3uint8>
+              <bool name="Anchored">true</bool>
+              <bool name="CanCollide">false</bool>
+              <bool name="CanTouch">false</bool>
+              <float name="Transparency">0</float>
+              <token name="Material">272</token>
+              <token name="TopSurface">0</token>
+              <token name="BottomSurface">0</token>
+              <bool name="CastShadow">false</bool>
+            </Properties>
+          </Item>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41066">
+      <Item class="Model" referent="RF09_41078">
         <Properties>
           <string name="Name">Spirit of Detroit</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
-        <Item class="MeshPart" referent="RF09_41067">
+        <Item class="MeshPart" referent="RF09_41079">
           <Properties>
             <string name="Name">body_geom</string>
             <Vector3 name="size">
@@ -670263,7 +670675,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41068">
+        <Item class="Part" referent="RF09_41080">
           <Properties>
             <string name="Name">Marble pedestal</string>
             <Vector3 name="size">
@@ -670296,7 +670708,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41069">
+        <Item class="Part" referent="RF09_41081">
           <Properties>
             <string name="Name">Stone backdrop</string>
             <Vector3 name="size">
@@ -670330,12 +670742,12 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41070">
+      <Item class="Model" referent="RF09_41082">
         <Properties>
           <string name="Name">Monument to Joe Louis</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
-        <Item class="Part" referent="RF09_41071">
+        <Item class="Part" referent="RF09_41083">
           <Properties>
             <string name="Name">Pyramid support</string>
             <Vector3 name="size">
@@ -670368,7 +670780,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41072">
+        <Item class="Part" referent="RF09_41084">
           <Properties>
             <string name="Name">Pyramid support</string>
             <Vector3 name="size">
@@ -670401,7 +670813,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41073">
+        <Item class="Part" referent="RF09_41085">
           <Properties>
             <string name="Name">Pyramid support</string>
             <Vector3 name="size">
@@ -670434,7 +670846,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41074">
+        <Item class="Part" referent="RF09_41086">
           <Properties>
             <string name="Name">Pyramid support</string>
             <Vector3 name="size">
@@ -670467,7 +670879,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41075">
+        <Item class="Part" referent="RF09_41087">
           <Properties>
             <string name="Name">Forearm</string>
             <Vector3 name="size">
@@ -670500,7 +670912,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41076">
+        <Item class="Part" referent="RF09_41088">
           <Properties>
             <string name="Name">Wrist</string>
             <Vector3 name="size">
@@ -670533,7 +670945,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41077">
+        <Item class="Part" referent="RF09_41089">
           <Properties>
             <string name="Name">Palm</string>
             <Vector3 name="size">
@@ -670566,7 +670978,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41078">
+        <Item class="Part" referent="RF09_41090">
           <Properties>
             <string name="Name">Curled finger</string>
             <Vector3 name="size">
@@ -670599,7 +671011,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41079">
+        <Item class="Part" referent="RF09_41091">
           <Properties>
             <string name="Name">Knuckle</string>
             <Vector3 name="size">
@@ -670632,7 +671044,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41080">
+        <Item class="Part" referent="RF09_41092">
           <Properties>
             <string name="Name">Curled finger</string>
             <Vector3 name="size">
@@ -670665,7 +671077,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41081">
+        <Item class="Part" referent="RF09_41093">
           <Properties>
             <string name="Name">Knuckle</string>
             <Vector3 name="size">
@@ -670698,7 +671110,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41082">
+        <Item class="Part" referent="RF09_41094">
           <Properties>
             <string name="Name">Curled finger</string>
             <Vector3 name="size">
@@ -670731,7 +671143,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41083">
+        <Item class="Part" referent="RF09_41095">
           <Properties>
             <string name="Name">Knuckle</string>
             <Vector3 name="size">
@@ -670764,7 +671176,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41084">
+        <Item class="Part" referent="RF09_41096">
           <Properties>
             <string name="Name">Curled finger</string>
             <Vector3 name="size">
@@ -670797,7 +671209,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41085">
+        <Item class="Part" referent="RF09_41097">
           <Properties>
             <string name="Name">Knuckle</string>
             <Vector3 name="size">
@@ -670830,7 +671242,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41086">
+        <Item class="Part" referent="RF09_41098">
           <Properties>
             <string name="Name">Thumb</string>
             <Vector3 name="size">
@@ -670863,7 +671275,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41087">
+        <Item class="Part" referent="RF09_41099">
           <Properties>
             <string name="Name">Suspension</string>
             <Vector3 name="size">
@@ -670897,12 +671309,12 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41088">
+      <Item class="Model" referent="RF09_41100">
         <Properties>
           <string name="Name">Transcending - Michigan Labor Legacy Landmark</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
-        <Item class="Part" referent="RF09_41089">
+        <Item class="Part" referent="RF09_41101">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -670935,7 +671347,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41090">
+        <Item class="Part" referent="RF09_41102">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -670968,7 +671380,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41091">
+        <Item class="Part" referent="RF09_41103">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671001,7 +671413,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41092">
+        <Item class="Part" referent="RF09_41104">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671034,7 +671446,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41093">
+        <Item class="Part" referent="RF09_41105">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671067,7 +671479,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41094">
+        <Item class="Part" referent="RF09_41106">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671100,7 +671512,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41095">
+        <Item class="Part" referent="RF09_41107">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671133,7 +671545,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41096">
+        <Item class="Part" referent="RF09_41108">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671166,7 +671578,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41097">
+        <Item class="Part" referent="RF09_41109">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671199,7 +671611,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41098">
+        <Item class="Part" referent="RF09_41110">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671232,7 +671644,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41099">
+        <Item class="Part" referent="RF09_41111">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671265,7 +671677,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41100">
+        <Item class="Part" referent="RF09_41112">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671298,7 +671710,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41101">
+        <Item class="Part" referent="RF09_41113">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671331,7 +671743,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41102">
+        <Item class="Part" referent="RF09_41114">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671364,7 +671776,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41103">
+        <Item class="Part" referent="RF09_41115">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671397,7 +671809,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41104">
+        <Item class="Part" referent="RF09_41116">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671430,7 +671842,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41105">
+        <Item class="Part" referent="RF09_41117">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671463,7 +671875,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41106">
+        <Item class="Part" referent="RF09_41118">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671496,7 +671908,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41107">
+        <Item class="Part" referent="RF09_41119">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671529,7 +671941,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41108">
+        <Item class="Part" referent="RF09_41120">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671562,7 +671974,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41109">
+        <Item class="Part" referent="RF09_41121">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671595,7 +672007,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41110">
+        <Item class="Part" referent="RF09_41122">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671628,7 +672040,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41111">
+        <Item class="Part" referent="RF09_41123">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671661,7 +672073,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41112">
+        <Item class="Part" referent="RF09_41124">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671694,7 +672106,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41113">
+        <Item class="Part" referent="RF09_41125">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671727,7 +672139,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41114">
+        <Item class="Part" referent="RF09_41126">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671760,7 +672172,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41115">
+        <Item class="Part" referent="RF09_41127">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671793,7 +672205,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41116">
+        <Item class="Part" referent="RF09_41128">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671826,7 +672238,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41117">
+        <Item class="Part" referent="RF09_41129">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671859,7 +672271,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41118">
+        <Item class="Part" referent="RF09_41130">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671892,7 +672304,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41119">
+        <Item class="Part" referent="RF09_41131">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671925,7 +672337,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41120">
+        <Item class="Part" referent="RF09_41132">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671958,7 +672370,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41121">
+        <Item class="Part" referent="RF09_41133">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -671991,7 +672403,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41122">
+        <Item class="Part" referent="RF09_41134">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672024,7 +672436,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41123">
+        <Item class="Part" referent="RF09_41135">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672057,7 +672469,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41124">
+        <Item class="Part" referent="RF09_41136">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672090,7 +672502,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41125">
+        <Item class="Part" referent="RF09_41137">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672123,7 +672535,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41126">
+        <Item class="Part" referent="RF09_41138">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672156,7 +672568,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41127">
+        <Item class="Part" referent="RF09_41139">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672189,7 +672601,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41128">
+        <Item class="Part" referent="RF09_41140">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672222,7 +672634,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41129">
+        <Item class="Part" referent="RF09_41141">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672255,7 +672667,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41130">
+        <Item class="Part" referent="RF09_41142">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672288,7 +672700,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41131">
+        <Item class="Part" referent="RF09_41143">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672321,7 +672733,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41132">
+        <Item class="Part" referent="RF09_41144">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672354,7 +672766,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41133">
+        <Item class="Part" referent="RF09_41145">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672387,7 +672799,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41134">
+        <Item class="Part" referent="RF09_41146">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672420,7 +672832,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41135">
+        <Item class="Part" referent="RF09_41147">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672453,7 +672865,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41136">
+        <Item class="Part" referent="RF09_41148">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672486,7 +672898,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41137">
+        <Item class="Part" referent="RF09_41149">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672519,7 +672931,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41138">
+        <Item class="Part" referent="RF09_41150">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672552,7 +672964,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41139">
+        <Item class="Part" referent="RF09_41151">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672585,7 +672997,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41140">
+        <Item class="Part" referent="RF09_41152">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672618,7 +673030,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41141">
+        <Item class="Part" referent="RF09_41153">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672651,7 +673063,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41142">
+        <Item class="Part" referent="RF09_41154">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672684,7 +673096,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41143">
+        <Item class="Part" referent="RF09_41155">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672717,7 +673129,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41144">
+        <Item class="Part" referent="RF09_41156">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672750,7 +673162,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41145">
+        <Item class="Part" referent="RF09_41157">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672783,7 +673195,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41146">
+        <Item class="Part" referent="RF09_41158">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672816,7 +673228,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41147">
+        <Item class="Part" referent="RF09_41159">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672849,7 +673261,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41148">
+        <Item class="Part" referent="RF09_41160">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672882,7 +673294,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41149">
+        <Item class="Part" referent="RF09_41161">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672915,7 +673327,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41150">
+        <Item class="Part" referent="RF09_41162">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672948,7 +673360,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41151">
+        <Item class="Part" referent="RF09_41163">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -672981,7 +673393,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41152">
+        <Item class="Part" referent="RF09_41164">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673014,7 +673426,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41153">
+        <Item class="Part" referent="RF09_41165">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673047,7 +673459,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41154">
+        <Item class="Part" referent="RF09_41166">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673080,7 +673492,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41155">
+        <Item class="Part" referent="RF09_41167">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673113,7 +673525,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41156">
+        <Item class="Part" referent="RF09_41168">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673146,7 +673558,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41157">
+        <Item class="Part" referent="RF09_41169">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673179,7 +673591,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41158">
+        <Item class="Part" referent="RF09_41170">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673212,7 +673624,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41159">
+        <Item class="Part" referent="RF09_41171">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673245,7 +673657,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41160">
+        <Item class="Part" referent="RF09_41172">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673278,7 +673690,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41161">
+        <Item class="Part" referent="RF09_41173">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673311,7 +673723,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41162">
+        <Item class="Part" referent="RF09_41174">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673344,7 +673756,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41163">
+        <Item class="Part" referent="RF09_41175">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673377,7 +673789,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41164">
+        <Item class="Part" referent="RF09_41176">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673410,7 +673822,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41165">
+        <Item class="Part" referent="RF09_41177">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673443,7 +673855,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41166">
+        <Item class="Part" referent="RF09_41178">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673476,7 +673888,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41167">
+        <Item class="Part" referent="RF09_41179">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673509,7 +673921,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41168">
+        <Item class="Part" referent="RF09_41180">
           <Properties>
             <string name="Name">Brushed steel arc</string>
             <Vector3 name="size">
@@ -673542,7 +673954,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41169">
+        <Item class="Part" referent="RF09_41181">
           <Properties>
             <string name="Name">Stone foundation</string>
             <Vector3 name="size">
@@ -673575,7 +673987,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41170">
+        <Item class="Part" referent="RF09_41182">
           <Properties>
             <string name="Name">Stone foundation</string>
             <Vector3 name="size">
@@ -673609,12 +674021,12 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41171">
+      <Item class="Model" referent="RF09_41183">
         <Properties>
           <string name="Name">Riverwalk bench 1</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
-        <Item class="Part" referent="RF09_41172">
+        <Item class="Part" referent="RF09_41184">
           <Properties>
             <string name="Name">Seat slat</string>
             <Vector3 name="size">
@@ -673647,7 +674059,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41173">
+        <Item class="Part" referent="RF09_41185">
           <Properties>
             <string name="Name">Seat slat</string>
             <Vector3 name="size">
@@ -673659,375 +674071,6 @@
               <X>-1570</X>
               <Y>1.649999976158142</Y>
               <Z>589.6199951171875</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">528</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41174">
-          <Properties>
-            <string name="Name">Seat slat</string>
-            <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1570</X>
-              <Y>1.649999976158142</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">528</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41175">
-          <Properties>
-            <string name="Name">Seat slat</string>
-            <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1570</X>
-              <Y>1.649999976158142</Y>
-              <Z>590.3800048828125</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">528</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41176">
-          <Properties>
-            <string name="Name">Seat slat</string>
-            <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1570</X>
-              <Y>1.649999976158142</Y>
-              <Z>590.760009765625</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">528</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41177">
-          <Properties>
-            <string name="Name">Back slat</string>
-            <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.3199999928474426</Y>
-              <Z>0.18000000715255737</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1570</X>
-              <Y>2.450000047683716</Y>
-              <Z>590.9000244140625</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">528</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41178">
-          <Properties>
-            <string name="Name">Back slat</string>
-            <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.3199999928474426</Y>
-              <Z>0.18000000715255737</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1570</X>
-              <Y>2.8499999046325684</Y>
-              <Z>590.9000244140625</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">528</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41179">
-          <Properties>
-            <string name="Name">Back slat</string>
-            <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.3199999928474426</Y>
-              <Z>0.18000000715255737</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1570</X>
-              <Y>3.25</Y>
-              <Z>590.9000244140625</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">528</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41180">
-          <Properties>
-            <string name="Name">Frame</string>
-            <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
-              <Z>1.899999976158142</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1572.5</X>
-              <Y>0.8500000238418579</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">1088</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41181">
-          <Properties>
-            <string name="Name">Arm rest</string>
-            <Vector3 name="size">
-              <X>0.25</X>
-              <Y>0.1599999964237213</Y>
-              <Z>1.899999976158142</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1572.5</X>
-              <Y>2.299999952316284</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">1088</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41182">
-          <Properties>
-            <string name="Name">Frame</string>
-            <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
-              <Z>1.899999976158142</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1567.5</X>
-              <Y>0.8500000238418579</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">1088</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41183">
-          <Properties>
-            <string name="Name">Arm rest</string>
-            <Vector3 name="size">
-              <X>0.25</X>
-              <Y>0.1599999964237213</Y>
-              <Z>1.899999976158142</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1567.5</X>
-              <Y>2.299999952316284</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">1088</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-      </Item>
-      <Item class="Model" referent="RF09_41184">
-        <Properties>
-          <string name="Name">Riverwalk bench 2</string>
-          <token name="ModelStreamingMode">1</token>
-        </Properties>
-        <Item class="Part" referent="RF09_41185">
-          <Properties>
-            <string name="Name">Seat slat</string>
-            <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1530</X>
-              <Y>1.649999976158142</Y>
-              <Z>589.239990234375</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674058,9 +674101,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1530</X>
+              <X>-1570</X>
               <Y>1.649999976158142</Y>
-              <Z>589.6199951171875</Z>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674091,9 +674134,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1530</X>
+              <X>-1570</X>
               <Y>1.649999976158142</Y>
-              <Z>590</Z>
+              <Z>590.3800048828125</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674124,9 +674167,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1530</X>
+              <X>-1570</X>
               <Y>1.649999976158142</Y>
-              <Z>590.3800048828125</Z>
+              <Z>590.760009765625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674150,16 +674193,16 @@
         </Item>
         <Item class="Part" referent="RF09_41189">
           <Properties>
-            <string name="Name">Seat slat</string>
+            <string name="Name">Back slat</string>
             <Vector3 name="size">
               <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
+              <Y>0.3199999928474426</Y>
+              <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1530</X>
-              <Y>1.649999976158142</Y>
-              <Z>590.760009765625</Z>
+              <X>-1570</X>
+              <Y>2.450000047683716</Y>
+              <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674190,8 +674233,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1530</X>
-              <Y>2.450000047683716</Y>
+              <X>-1570</X>
+              <Y>2.8499999046325684</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -674223,8 +674266,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1530</X>
-              <Y>2.8499999046325684</Y>
+              <X>-1570</X>
+              <Y>3.25</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -674249,16 +674292,16 @@
         </Item>
         <Item class="Part" referent="RF09_41192">
           <Properties>
-            <string name="Name">Back slat</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.3199999928474426</Y>
-              <Z>0.18000000715255737</Z>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
+              <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1530</X>
-              <Y>3.25</Y>
-              <Z>590.9000244140625</Z>
+              <X>-1572.5</X>
+              <Y>0.8500000238418579</Y>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674269,12 +674312,12 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
             <bool name="Anchored">true</bool>
             <bool name="CanCollide">true</bool>
             <bool name="CanTouch">false</bool>
             <float name="Transparency">0</float>
-            <token name="Material">528</token>
+            <token name="Material">1088</token>
             <token name="shape">1</token>
             <token name="TopSurface">0</token>
             <token name="BottomSurface">0</token>
@@ -674282,15 +674325,15 @@
         </Item>
         <Item class="Part" referent="RF09_41193">
           <Properties>
-            <string name="Name">Frame</string>
+            <string name="Name">Arm rest</string>
             <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
+              <X>0.25</X>
+              <Y>0.1599999964237213</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1532.5</X>
-              <Y>0.8500000238418579</Y>
+              <X>-1572.5</X>
+              <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -674315,15 +674358,15 @@
         </Item>
         <Item class="Part" referent="RF09_41194">
           <Properties>
-            <string name="Name">Arm rest</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>0.25</X>
-              <Y>0.1599999964237213</Y>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1532.5</X>
-              <Y>2.299999952316284</Y>
+              <X>-1567.5</X>
+              <Y>0.8500000238418579</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -674348,39 +674391,6 @@
         </Item>
         <Item class="Part" referent="RF09_41195">
           <Properties>
-            <string name="Name">Frame</string>
-            <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
-              <Z>1.899999976158142</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1527.5</X>
-              <Y>0.8500000238418579</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">1088</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41196">
-          <Properties>
             <string name="Name">Arm rest</string>
             <Vector3 name="size">
               <X>0.25</X>
@@ -674388,7 +674398,7 @@
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1527.5</X>
+              <X>-1567.5</X>
               <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
@@ -674413,11 +674423,44 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41197">
+      <Item class="Model" referent="RF09_41196">
         <Properties>
-          <string name="Name">Riverwalk bench 3</string>
+          <string name="Name">Riverwalk bench 2</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
+        <Item class="Part" referent="RF09_41197">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1530</X>
+              <Y>1.649999976158142</Y>
+              <Z>589.239990234375</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
         <Item class="Part" referent="RF09_41198">
           <Properties>
             <string name="Name">Seat slat</string>
@@ -674427,9 +674470,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1490</X>
+              <X>-1530</X>
               <Y>1.649999976158142</Y>
-              <Z>589.239990234375</Z>
+              <Z>589.6199951171875</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674460,9 +674503,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1490</X>
+              <X>-1530</X>
               <Y>1.649999976158142</Y>
-              <Z>589.6199951171875</Z>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674493,9 +674536,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1490</X>
+              <X>-1530</X>
               <Y>1.649999976158142</Y>
-              <Z>590</Z>
+              <Z>590.3800048828125</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674526,9 +674569,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1490</X>
+              <X>-1530</X>
               <Y>1.649999976158142</Y>
-              <Z>590.3800048828125</Z>
+              <Z>590.760009765625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674552,16 +674595,16 @@
         </Item>
         <Item class="Part" referent="RF09_41202">
           <Properties>
-            <string name="Name">Seat slat</string>
+            <string name="Name">Back slat</string>
             <Vector3 name="size">
               <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
+              <Y>0.3199999928474426</Y>
+              <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1490</X>
-              <Y>1.649999976158142</Y>
-              <Z>590.760009765625</Z>
+              <X>-1530</X>
+              <Y>2.450000047683716</Y>
+              <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674592,8 +674635,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1490</X>
-              <Y>2.450000047683716</Y>
+              <X>-1530</X>
+              <Y>2.8499999046325684</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -674625,8 +674668,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1490</X>
-              <Y>2.8499999046325684</Y>
+              <X>-1530</X>
+              <Y>3.25</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -674651,16 +674694,16 @@
         </Item>
         <Item class="Part" referent="RF09_41205">
           <Properties>
-            <string name="Name">Back slat</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.3199999928474426</Y>
-              <Z>0.18000000715255737</Z>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
+              <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1490</X>
-              <Y>3.25</Y>
-              <Z>590.9000244140625</Z>
+              <X>-1532.5</X>
+              <Y>0.8500000238418579</Y>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674671,12 +674714,12 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
             <bool name="Anchored">true</bool>
             <bool name="CanCollide">true</bool>
             <bool name="CanTouch">false</bool>
             <float name="Transparency">0</float>
-            <token name="Material">528</token>
+            <token name="Material">1088</token>
             <token name="shape">1</token>
             <token name="TopSurface">0</token>
             <token name="BottomSurface">0</token>
@@ -674684,15 +674727,15 @@
         </Item>
         <Item class="Part" referent="RF09_41206">
           <Properties>
-            <string name="Name">Frame</string>
+            <string name="Name">Arm rest</string>
             <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
+              <X>0.25</X>
+              <Y>0.1599999964237213</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1492.5</X>
-              <Y>0.8500000238418579</Y>
+              <X>-1532.5</X>
+              <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -674717,15 +674760,15 @@
         </Item>
         <Item class="Part" referent="RF09_41207">
           <Properties>
-            <string name="Name">Arm rest</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>0.25</X>
-              <Y>0.1599999964237213</Y>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1492.5</X>
-              <Y>2.299999952316284</Y>
+              <X>-1527.5</X>
+              <Y>0.8500000238418579</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -674750,39 +674793,6 @@
         </Item>
         <Item class="Part" referent="RF09_41208">
           <Properties>
-            <string name="Name">Frame</string>
-            <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
-              <Z>1.899999976158142</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1487.5</X>
-              <Y>0.8500000238418579</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">1088</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41209">
-          <Properties>
             <string name="Name">Arm rest</string>
             <Vector3 name="size">
               <X>0.25</X>
@@ -674790,7 +674800,7 @@
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1487.5</X>
+              <X>-1527.5</X>
               <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
@@ -674815,11 +674825,44 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41210">
+      <Item class="Model" referent="RF09_41209">
         <Properties>
-          <string name="Name">Riverwalk bench 4</string>
+          <string name="Name">Riverwalk bench 3</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
+        <Item class="Part" referent="RF09_41210">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1490</X>
+              <Y>1.649999976158142</Y>
+              <Z>589.239990234375</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
         <Item class="Part" referent="RF09_41211">
           <Properties>
             <string name="Name">Seat slat</string>
@@ -674829,9 +674872,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1450</X>
+              <X>-1490</X>
               <Y>1.649999976158142</Y>
-              <Z>589.239990234375</Z>
+              <Z>589.6199951171875</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674862,9 +674905,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1450</X>
+              <X>-1490</X>
               <Y>1.649999976158142</Y>
-              <Z>589.6199951171875</Z>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674895,9 +674938,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1450</X>
+              <X>-1490</X>
               <Y>1.649999976158142</Y>
-              <Z>590</Z>
+              <Z>590.3800048828125</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674928,9 +674971,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1450</X>
+              <X>-1490</X>
               <Y>1.649999976158142</Y>
-              <Z>590.3800048828125</Z>
+              <Z>590.760009765625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674954,16 +674997,16 @@
         </Item>
         <Item class="Part" referent="RF09_41215">
           <Properties>
-            <string name="Name">Seat slat</string>
+            <string name="Name">Back slat</string>
             <Vector3 name="size">
               <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
+              <Y>0.3199999928474426</Y>
+              <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1450</X>
-              <Y>1.649999976158142</Y>
-              <Z>590.760009765625</Z>
+              <X>-1490</X>
+              <Y>2.450000047683716</Y>
+              <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -674994,8 +675037,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1450</X>
-              <Y>2.450000047683716</Y>
+              <X>-1490</X>
+              <Y>2.8499999046325684</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675027,8 +675070,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1450</X>
-              <Y>2.8499999046325684</Y>
+              <X>-1490</X>
+              <Y>3.25</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675053,16 +675096,16 @@
         </Item>
         <Item class="Part" referent="RF09_41218">
           <Properties>
-            <string name="Name">Back slat</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.3199999928474426</Y>
-              <Z>0.18000000715255737</Z>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
+              <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1450</X>
-              <Y>3.25</Y>
-              <Z>590.9000244140625</Z>
+              <X>-1492.5</X>
+              <Y>0.8500000238418579</Y>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675073,12 +675116,12 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
             <bool name="Anchored">true</bool>
             <bool name="CanCollide">true</bool>
             <bool name="CanTouch">false</bool>
             <float name="Transparency">0</float>
-            <token name="Material">528</token>
+            <token name="Material">1088</token>
             <token name="shape">1</token>
             <token name="TopSurface">0</token>
             <token name="BottomSurface">0</token>
@@ -675086,15 +675129,15 @@
         </Item>
         <Item class="Part" referent="RF09_41219">
           <Properties>
-            <string name="Name">Frame</string>
+            <string name="Name">Arm rest</string>
             <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
+              <X>0.25</X>
+              <Y>0.1599999964237213</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1452.5</X>
-              <Y>0.8500000238418579</Y>
+              <X>-1492.5</X>
+              <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675119,15 +675162,15 @@
         </Item>
         <Item class="Part" referent="RF09_41220">
           <Properties>
-            <string name="Name">Arm rest</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>0.25</X>
-              <Y>0.1599999964237213</Y>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1452.5</X>
-              <Y>2.299999952316284</Y>
+              <X>-1487.5</X>
+              <Y>0.8500000238418579</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675152,39 +675195,6 @@
         </Item>
         <Item class="Part" referent="RF09_41221">
           <Properties>
-            <string name="Name">Frame</string>
-            <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
-              <Z>1.899999976158142</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1447.5</X>
-              <Y>0.8500000238418579</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">1088</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41222">
-          <Properties>
             <string name="Name">Arm rest</string>
             <Vector3 name="size">
               <X>0.25</X>
@@ -675192,7 +675202,7 @@
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1447.5</X>
+              <X>-1487.5</X>
               <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
@@ -675217,11 +675227,44 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41223">
+      <Item class="Model" referent="RF09_41222">
         <Properties>
-          <string name="Name">Riverwalk bench 5</string>
+          <string name="Name">Riverwalk bench 4</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
+        <Item class="Part" referent="RF09_41223">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1450</X>
+              <Y>1.649999976158142</Y>
+              <Z>589.239990234375</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
         <Item class="Part" referent="RF09_41224">
           <Properties>
             <string name="Name">Seat slat</string>
@@ -675231,9 +675274,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1410</X>
+              <X>-1450</X>
               <Y>1.649999976158142</Y>
-              <Z>589.239990234375</Z>
+              <Z>589.6199951171875</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675264,9 +675307,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1410</X>
+              <X>-1450</X>
               <Y>1.649999976158142</Y>
-              <Z>589.6199951171875</Z>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675297,9 +675340,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1410</X>
+              <X>-1450</X>
               <Y>1.649999976158142</Y>
-              <Z>590</Z>
+              <Z>590.3800048828125</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675330,9 +675373,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1410</X>
+              <X>-1450</X>
               <Y>1.649999976158142</Y>
-              <Z>590.3800048828125</Z>
+              <Z>590.760009765625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675356,16 +675399,16 @@
         </Item>
         <Item class="Part" referent="RF09_41228">
           <Properties>
-            <string name="Name">Seat slat</string>
+            <string name="Name">Back slat</string>
             <Vector3 name="size">
               <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
+              <Y>0.3199999928474426</Y>
+              <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1410</X>
-              <Y>1.649999976158142</Y>
-              <Z>590.760009765625</Z>
+              <X>-1450</X>
+              <Y>2.450000047683716</Y>
+              <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675396,8 +675439,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1410</X>
-              <Y>2.450000047683716</Y>
+              <X>-1450</X>
+              <Y>2.8499999046325684</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675429,8 +675472,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1410</X>
-              <Y>2.8499999046325684</Y>
+              <X>-1450</X>
+              <Y>3.25</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675455,16 +675498,16 @@
         </Item>
         <Item class="Part" referent="RF09_41231">
           <Properties>
-            <string name="Name">Back slat</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.3199999928474426</Y>
-              <Z>0.18000000715255737</Z>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
+              <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1410</X>
-              <Y>3.25</Y>
-              <Z>590.9000244140625</Z>
+              <X>-1452.5</X>
+              <Y>0.8500000238418579</Y>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675475,12 +675518,12 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
             <bool name="Anchored">true</bool>
             <bool name="CanCollide">true</bool>
             <bool name="CanTouch">false</bool>
             <float name="Transparency">0</float>
-            <token name="Material">528</token>
+            <token name="Material">1088</token>
             <token name="shape">1</token>
             <token name="TopSurface">0</token>
             <token name="BottomSurface">0</token>
@@ -675488,15 +675531,15 @@
         </Item>
         <Item class="Part" referent="RF09_41232">
           <Properties>
-            <string name="Name">Frame</string>
+            <string name="Name">Arm rest</string>
             <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
+              <X>0.25</X>
+              <Y>0.1599999964237213</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1412.5</X>
-              <Y>0.8500000238418579</Y>
+              <X>-1452.5</X>
+              <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675521,15 +675564,15 @@
         </Item>
         <Item class="Part" referent="RF09_41233">
           <Properties>
-            <string name="Name">Arm rest</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>0.25</X>
-              <Y>0.1599999964237213</Y>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1412.5</X>
-              <Y>2.299999952316284</Y>
+              <X>-1447.5</X>
+              <Y>0.8500000238418579</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675554,39 +675597,6 @@
         </Item>
         <Item class="Part" referent="RF09_41234">
           <Properties>
-            <string name="Name">Frame</string>
-            <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
-              <Z>1.899999976158142</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1407.5</X>
-              <Y>0.8500000238418579</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">1088</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41235">
-          <Properties>
             <string name="Name">Arm rest</string>
             <Vector3 name="size">
               <X>0.25</X>
@@ -675594,7 +675604,7 @@
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1407.5</X>
+              <X>-1447.5</X>
               <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
@@ -675619,11 +675629,44 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41236">
+      <Item class="Model" referent="RF09_41235">
         <Properties>
-          <string name="Name">Riverwalk bench 6</string>
+          <string name="Name">Riverwalk bench 5</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
+        <Item class="Part" referent="RF09_41236">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1410</X>
+              <Y>1.649999976158142</Y>
+              <Z>589.239990234375</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
         <Item class="Part" referent="RF09_41237">
           <Properties>
             <string name="Name">Seat slat</string>
@@ -675633,9 +675676,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1370</X>
+              <X>-1410</X>
               <Y>1.649999976158142</Y>
-              <Z>589.239990234375</Z>
+              <Z>589.6199951171875</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675666,9 +675709,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1370</X>
+              <X>-1410</X>
               <Y>1.649999976158142</Y>
-              <Z>589.6199951171875</Z>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675699,9 +675742,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1370</X>
+              <X>-1410</X>
               <Y>1.649999976158142</Y>
-              <Z>590</Z>
+              <Z>590.3800048828125</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675732,9 +675775,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1370</X>
+              <X>-1410</X>
               <Y>1.649999976158142</Y>
-              <Z>590.3800048828125</Z>
+              <Z>590.760009765625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675758,16 +675801,16 @@
         </Item>
         <Item class="Part" referent="RF09_41241">
           <Properties>
-            <string name="Name">Seat slat</string>
+            <string name="Name">Back slat</string>
             <Vector3 name="size">
               <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
+              <Y>0.3199999928474426</Y>
+              <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1370</X>
-              <Y>1.649999976158142</Y>
-              <Z>590.760009765625</Z>
+              <X>-1410</X>
+              <Y>2.450000047683716</Y>
+              <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675798,8 +675841,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1370</X>
-              <Y>2.450000047683716</Y>
+              <X>-1410</X>
+              <Y>2.8499999046325684</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675831,8 +675874,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1370</X>
-              <Y>2.8499999046325684</Y>
+              <X>-1410</X>
+              <Y>3.25</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675857,16 +675900,16 @@
         </Item>
         <Item class="Part" referent="RF09_41244">
           <Properties>
-            <string name="Name">Back slat</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>6.5</X>
-              <Y>0.3199999928474426</Y>
-              <Z>0.18000000715255737</Z>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
+              <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1370</X>
-              <Y>3.25</Y>
-              <Z>590.9000244140625</Z>
+              <X>-1412.5</X>
+              <Y>0.8500000238418579</Y>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -675877,12 +675920,12 @@
               <R21>0</R21>
               <R22>1</R22>
             </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
             <bool name="Anchored">true</bool>
             <bool name="CanCollide">true</bool>
             <bool name="CanTouch">false</bool>
             <float name="Transparency">0</float>
-            <token name="Material">528</token>
+            <token name="Material">1088</token>
             <token name="shape">1</token>
             <token name="TopSurface">0</token>
             <token name="BottomSurface">0</token>
@@ -675890,15 +675933,15 @@
         </Item>
         <Item class="Part" referent="RF09_41245">
           <Properties>
-            <string name="Name">Frame</string>
+            <string name="Name">Arm rest</string>
             <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
+              <X>0.25</X>
+              <Y>0.1599999964237213</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1372.5</X>
-              <Y>0.8500000238418579</Y>
+              <X>-1412.5</X>
+              <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675923,15 +675966,15 @@
         </Item>
         <Item class="Part" referent="RF09_41246">
           <Properties>
-            <string name="Name">Arm rest</string>
+            <string name="Name">Frame</string>
             <Vector3 name="size">
-              <X>0.25</X>
-              <Y>0.1599999964237213</Y>
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1372.5</X>
-              <Y>2.299999952316284</Y>
+              <X>-1407.5</X>
+              <Y>0.8500000238418579</Y>
               <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -675956,39 +675999,6 @@
         </Item>
         <Item class="Part" referent="RF09_41247">
           <Properties>
-            <string name="Name">Frame</string>
-            <Vector3 name="size">
-              <X>0.2199999988079071</X>
-              <Y>1.7000000476837158</Y>
-              <Z>1.899999976158142</Z>
-            </Vector3>
-            <CoordinateFrame name="CFrame">
-              <X>-1367.5</X>
-              <Y>0.8500000238418579</Y>
-              <Z>590</Z>
-              <R00>1</R00>
-              <R01>0</R01>
-              <R02>0</R02>
-              <R10>0</R10>
-              <R11>1</R11>
-              <R12>0</R12>
-              <R20>0</R20>
-              <R21>0</R21>
-              <R22>1</R22>
-            </CoordinateFrame>
-            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
-            <bool name="Anchored">true</bool>
-            <bool name="CanCollide">true</bool>
-            <bool name="CanTouch">false</bool>
-            <float name="Transparency">0</float>
-            <token name="Material">1088</token>
-            <token name="shape">1</token>
-            <token name="TopSurface">0</token>
-            <token name="BottomSurface">0</token>
-          </Properties>
-        </Item>
-        <Item class="Part" referent="RF09_41248">
-          <Properties>
             <string name="Name">Arm rest</string>
             <Vector3 name="size">
               <X>0.25</X>
@@ -675996,7 +676006,7 @@
               <Z>1.899999976158142</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1367.5</X>
+              <X>-1407.5</X>
               <Y>2.299999952316284</Y>
               <Z>590</Z>
               <R00>1</R00>
@@ -676021,11 +676031,44 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41249">
+      <Item class="Model" referent="RF09_41248">
         <Properties>
-          <string name="Name">Riverwalk bench 7</string>
+          <string name="Name">Riverwalk bench 6</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
+        <Item class="Part" referent="RF09_41249">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1370</X>
+              <Y>1.649999976158142</Y>
+              <Z>589.239990234375</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
         <Item class="Part" referent="RF09_41250">
           <Properties>
             <string name="Name">Seat slat</string>
@@ -676035,9 +676078,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1330</X>
+              <X>-1370</X>
               <Y>1.649999976158142</Y>
-              <Z>589.239990234375</Z>
+              <Z>589.6199951171875</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -676068,9 +676111,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1330</X>
+              <X>-1370</X>
               <Y>1.649999976158142</Y>
-              <Z>589.6199951171875</Z>
+              <Z>590</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -676101,9 +676144,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1330</X>
+              <X>-1370</X>
               <Y>1.649999976158142</Y>
-              <Z>590</Z>
+              <Z>590.3800048828125</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -676134,9 +676177,9 @@
               <Z>0.3199999928474426</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1330</X>
+              <X>-1370</X>
               <Y>1.649999976158142</Y>
-              <Z>590.3800048828125</Z>
+              <Z>590.760009765625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -676160,16 +676203,16 @@
         </Item>
         <Item class="Part" referent="RF09_41254">
           <Properties>
-            <string name="Name">Seat slat</string>
+            <string name="Name">Back slat</string>
             <Vector3 name="size">
               <X>6.5</X>
-              <Y>0.1599999964237213</Y>
-              <Z>0.3199999928474426</Z>
+              <Y>0.3199999928474426</Y>
+              <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1330</X>
-              <Y>1.649999976158142</Y>
-              <Z>590.760009765625</Z>
+              <X>-1370</X>
+              <Y>2.450000047683716</Y>
+              <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
               <R02>0</R02>
@@ -676200,8 +676243,8 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
-              <X>-1330</X>
-              <Y>2.450000047683716</Y>
+              <X>-1370</X>
+              <Y>2.8499999046325684</Y>
               <Z>590.9000244140625</Z>
               <R00>1</R00>
               <R01>0</R01>
@@ -676233,6 +676276,375 @@
               <Z>0.18000000715255737</Z>
             </Vector3>
             <CoordinateFrame name="CFrame">
+              <X>-1370</X>
+              <Y>3.25</Y>
+              <Z>590.9000244140625</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41257">
+          <Properties>
+            <string name="Name">Frame</string>
+            <Vector3 name="size">
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
+              <Z>1.899999976158142</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1372.5</X>
+              <Y>0.8500000238418579</Y>
+              <Z>590</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">1088</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41258">
+          <Properties>
+            <string name="Name">Arm rest</string>
+            <Vector3 name="size">
+              <X>0.25</X>
+              <Y>0.1599999964237213</Y>
+              <Z>1.899999976158142</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1372.5</X>
+              <Y>2.299999952316284</Y>
+              <Z>590</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">1088</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41259">
+          <Properties>
+            <string name="Name">Frame</string>
+            <Vector3 name="size">
+              <X>0.2199999988079071</X>
+              <Y>1.7000000476837158</Y>
+              <Z>1.899999976158142</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1367.5</X>
+              <Y>0.8500000238418579</Y>
+              <Z>590</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">1088</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41260">
+          <Properties>
+            <string name="Name">Arm rest</string>
+            <Vector3 name="size">
+              <X>0.25</X>
+              <Y>0.1599999964237213</Y>
+              <Z>1.899999976158142</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1367.5</X>
+              <Y>2.299999952316284</Y>
+              <Z>590</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">2370087</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">1088</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+      </Item>
+      <Item class="Model" referent="RF09_41261">
+        <Properties>
+          <string name="Name">Riverwalk bench 7</string>
+          <token name="ModelStreamingMode">1</token>
+        </Properties>
+        <Item class="Part" referent="RF09_41262">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1330</X>
+              <Y>1.649999976158142</Y>
+              <Z>589.239990234375</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41263">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1330</X>
+              <Y>1.649999976158142</Y>
+              <Z>589.6199951171875</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41264">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1330</X>
+              <Y>1.649999976158142</Y>
+              <Z>590</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41265">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1330</X>
+              <Y>1.649999976158142</Y>
+              <Z>590.3800048828125</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41266">
+          <Properties>
+            <string name="Name">Seat slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.1599999964237213</Y>
+              <Z>0.3199999928474426</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1330</X>
+              <Y>1.649999976158142</Y>
+              <Z>590.760009765625</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41267">
+          <Properties>
+            <string name="Name">Back slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.3199999928474426</Y>
+              <Z>0.18000000715255737</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
+              <X>-1330</X>
+              <Y>2.450000047683716</Y>
+              <Z>590.9000244140625</Z>
+              <R00>1</R00>
+              <R01>0</R01>
+              <R02>0</R02>
+              <R10>0</R10>
+              <R11>1</R11>
+              <R12>0</R12>
+              <R20>0</R20>
+              <R21>0</R21>
+              <R22>1</R22>
+            </CoordinateFrame>
+            <Color3uint8 name="Color3uint8">7623220</Color3uint8>
+            <bool name="Anchored">true</bool>
+            <bool name="CanCollide">true</bool>
+            <bool name="CanTouch">false</bool>
+            <float name="Transparency">0</float>
+            <token name="Material">528</token>
+            <token name="shape">1</token>
+            <token name="TopSurface">0</token>
+            <token name="BottomSurface">0</token>
+          </Properties>
+        </Item>
+        <Item class="Part" referent="RF09_41268">
+          <Properties>
+            <string name="Name">Back slat</string>
+            <Vector3 name="size">
+              <X>6.5</X>
+              <Y>0.3199999928474426</Y>
+              <Z>0.18000000715255737</Z>
+            </Vector3>
+            <CoordinateFrame name="CFrame">
               <X>-1330</X>
               <Y>2.8499999046325684</Y>
               <Z>590.9000244140625</Z>
@@ -676257,7 +676669,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41257">
+        <Item class="Part" referent="RF09_41269">
           <Properties>
             <string name="Name">Back slat</string>
             <Vector3 name="size">
@@ -676290,7 +676702,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41258">
+        <Item class="Part" referent="RF09_41270">
           <Properties>
             <string name="Name">Frame</string>
             <Vector3 name="size">
@@ -676323,7 +676735,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41259">
+        <Item class="Part" referent="RF09_41271">
           <Properties>
             <string name="Name">Arm rest</string>
             <Vector3 name="size">
@@ -676356,7 +676768,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41260">
+        <Item class="Part" referent="RF09_41272">
           <Properties>
             <string name="Name">Frame</string>
             <Vector3 name="size">
@@ -676389,7 +676801,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41261">
+        <Item class="Part" referent="RF09_41273">
           <Properties>
             <string name="Name">Arm rest</string>
             <Vector3 name="size">
@@ -676423,12 +676835,12 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41262">
+      <Item class="Model" referent="RF09_41274">
         <Properties>
           <string name="Name">Riverwalk bench 8</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
-        <Item class="Part" referent="RF09_41263">
+        <Item class="Part" referent="RF09_41275">
           <Properties>
             <string name="Name">Seat slat</string>
             <Vector3 name="size">
@@ -676461,7 +676873,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41264">
+        <Item class="Part" referent="RF09_41276">
           <Properties>
             <string name="Name">Seat slat</string>
             <Vector3 name="size">
@@ -676494,7 +676906,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41265">
+        <Item class="Part" referent="RF09_41277">
           <Properties>
             <string name="Name">Seat slat</string>
             <Vector3 name="size">
@@ -676527,7 +676939,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41266">
+        <Item class="Part" referent="RF09_41278">
           <Properties>
             <string name="Name">Seat slat</string>
             <Vector3 name="size">
@@ -676560,7 +676972,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41267">
+        <Item class="Part" referent="RF09_41279">
           <Properties>
             <string name="Name">Seat slat</string>
             <Vector3 name="size">
@@ -676593,7 +677005,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41268">
+        <Item class="Part" referent="RF09_41280">
           <Properties>
             <string name="Name">Back slat</string>
             <Vector3 name="size">
@@ -676626,7 +677038,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41269">
+        <Item class="Part" referent="RF09_41281">
           <Properties>
             <string name="Name">Back slat</string>
             <Vector3 name="size">
@@ -676659,7 +677071,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41270">
+        <Item class="Part" referent="RF09_41282">
           <Properties>
             <string name="Name">Back slat</string>
             <Vector3 name="size">
@@ -676692,7 +677104,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41271">
+        <Item class="Part" referent="RF09_41283">
           <Properties>
             <string name="Name">Frame</string>
             <Vector3 name="size">
@@ -676725,7 +677137,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41272">
+        <Item class="Part" referent="RF09_41284">
           <Properties>
             <string name="Name">Arm rest</string>
             <Vector3 name="size">
@@ -676758,7 +677170,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41273">
+        <Item class="Part" referent="RF09_41285">
           <Properties>
             <string name="Name">Frame</string>
             <Vector3 name="size">
@@ -676791,7 +677203,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41274">
+        <Item class="Part" referent="RF09_41286">
           <Properties>
             <string name="Name">Arm rest</string>
             <Vector3 name="size">
@@ -676825,12 +677237,12 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41275">
+      <Item class="Model" referent="RF09_41287">
         <Properties>
           <string name="Name">Riverfront SUV</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
-        <Item class="Part" referent="RF09_41276">
+        <Item class="Part" referent="RF09_41288">
           <Properties>
             <string name="Name">Chassis</string>
             <Vector3 name="size">
@@ -676863,7 +677275,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41277">
+        <Item class="MeshPart" referent="RF09_41289">
           <Properties>
             <string name="Name">body_geom</string>
             <Vector3 name="size">
@@ -676906,7 +677318,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41278">
+        <Item class="MeshPart" referent="RF09_41290">
           <Properties>
             <string name="Name">left front wheel_geom</string>
             <Vector3 name="size">
@@ -676949,7 +677361,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41279">
+        <Item class="MeshPart" referent="RF09_41291">
           <Properties>
             <string name="Name">right front wheel_geom</string>
             <Vector3 name="size">
@@ -676992,7 +677404,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41280">
+        <Item class="MeshPart" referent="RF09_41292">
           <Properties>
             <string name="Name">left rear wheel_geom</string>
             <Vector3 name="size">
@@ -677035,7 +677447,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41281">
+        <Item class="MeshPart" referent="RF09_41293">
           <Properties>
             <string name="Name">right rear wheel_geom</string>
             <Vector3 name="size">
@@ -677078,7 +677490,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41282">
+        <Item class="Part" referent="RF09_41294">
           <Properties>
             <string name="Name">Impact body</string>
             <Vector3 name="size">
@@ -677111,7 +677523,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41283">
+        <Item class="Part" referent="RF09_41295">
           <Properties>
             <string name="Name">Impact body</string>
             <Vector3 name="size">
@@ -677144,7 +677556,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41284">
+        <Item class="Part" referent="RF09_41296">
           <Properties>
             <string name="Name">Tire collision</string>
             <Vector3 name="size">
@@ -677177,7 +677589,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41285">
+        <Item class="Part" referent="RF09_41297">
           <Properties>
             <string name="Name">Wheel hub</string>
             <Vector3 name="size">
@@ -677210,7 +677622,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41286">
+        <Item class="Part" referent="RF09_41298">
           <Properties>
             <string name="Name">Tire collision</string>
             <Vector3 name="size">
@@ -677243,7 +677655,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41287">
+        <Item class="Part" referent="RF09_41299">
           <Properties>
             <string name="Name">Wheel hub</string>
             <Vector3 name="size">
@@ -677276,7 +677688,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41288">
+        <Item class="Part" referent="RF09_41300">
           <Properties>
             <string name="Name">Tire collision</string>
             <Vector3 name="size">
@@ -677309,7 +677721,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41289">
+        <Item class="Part" referent="RF09_41301">
           <Properties>
             <string name="Name">Wheel hub</string>
             <Vector3 name="size">
@@ -677342,7 +677754,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41290">
+        <Item class="Part" referent="RF09_41302">
           <Properties>
             <string name="Name">Tire collision</string>
             <Vector3 name="size">
@@ -677375,7 +677787,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41291">
+        <Item class="Part" referent="RF09_41303">
           <Properties>
             <string name="Name">Wheel hub</string>
             <Vector3 name="size">
@@ -677408,7 +677820,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41292">
+        <Item class="Part" referent="RF09_41304">
           <Properties>
             <string name="Name">Headlamp</string>
             <Vector3 name="size">
@@ -677441,7 +677853,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41293">
+        <Item class="Part" referent="RF09_41305">
           <Properties>
             <string name="Name">Brake lamp</string>
             <Vector3 name="size">
@@ -677474,7 +677886,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41294">
+        <Item class="Part" referent="RF09_41306">
           <Properties>
             <string name="Name">Headlamp</string>
             <Vector3 name="size">
@@ -677507,7 +677919,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41295">
+        <Item class="Part" referent="RF09_41307">
           <Properties>
             <string name="Name">Brake lamp</string>
             <Vector3 name="size">
@@ -677540,7 +677952,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41296">
+        <Item class="Part" referent="RF09_41308">
           <Properties>
             <string name="Name">DriverSeat</string>
             <Vector3 name="size">
@@ -677572,7 +677984,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41297">
+        <Item class="Part" referent="RF09_41309">
           <Properties>
             <string name="Name">Driver entry</string>
             <Vector3 name="size">
@@ -677606,12 +678018,12 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41298">
+      <Item class="Model" referent="RF09_41310">
         <Properties>
           <string name="Name">Parked SUV - graphite</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
-        <Item class="Part" referent="RF09_41299">
+        <Item class="Part" referent="RF09_41311">
           <Properties>
             <string name="Name">Chassis</string>
             <Vector3 name="size">
@@ -677644,7 +678056,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41300">
+        <Item class="MeshPart" referent="RF09_41312">
           <Properties>
             <string name="Name">body_geom</string>
             <Vector3 name="size">
@@ -677687,7 +678099,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41301">
+        <Item class="MeshPart" referent="RF09_41313">
           <Properties>
             <string name="Name">left front wheel_geom</string>
             <Vector3 name="size">
@@ -677730,7 +678142,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41302">
+        <Item class="MeshPart" referent="RF09_41314">
           <Properties>
             <string name="Name">right front wheel_geom</string>
             <Vector3 name="size">
@@ -677773,7 +678185,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41303">
+        <Item class="MeshPart" referent="RF09_41315">
           <Properties>
             <string name="Name">left rear wheel_geom</string>
             <Vector3 name="size">
@@ -677816,7 +678228,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41304">
+        <Item class="MeshPart" referent="RF09_41316">
           <Properties>
             <string name="Name">right rear wheel_geom</string>
             <Vector3 name="size">
@@ -677859,7 +678271,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41305">
+        <Item class="Part" referent="RF09_41317">
           <Properties>
             <string name="Name">Impact body</string>
             <Vector3 name="size">
@@ -677892,7 +678304,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41306">
+        <Item class="Part" referent="RF09_41318">
           <Properties>
             <string name="Name">Impact body</string>
             <Vector3 name="size">
@@ -677925,7 +678337,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41307">
+        <Item class="Part" referent="RF09_41319">
           <Properties>
             <string name="Name">Headlamp</string>
             <Vector3 name="size">
@@ -677958,7 +678370,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41308">
+        <Item class="Part" referent="RF09_41320">
           <Properties>
             <string name="Name">Brake lamp</string>
             <Vector3 name="size">
@@ -677991,7 +678403,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41309">
+        <Item class="Part" referent="RF09_41321">
           <Properties>
             <string name="Name">Headlamp</string>
             <Vector3 name="size">
@@ -678024,7 +678436,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41310">
+        <Item class="Part" referent="RF09_41322">
           <Properties>
             <string name="Name">Brake lamp</string>
             <Vector3 name="size">
@@ -678058,12 +678470,12 @@
           </Properties>
         </Item>
       </Item>
-      <Item class="Model" referent="RF09_41311">
+      <Item class="Model" referent="RF09_41323">
         <Properties>
           <string name="Name">Parked SUV - riverwalk</string>
           <token name="ModelStreamingMode">1</token>
         </Properties>
-        <Item class="Part" referent="RF09_41312">
+        <Item class="Part" referent="RF09_41324">
           <Properties>
             <string name="Name">Chassis</string>
             <Vector3 name="size">
@@ -678096,7 +678508,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41313">
+        <Item class="MeshPart" referent="RF09_41325">
           <Properties>
             <string name="Name">body_geom</string>
             <Vector3 name="size">
@@ -678139,7 +678551,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41314">
+        <Item class="MeshPart" referent="RF09_41326">
           <Properties>
             <string name="Name">left front wheel_geom</string>
             <Vector3 name="size">
@@ -678182,7 +678594,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41315">
+        <Item class="MeshPart" referent="RF09_41327">
           <Properties>
             <string name="Name">right front wheel_geom</string>
             <Vector3 name="size">
@@ -678225,7 +678637,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41316">
+        <Item class="MeshPart" referent="RF09_41328">
           <Properties>
             <string name="Name">left rear wheel_geom</string>
             <Vector3 name="size">
@@ -678268,7 +678680,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="MeshPart" referent="RF09_41317">
+        <Item class="MeshPart" referent="RF09_41329">
           <Properties>
             <string name="Name">right rear wheel_geom</string>
             <Vector3 name="size">
@@ -678311,7 +678723,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41318">
+        <Item class="Part" referent="RF09_41330">
           <Properties>
             <string name="Name">Impact body</string>
             <Vector3 name="size">
@@ -678344,7 +678756,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41319">
+        <Item class="Part" referent="RF09_41331">
           <Properties>
             <string name="Name">Impact body</string>
             <Vector3 name="size">
@@ -678377,7 +678789,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41320">
+        <Item class="Part" referent="RF09_41332">
           <Properties>
             <string name="Name">Headlamp</string>
             <Vector3 name="size">
@@ -678410,7 +678822,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41321">
+        <Item class="Part" referent="RF09_41333">
           <Properties>
             <string name="Name">Brake lamp</string>
             <Vector3 name="size">
@@ -678443,7 +678855,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41322">
+        <Item class="Part" referent="RF09_41334">
           <Properties>
             <string name="Name">Headlamp</string>
             <Vector3 name="size">
@@ -678476,7 +678888,7 @@
             <token name="BottomSurface">0</token>
           </Properties>
         </Item>
-        <Item class="Part" referent="RF09_41323">
+        <Item class="Part" referent="RF09_41335">
           <Properties>
             <string name="Name">Brake lamp</string>
             <Vector3 name="size">
@@ -680865,9 +681277,20 @@ function Lounge.build(garden,data)
     local seat=part("Seat","ArrivalSeat",Vector3.new(2.8,.3,2.6),cf*CFrame.new(x,1.4,0),Color3.fromRGB(88,104,105))
     seat.Disabled=false
    end
-   part("Part","BenchBack",Vector3.new(6,2,.25),cf*CFrame.new(0,2.25,1.35),Color3.fromRGB(95,112,113))
+   local back=part("Part","BenchBack",Vector3.new(6,2,.25),cf*CFrame.new(0,2.25,1.35),Color3.fromRGB(112,87,61))
+   back.Material=Enum.Material.WoodPlanks
+   local planter=part("Part","LoungePlanter",Vector3.new(1.8,1.4,1.8),cf*CFrame.new(-4.5,.7,0),Color3.fromRGB(177,175,164))
+   planter.Material=Enum.Material.Concrete
+   local soil=part("Part","PlanterSoil",Vector3.new(1.5,.12,1.5),cf*CFrame.new(-4.5,1.43,0),Color3.fromRGB(65,57,42))
+   soil.Material=Enum.Material.Ground soil.CanCollide=false
+   for _,leaf in ipairs({{-.45,2.05,0,.4},{.4,2.3,.25,-.35},{0,2.6,-.3,.15}}) do
+    local foliage=part("Part","OriginalIndoorFoliage",Vector3.new(.7,1.8,.65),cf*CFrame.new(-4.5+leaf[1],leaf[2],leaf[3])*CFrame.Angles(0,0,leaf[4]),Color3.fromRGB(69,100,62))
+    foliage.Material=Enum.Material.Grass foliage.CanCollide=false foliage.CanQuery=false
+   end
    local lamp=part("Part","ArrivalLight",Vector3.new(.45,4,.45),cf*CFrame.new(4.5,2,0),Color3.fromRGB(190,196,193))
    lamp.CanCollide=false
+   local cap=part("Part","ArrivalLightDiffuser",Vector3.new(.8,.3,.8),cf*CFrame.new(4.5,4.05,0),Color3.fromRGB(242,232,207))
+   cap.Material=Enum.Material.SmoothPlastic cap.CanCollide=false
    local light=Instance.new("PointLight") light.Color=Color3.fromRGB(255,235,200) light.Brightness=.6 light.Range=14 light.Shadows=false light.Parent=lamp
   end
   local a=data.seats[1] local cf=CFrame.new(a.pos[1],a.pos[2],a.pos[3],table.unpack(a.matrix))
