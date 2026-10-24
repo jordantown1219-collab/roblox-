@@ -1,4 +1,4 @@
-# Step2: stairs and ramps down to RiverWalk — awaiting approval
+# Step2: stairs and ramps down to RiverWalk — approved; in progress
 1. Checkpoint currentplace/source and verify GitHub before edits.
 2. Reuse saved real-world references; inspect the current forecourt, river threshold and80m paved segment to establish actual game grades.
 3. Build original source-aware stairs and an accessible continuous ramp with edge protection; preserve the completed entrances, roof, interiors and geographic landmarks.

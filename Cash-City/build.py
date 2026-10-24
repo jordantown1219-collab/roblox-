@@ -72,7 +72,7 @@ mapping={'Arena':'Arena.lua','SmallSignalsServer':'SmallSignalsServer.server.lua
 for n in root.iter('Item'):
  props=n.find('Properties');name=props.findtext("string[@name='Name']") if props is not None else None
  if name in mapping:prop(n,'ProtectedString','Source',(P/'src'/mapping[name]).read_text(encoding='utf-8-sig'))
-for name in ['LegacyArena','CityConfig','InteractionRegistry','InteractionWorkshop','InteractionRules','WorldLoading','WeaponVisuals','RiverfrontVehicles','CityDetails','CityBlockGenerator','BuildingTemplates','BuildingInteractions','StorefrontInterior','CivicFacades','CivicFacadeData','HartPathData','RenaissanceDetails','RenaissanceData','Wintergarden','WintergardenData','ArrivalLounge','ArrivalLoungeData','RenaissanceLobby','RenaissanceLobbyData']:
+for name in ['LegacyArena','CityConfig','InteractionRegistry','InteractionWorkshop','InteractionRules','WorldLoading','WeaponVisuals','RiverfrontVehicles','CityDetails','CityBlockGenerator','BuildingTemplates','BuildingInteractions','StorefrontInterior','CivicFacades','CivicFacadeData','HartPathData','RenaissanceDetails','RenaissanceData','Wintergarden','WintergardenData','ArrivalLounge','ArrivalLoungeData','RenaissanceLobby','RenaissanceLobbyData','RiverAccess','RiverAccessData']:
  source(server,'ModuleScript',name,(P/'src'/f'{name}.lua').read_text(encoding='utf-8-sig'))
 source(shared,'ModuleScript','InteractionRules',(P/'src/InteractionRules.lua').read_text(encoding='utf-8-sig'))
 source(sp,'LocalScript','RiverfrontClient',(P/'src/RiverfrontClient.client.lua').read_text(encoding='utf-8-sig'))
@@ -214,6 +214,11 @@ for b in lobby['records']:
    for key,value in zip('RGB',[238/255,235/255,214/255]):ET.SubElement(rgb,key).text=str(value)
 for index,anchor in enumerate(lobby.get('doorAnchors',[])):
  primitive(lobby_preview,dict(name='RenaissanceLobbyDoorPreview_'+str(index),size=[anchor['width']-.6,anchor['height']-.3,.28],pos=anchor['pos'],matrix=anchor['matrix'],color=[126,142,146],material='Metal',collide=True))
+access=json.loads((P/'data/river_access_plan.json').read_text())
+access_preview=item(preview,'Model',access['id']);prop(access_preview,'token','ModelStreamingMode',1)
+marker=item(access_preview,'StringValue','CashCityGeneratedBlockManifest');prop(marker,'string','Value',access['id'])
+for b in access['records']:
+ node=primitive(access_preview,b);prop(node,'bool','CastShadow','false')
 for entry in json.loads((P/'data/detail_preview.json').read_text(encoding='utf-8')):
  group=item(preview,'Model',entry['name']);prop(group,'token','ModelStreamingMode',1)
  for b in entry['parts']:primitive(group,b)
