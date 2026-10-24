@@ -1,5 +1,6 @@
 -- Reversible Map 1 enclosure; original parts remain in place with restoration metadata.
-local Boundary={limits={minX=-1700,maxX=650,minZ=-550,maxZ=850,floorY=-20,resetY=-8,ceilingY=1200}}
+-- Rounded outward from Hart Plaza and completed RenCen footprints with >=64stud margin.
+local Boundary={limits={minX=-1850,maxX=750,minZ=-650,maxZ=1250,floorY=-20,resetY=-8,ceilingY=1200}}
 function Boundary.contains(p)
  local b=Boundary.limits
  return p.X>=b.minX and p.X<=b.maxX and p.Z>=b.minZ and p.Z<=b.maxZ and p.Y>=b.resetY and p.Y<=b.ceilingY
@@ -42,7 +43,7 @@ function Boundary.build(root)
    part(y==b.floorY and 'FallCatchFloor' or 'MapCeiling',Vector3.new(width+4,2,b.maxZ-b.minZ+4),CFrame.new(x,y,(b.minZ+b.maxZ)/2),nil,1)
   end
  end
- local hidden,bank=0,0
+ local hidden,bank,restored=0,0,0
  local existing=root:GetDescendants()
  for index,p in ipairs(existing) do
   if p:IsA('BasePart') then
@@ -58,6 +59,9 @@ function Boundary.build(root)
      p:SetAttribute('Map1PriorTransparency',p.Transparency) p:SetAttribute('Map1PriorCastShadow',p.CastShadow)
     end
     p.Transparency=1 p.CastShadow=false hidden=hidden+1
+   elseif p:GetAttribute('Map1PriorTransparency')~=nil then
+    p.Transparency=p:GetAttribute('Map1PriorTransparency') p.CastShadow=p:GetAttribute('Map1PriorCastShadow')
+    p:SetAttribute('Map1PriorTransparency',nil) p:SetAttribute('Map1PriorCastShadow',nil) restored=restored+1
    end
   end
   if index%1000==0 then task.wait() end
@@ -85,6 +89,6 @@ function Boundary.build(root)
    end
   end)
  end
- return model,{hidden=hidden,waterEdges=bank}
+ return model,{hidden=hidden,waterEdges=bank,restored=restored}
 end
 return Boundary

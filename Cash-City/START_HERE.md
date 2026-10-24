@@ -1,29 +1,29 @@
 # Map 1 release preparation — START HERE
-## Working place
-CashCity_RiverWalk_Section2.rbxl (latest saved binary; both40m extensions + original80mwalk).
-Visible Studio92bb2bd5-f0e8-4fe0-9300-40cf8d01dfb0; MCPmayreportoldAutoRecoveryname.
-## Scope and rules
-Map1only: RenaissanceCenter/RiverWalk/surroundingpark. Nootherdistricts; neverpublish.
-UserapprovedMap1roads/mapedges/neededfullrebuild. One numberedtask perrun; STOPandwaitfor"next".
-Checkpoint/placebackupGitHub BEFOREandAFTEReach task. Stopbefore90%USEDfivehour (leave10%remaining; userupdatedlimit2026-10-24); no paidcredits/helpers.
-UI save/click failsTWICE: stopandgive manualsteps. Measureperformance; neverinventresults.
-## Task status
-1. PASS: floor-join corrections; six focusedoffline tests8.552s; native2532floor/width+2532headroomPASS.
-   Stairs-top atpoint58.5/6/.55; landing.coversassert. Approachjoins derivedfromrenderedpolygons; grade.35to.55.
-   Preservecurrent23parts (old9->10instruction referredtosupersededbaseline); no existingrepairremoved.
-   Regenerateddata/module. Task1rollback preserved. CurrentTask2candidateplace676637bytes, SHA522C34FC71AFD39531880E71FBC6F828A7E855754184DCF5FC917727D09F225A.
-2. PARTIAL: reversible38partperimeter+12waterblockers implemented;14723exteriorparts hiddenwithrestoreattributes. Fiveofflinechecks/6nativebarrierraysPASS. MechanicalacceptancePASS:528rays,3actualplayerresets,tinyavatarblocked,11runtimeWintergardenchecks,183roof+63lobbypartsconfirmed. VisualscreenacceptancePENDINGuseranswer; noTask3inthisrun.
-3. PENDING: walkableRenCen/RiverWalk/park connections.
-4. UNVERIFIED: fullmatchloop incl3v3minimum,4sizes,extraction/results; fixonlyblockers.
-5. UNVERIFIED: streaming + freshdesktop/low-endmobileFPS; actualhardwareevidencerequired.
-6. PENDING: allroutes/all4sizes/offlinesuite + phone/multiplayerchecklist.
-7. PENDING: rollbacktestedplace/releasechecklist/PRIVATEtestpublishinginstructions. Neverpublishwithoutapproval.
-## Evidence/limits
-Task1geometrychecksarenotactualnewavatarwalk,matchloop,multiplayer/mobile/performanceacceptance.
-BothRiverWalkextensionspreserved. MapNOTrelease-ready.
+Working place: CashCity_RiverWalk_Section2.rbxl. Never publish.
+Visible Studio92bb2bd5-f0e8-4fe0-9300-40cf8d01dfb0 (MCP may report old AutoRecovery name).
+## Rules
+Map1 only: RenCen, RiverWalk, surrounding park. No other districts/helpers/paid credits.
+One numbered task per run; save/checkpoint GitHub before and after; stop for "next".
+Stop before90%USED five-hour allowance, leaving10%remaining. UI failure twice: stop.
+Map1 roads/edges/necessary full rebuild approved; preserve originals.
+## Status
+1 PASS: inset stair-top + source-derived approach;6 offline +5064 native checks.
+2 MECHANICAL PASS; visual screens unverified. New boundary adjusted duringTask3 to retain actual park/complex footprints.
+  Previous reset tests passed at old extents; containment unit checks and573 current-extent barrier rays passed. Recheck current-extent player escape cases duringTask6.
+3 PASS: 68-part park path joins completed160m RiverWalk to existing Hart Plaza path over428.786m.
+  Fixed boundary cropping: limitsX[-1850,750],Z[-650,1250];1098 previously screened preview parts restored.
+  12 focused offline tests;87 native floor samples;22% avatar completed ALL87 waypoints,health100/supportPASS.
+  573 updated barrier rays:0 misses. Park-facing desktop sample59.99FPS,p9518.48ms; not mobile/multiplayer/improvement proof.
+4 NEXT: fullmatchloop incl3v3 minimum,mode/team/map/shrink/extraction/results; fix only blockers. Start only after"next".
+5 PENDING: streaming + desktop/low-end mobile performance acceptance.
+6 PENDING: all routes/all4sizes/full offline suite + phone/multiplayer checklist.
+7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.
+## Evidence and remaining work
+See docs/Map1_Task3_ACCEPTANCE.md and Map1_Task3_WALK_RESULTS.json.
+Task2 visual concealment approval still pending; no claim of release readiness.
+Full-build preview/source embedding for newly added modules must be reconciled beforeTask6 fullsuite; old .rbxlx is NOT current working place.
+PNG request was canceled by user after renderer failed twice; no PNG produced. Do not resume renderer unless asked.
 ## Where to look
-Groundnorthroadcutoffview:camera90/20/-455 looks0/6/-550; selectionclearedforvisualreview.
+Camera atpark join:target-1480/1/1120,eye-1415/36/1195;selectionclear.
 ## Postlaunch only
-Districts,votingpolish,extrainteriors,vehicles,consoletuning.
-
-
+Newdistricts,votingpolish,extra interiors,vehicles,console tuning.

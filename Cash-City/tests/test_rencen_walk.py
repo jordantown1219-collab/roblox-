@@ -70,6 +70,20 @@ class RenCenWalk(unittest.TestCase):
         expected=[old['segmentMetersXZ'][-1][0]*old['studsPerMeter'],.41,old['segmentMetersXZ'][-1][1]*old['studsPerMeter']]
         for a,b in zip(plan['routeSamples'][0]['pos'],expected):self.assertAlmostEqual(a,b)
 
+    def test_park_connection_reaches_existing_paving(self):
+        from generate_park_connection import generate
+        files=['rencen_walk_plan.json','riverwalk_extension_plan.json','riverwalk_extension2_plan.json','hart_path_plan.json']
+        before={n:hashlib.sha256((ROOT/'data'/n).read_bytes()).hexdigest() for n in files}
+        plan=generate()
+        previous=json.loads((ROOT/'data/riverwalk_extension2_plan.json').read_text())
+        hart=json.loads((ROOT/'data/hart_path_plan.json').read_text())['records'][0]
+        for a,b in zip(plan['routeSamples'][0]['pos'],previous['routeSamples'][-1]['pos']):self.assertAlmostEqual(a,b)
+        self.assertAlmostEqual(plan['routeSamples'][-1]['pos'][0],hart['pos'][0])
+        self.assertAlmostEqual(plan['routeSamples'][-1]['pos'][2],hart['pos'][2])
+        self.assertLess(len(plan['records']),250)
+        for a,b in zip(plan['routeSamples'],plan['routeSamples'][1:]):self.assertLessEqual(math.dist(a['pos'],b['pos']),18)
+        for n,digest in before.items():self.assertEqual(digest,hashlib.sha256((ROOT/'data'/n).read_bytes()).hexdigest())
+
     def test_second_section_connects_and_preserves_first(self):
         from generate_riverwalk_extension import generate
         path=ROOT/'src/RiverWalkExtension.lua'

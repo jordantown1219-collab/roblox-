@@ -21,6 +21,17 @@ class PlayableBlockTests(unittest.TestCase):
             for _,position in config[category].items():self.assertTrue(boundary.contains(position),category)
         for _,spots in config['Sockets'].items():
             for _,position in spots.items():self.assertTrue(boundary.contains(position),'Gate outside enclosure')
+        park=shape(next(f for f in self.geography['features'] if f.get('osm')==69349404)['geometry'])
+        scale=self.geography['studsPerMeter']
+        x0,z0,x1,z1=park.bounds
+        for x in (x0,x1):
+            for z in (z0,z1):self.assertTrue(boundary.contains(lua.table_from({'X':x*scale,'Y':5,'Z':z*scale})),'Hart Plaza cropped')
+        completed=json.loads((ROOT/'data/rencen_detail_plan.json').read_text())
+        for face in completed['faces']:
+            r=face['record'];m=r['matrix'];p=r['pos'];size=r['size']
+            for x in (-.5,.5):
+                for z in (-.5,.5):
+                    self.assertTrue(boundary.contains(lua.table_from({'X':p[0]+m[0]*size[0]*x+m[2]*size[2]*z,'Y':5,'Z':p[2]+m[6]*size[0]*x+m[8]*size[2]*z})),'Completed RenCen face cropped')
         b=boundary.limits
         center={'X':(b.minX+b.maxX)/2,'Y':5,'Z':(b.minZ+b.maxZ)/2}
         for key,value in [('X',b.minX-1),('X',b.maxX+1),('Z',b.minZ-1),('Z',b.maxZ+1),('Y',b.resetY-1),('Y',b.floorY+3),('Y',b.ceilingY+1)]:

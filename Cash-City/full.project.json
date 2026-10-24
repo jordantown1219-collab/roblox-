@@ -156,6 +156,10 @@
       "Map1Boundary": {
         "$path": "src/Map1Boundary.lua",
         "$ignoreUnknownInstances": true
+      },
+      "ParkConnection": {
+        "$path": "src/ParkConnection.lua",
+        "$ignoreUnknownInstances": true
       }
     },
     "StarterPlayer": {

@@ -1,0 +1,10 @@
+test_civic_faces_preserve_exact_records_and_outward_normals (test_playable_block.PlayableBlockTests.test_civic_faces_preserve_exact_records_and_outward_normals) ... ok
+test_map1_boundary_contains_existing_gameplay_and_rejects_exits (test_playable_block.PlayableBlockTests.test_map1_boundary_contains_existing_gameplay_and_rejects_exits) ... ok
+test_route_is_source_derived_clear_land_corridor (test_playable_block.PlayableBlockTests.test_route_is_source_derived_clear_land_corridor) ... ok
+test_saved_plan_determinism_datum_and_provenance (test_playable_block.PlayableBlockTests.test_saved_plan_determinism_datum_and_provenance) ... ok
+test_secondary_fit_is_not_false_placement_acceptance (test_playable_block.PlayableBlockTests.test_secondary_fit_is_not_false_placement_acceptance) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.497s
+
+OK

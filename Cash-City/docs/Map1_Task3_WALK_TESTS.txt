@@ -1,0 +1,12 @@
+test_continuous_collision_and_panel_bounds (test_rencen_walk.RenCenWalk.test_continuous_collision_and_panel_bounds) ... ok
+test_deterministic_bounded_without_source_mutation (test_rencen_walk.RenCenWalk.test_deterministic_bounded_without_source_mutation) ... ok
+test_extension_keeps_completed_walk_and_reproduces_furnishings (test_rencen_walk.RenCenWalk.test_extension_keeps_completed_walk_and_reproduces_furnishings) ... ok
+test_park_connection_reaches_existing_paving (test_rencen_walk.RenCenWalk.test_park_connection_reaches_existing_paving) ... ok
+test_reject_source_path_change (test_rencen_walk.RenCenWalk.test_reject_source_path_change) ... ok
+test_saved_plan_matches_and_sources_unchanged (test_rencen_walk.RenCenWalk.test_saved_plan_matches_and_sources_unchanged) ... ok
+test_second_section_connects_and_preserves_first (test_rencen_walk.RenCenWalk.test_second_section_connects_and_preserves_first) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 15.105s
+
+OK
