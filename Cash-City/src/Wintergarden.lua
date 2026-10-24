@@ -77,6 +77,7 @@ function Garden.build(root,plan)
   door.Parent=model
  end
  model:SetAttribute("ReferenceStatus","Original barrel-vault interpretation; roof rise and interiors estimated")
+ require(script.Parent.ArrivalLounge).build(model)
  return model,stats
 end
 return Garden

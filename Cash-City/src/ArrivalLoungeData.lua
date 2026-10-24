@@ -1,0 +1,1 @@
+return game:GetService("HttpService"):JSONDecode([=[{"seats":[{"pos":[194,0.35,248],"matrix":[1,0,0,0,1,0,0,0,1]},{"pos":[210,0.35,232],"matrix":[1,0,0,0,1,0,0,0,1]}],"floorTop":0.35,"referenceStatus":"Original Wintergarden arrival lounge; not the hotel third-floor lobby","sign":"RIVERFRONT ATRIUM","routeClearanceStuds":15}]=])

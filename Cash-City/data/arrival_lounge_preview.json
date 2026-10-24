@@ -1,0 +1,374 @@
+[
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      171,
+      173,
+      168
+    ],
+    "size": [
+      6,
+      0.30000001192092896,
+      4
+    ],
+    "name": "LoungeLowPlinth",
+    "touch": false,
+    "collide": true,
+    "material": "Metal",
+    "pos": [
+      194,
+      0.5,
+      248
+    ],
+    "cls": "Part"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      88,
+      104,
+      105
+    ],
+    "size": [
+      2.799999952316284,
+      0.30000001192092896,
+      2.5999999046325684
+    ],
+    "name": "ArrivalSeat",
+    "touch": true,
+    "collide": true,
+    "material": "Metal",
+    "pos": [
+      192.5,
+      1.75,
+      248
+    ],
+    "cls": "Seat"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      88,
+      104,
+      105
+    ],
+    "size": [
+      2.799999952316284,
+      0.30000001192092896,
+      2.5999999046325684
+    ],
+    "name": "ArrivalSeat",
+    "touch": true,
+    "collide": true,
+    "material": "Metal",
+    "pos": [
+      195.5,
+      1.75,
+      248
+    ],
+    "cls": "Seat"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      95,
+      112,
+      113
+    ],
+    "size": [
+      6,
+      2,
+      0.25
+    ],
+    "name": "BenchBack",
+    "touch": false,
+    "collide": true,
+    "material": "Metal",
+    "pos": [
+      194,
+      2.5999999046325684,
+      249.35000610351562
+    ],
+    "cls": "Part"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      190,
+      196,
+      193
+    ],
+    "size": [
+      0.44999998807907104,
+      4,
+      0.44999998807907104
+    ],
+    "touch": false,
+    "name": "ArrivalLight",
+    "collide": false,
+    "light": {
+      "range": 14,
+      "brightness": 0.6000000238418579
+    },
+    "material": "Metal",
+    "pos": [
+      198.5,
+      2.3499999046325684,
+      248
+    ],
+    "cls": "Part"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      171,
+      173,
+      168
+    ],
+    "size": [
+      6,
+      0.30000001192092896,
+      4
+    ],
+    "name": "LoungeLowPlinth",
+    "touch": false,
+    "collide": true,
+    "material": "Metal",
+    "pos": [
+      210,
+      0.5,
+      232
+    ],
+    "cls": "Part"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      88,
+      104,
+      105
+    ],
+    "size": [
+      2.799999952316284,
+      0.30000001192092896,
+      2.5999999046325684
+    ],
+    "name": "ArrivalSeat",
+    "touch": true,
+    "collide": true,
+    "material": "Metal",
+    "pos": [
+      208.5,
+      1.75,
+      232
+    ],
+    "cls": "Seat"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      88,
+      104,
+      105
+    ],
+    "size": [
+      2.799999952316284,
+      0.30000001192092896,
+      2.5999999046325684
+    ],
+    "name": "ArrivalSeat",
+    "touch": true,
+    "collide": true,
+    "material": "Metal",
+    "pos": [
+      211.5,
+      1.75,
+      232
+    ],
+    "cls": "Seat"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      95,
+      112,
+      113
+    ],
+    "size": [
+      6,
+      2,
+      0.25
+    ],
+    "name": "BenchBack",
+    "touch": false,
+    "collide": true,
+    "material": "Metal",
+    "pos": [
+      210,
+      2.5999999046325684,
+      233.35000610351562
+    ],
+    "cls": "Part"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      190,
+      196,
+      193
+    ],
+    "size": [
+      0.44999998807907104,
+      4,
+      0.44999998807907104
+    ],
+    "touch": false,
+    "name": "ArrivalLight",
+    "collide": false,
+    "light": {
+      "range": 14,
+      "brightness": 0.6000000238418579
+    },
+    "material": "Metal",
+    "pos": [
+      214.5,
+      2.3499999046325684,
+      232
+    ],
+    "cls": "Part"
+  },
+  {
+    "matrix": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "color": [
+      31,
+      42,
+      45
+    ],
+    "size": [
+      6,
+      2.4000000953674316,
+      0.15000000596046448
+    ],
+    "touch": false,
+    "name": "GenericAtriumSign",
+    "collide": false,
+    "signText": "RIVERFRONT ATRIUM",
+    "material": "Metal",
+    "pos": [
+      194,
+      4.549999713897705,
+      249.5
+    ],
+    "cls": "Part"
+  }
+]

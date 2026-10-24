@@ -33,6 +33,14 @@
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "$ignoreUnknownInstances": true,
+      "ArrivalLounge": {
+        "$path": "src/ArrivalLounge.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "ArrivalLoungeData": {
+        "$path": "src/ArrivalLoungeData.lua",
+        "$ignoreUnknownInstances": true
+      },
       "Wintergarden": {
         "$path": "src/Wintergarden.lua",
         "$ignoreUnknownInstances": true

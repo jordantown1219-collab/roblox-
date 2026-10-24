@@ -1,6 +1,6 @@
 {
   "place": "SmallSignals_DetroitRiverfront_v0_14.rbxlx",
-  "bytes": 52030462,
+  "bytes": 52050032,
   "baseSHA256": "7ad16f608329dee0189ec2e2258adc3b109ff75820a920ee12c665ea303c4287",
   "primitiveCount": 19965,
   "sectorCount": 30,
@@ -9,6 +9,8 @@
   "fpsMeasured": false,
   "sources": {
     "Arena.lua": "464897902ba478b36fd86aa3ddc54a5dc4442ffcbd12ac69e045d679a84ad08a",
+    "ArrivalLounge.lua": "ccc02c0cbe6ee419c012b9192a667c758c94e723243b919ad8bc833c001a229f",
+    "ArrivalLoungeData.lua": "40bbe6a1e13cc52660a34515aa84eb0c6a7ef8b47d37fea028226387524be272",
     "BuildingInteractions.lua": "5ca34ea0a33619f9e1a5ad926526036f447718e4893f7050cf8771bd8889853b",
     "BuildingTemplates.lua": "8ea14f27d6a98b9516831907411aa93d765ac66c81b70d20685548c3417c6d0a",
     "CityBlockGenerator.lua": "62a203ade78f8036a806d3d4bf5257fe28750a4a8198aca685aa659f57075ab8",
@@ -34,7 +36,7 @@
     "StorefrontInterior.lua": "e815bcee8c4a01888cd5775cfa36630307b74996ef5550cbd87bc39ed419fcd7",
     "VehicleClient.client.lua": "8bc98aaf8cbc1dc9dd0a8ee6067cd83f5095185f806e5520d590b7e6ee5c5b1f",
     "WeaponVisuals.lua": "42facf8805e91af25ebb6fa0d9d82c8a51d33c1b0867519993fb576fcf8b72ec",
-    "Wintergarden.lua": "4e066e08b28b0b6c4f725d35eaebe5f31419b376d047cec6b0dfb7db44ace950",
+    "Wintergarden.lua": "081d1a25f243f322460fb51ce73791b0c5e8858dd2a551df5669691f63fa1a55",
     "WintergardenData.lua": "6a5cc6c1d0f46ebadd4b89773448ee2cf1a206bda2d3bcd342d5c048277141bb",
     "WorldLoading.lua": "d326e382f82da6cd1bd2163720f0930105b38568f11b6705acc45306485a88bd"
   }

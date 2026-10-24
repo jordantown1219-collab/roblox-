@@ -40,7 +40,7 @@ def primitive(parent,b):
  node=item(parent,b.get('cls','Part'),b['name'])
  vector(node,'size',b['size']);frame(node,b['pos'],b.get('matrix'))
  color(node,(finish or b)['color'])
- for key,value in [('Anchored',True),('CanCollide',b.get('collide',True)),('CanTouch',False)]:prop(node,'bool',key,str(value).lower())
+ for key,value in [('Anchored',True),('CanCollide',b.get('collide',True)),('CanTouch',b.get('touch',False))]:prop(node,'bool',key,str(value).lower())
  prop(node,'float','Transparency',b.get('trans',0));prop(node,'token','Material',materials[finish['material']] if finish else b.get('materialValue',materials.get(b.get('material','Concrete'),816)))
  if b['name'] in ('SafeLanding','TransitLanding'):prop(node,'float','Transparency',1);prop(node,'bool','CanQuery','false')
  if 'shape' in b:prop(node,'token','shape',b['shape'])
@@ -72,7 +72,7 @@ mapping={'Arena':'Arena.lua','SmallSignalsServer':'SmallSignalsServer.server.lua
 for n in root.iter('Item'):
  props=n.find('Properties');name=props.findtext("string[@name='Name']") if props is not None else None
  if name in mapping:prop(n,'ProtectedString','Source',(P/'src'/mapping[name]).read_text(encoding='utf-8-sig'))
-for name in ['LegacyArena','CityConfig','InteractionRegistry','InteractionWorkshop','InteractionRules','WorldLoading','WeaponVisuals','RiverfrontVehicles','CityDetails','CityBlockGenerator','BuildingTemplates','BuildingInteractions','StorefrontInterior','CivicFacades','CivicFacadeData','HartPathData','RenaissanceDetails','RenaissanceData','Wintergarden','WintergardenData']:
+for name in ['LegacyArena','CityConfig','InteractionRegistry','InteractionWorkshop','InteractionRules','WorldLoading','WeaponVisuals','RiverfrontVehicles','CityDetails','CityBlockGenerator','BuildingTemplates','BuildingInteractions','StorefrontInterior','CivicFacades','CivicFacadeData','HartPathData','RenaissanceDetails','RenaissanceData','Wintergarden','WintergardenData','ArrivalLounge','ArrivalLoungeData']:
  source(server,'ModuleScript',name,(P/'src'/f'{name}.lua').read_text(encoding='utf-8-sig'))
 source(shared,'ModuleScript','InteractionRules',(P/'src/InteractionRules.lua').read_text(encoding='utf-8-sig'))
 source(sp,'LocalScript','RiverfrontClient',(P/'src/RiverfrontClient.client.lua').read_text(encoding='utf-8-sig'))
@@ -160,6 +160,22 @@ for b in winter['records']:
 for index,anchor in enumerate(winter['doorAnchors']):
  # Edit preview leaf; runtime installs the complete authoritative interaction component.
  primitive(winter_preview,dict(name='WintergardenDoorPreview_'+str(index),size=[anchor.get('apertureWidth',anchor['width'])-.6,anchor['height']-.3,.28],pos=anchor['pos'],matrix=anchor['matrix'],color=[126,142,146],material='Metal',collide=True))
+lounge_preview=item(winter_preview,'Model','ArrivalLounge')
+for b in json.loads((P/'data/arrival_lounge_preview.json').read_text()):
+ node=primitive(lounge_preview,b);prop(node,'bool','CastShadow','false')
+ if b['cls']=='Seat':prop(node,'bool','Disabled','false')
+ if b.get('light'):
+  light=item(node,'PointLight','ArrivalLight')
+  prop(light,'float','Brightness',b['light']['brightness']);prop(light,'float','Range',b['light']['range']);prop(light,'bool','Shadows','false')
+ if b.get('signText'):
+  surface=item(node,'SurfaceGui','AtriumSign')
+  size=prop(surface,'Vector2','CanvasSize','');ET.SubElement(size,'X').text='600';ET.SubElement(size,'Y').text='240'
+  prop(surface,'float','LightInfluence',0)
+  label=item(surface,'TextLabel','GenericTitle');prop(label,'string','Text',b['signText']);prop(label,'bool','TextScaled','true');prop(label,'float','BackgroundTransparency',1)
+  size=prop(label,'UDim2','Size','')
+  for key,value in [('XS',1),('XO',0),('YS',1),('YO',0)]:ET.SubElement(size,key).text=str(value)
+  rgb=prop(label,'Color3','TextColor3','')
+  for key,value in zip('RGB',[238/255,235/255,214/255]):ET.SubElement(rgb,key).text=str(value)
 for entry in json.loads((P/'data/detail_preview.json').read_text(encoding='utf-8')):
  group=item(preview,'Model',entry['name']);prop(group,'token','ModelStreamingMode',1)
  for b in entry['parts']:primitive(group,b)
@@ -176,3 +192,4 @@ ET.ElementTree(root).write(out,encoding='utf-8',xml_declaration=True)
 manifest={'place':out.name,'bytes':out.stat().st_size,'baseSHA256':hashlib.sha256(BASE.read_bytes()).hexdigest(),'primitiveCount':len(geo),'sectorCount':len(sectors),'streamingEnabled':True,'runtimeVerified':False,'fpsMeasured':False,'sources':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in (P/'src').glob('*.lua')}}
 (P/'build_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
 print('Built',out.name,f'{out.stat().st_size:,} bytes;',len(geo),'geographic parts;',len(sectors),'sectors. Studio acceptance pending.')
+
