@@ -1,18 +1,21 @@
 # START HERE
+## Active saved place
+CashCity_Visible_Working.rbxl — use this latest visible working copy.
+Studio MCP92bb2bd5-f0e8-4fe0-9300-40cf8d01dfb0 may report its oldAutoRecoveryname; Windowswindowtitle confirms this saved filename.
 ## Current goal
-Step3 RiverWalk: one40m source-aligned extension approved2026-10-24.
-## Latest visible-content candidate
-- RenCenRiverWalkExtension:79anchoredparts,40m mappedpath,2seatingbays,4nativeSeats,4planters/shrubs,2lights andlowbayrailings.
-- Original80m promenade/sourcegeography/accessblock unchanged.
-- Generator emits src/RiverWalkExtension.lua anddata/riverwalk_extension_plan.json; Arena runtimehook andRojo mappings registered.
-- Focused existingRiverWalk tests5/5PASS8.503s; generator verifiesland/road/building/standingobstacleclearance.
-- NativeEditbuild79parts/4Seats/2lightsPASS; sourcepartcountdelta exactly79. No avatar/device/FPS acceptance claimed.
-## Next: SAVE AND SHOW
-StudioMCP983d9191-fc43-4502-a244-f077b599de09 contains extension inEdit, butWindowsStudio process38600 hasno visiblewindow/MainWindowHandle0. Do not launchduplicates/kill/close. UserneedsbringexistingStudio onscreen.
-SelectedWorkspace.DetroitCityPreview.RenCenRiverWalkExtension; camera110/65/635 looks56/0/543.
-Starts at123.18/.41/519.33, ends-11.32/.41/567.46, beyondwesternend ofold80mwalk.
-Localfull.rbxlx remains PRE-extension: nofullrebuild ornormalStudiofilesaveperformed. GitHubsource+standaloneJSON preserveallnewwork. DoNOTclaimfullplacecontainsit.
-OnceStudio visible, saveexistinglocalplace normally (notpublish). Code-sync project also includesnewmodule; runtimecreatesextensiononPlay. No newtestharness.
-## Scope/usage
-One task per session thenstop. No paidcredits; stopbefore40%fivehourUSED. Last9%,credits36.67015575unchanged.
-Roads/mapedges/fullrebuild stillneedapproval. Furnishinglayout/flatgrades originalestimates; OSMpathalignment reused.
+Step3 RiverWalk: approved40m extension, awaiting uservisualreview.
+## Present in visible copy
+- RenCenRiverWalkExtension:79parts,2seatingbays,4nativeSeats,4planters/shrubs,2lights,lowbayrailings.
+- RiverWalkExtension module andArena runtimehook verified present.
+- Original80mpromenade andStep2stairs/ramp preserved.
+- FivefocusedofflineRiverWalktestsPASS; nativeassemblycountsPASS. No extensionavatar/device/FPS acceptance claim.
+## Where to look
+Workspace.DetroitCityPreview.RenCenRiverWalkExtension selected.
+Camera110/65/635 looks56/0/543, beyondwesternend oforiginal80mwalk.
+## Saved/resume
+Visiblebinarycopy backedup locally andGitHub; useit instead ofolderPRE-extension.rbxlx.
+Source+generator+standaloneJSON also preserved. No rebuild/publish/newgeometry this task.
+HiddenStudio983d9191 leftuntouched; do not close/kill automatically.
+## Next
+Userlooks at newsection andsaysgood/wrong. Roads/mapedges/fullrebuildneedapproval.
+No paidcredits; stopbefore40%USEDfivehourmeter. One task thenstop perAGENTS.
