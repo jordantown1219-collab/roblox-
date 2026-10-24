@@ -143,6 +143,7 @@ end
 local function broadcast()
     Arena.folder:SetAttribute("MatchActive",phase=="Match")
     local data = {phase=phase, deadline=deadline, message=message, practice=practice, stages=C.Stages,
+        mode=C.GameMode,map=C.ActiveMap,mapLabel=C.MapLabel,
         teams={}, round=roundId}
     for _, p in ipairs(Players:GetPlayers()) do
         local viewerTeam=members[p] and members[p].team

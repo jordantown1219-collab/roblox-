@@ -14,7 +14,14 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   Fixed boundary cropping: limitsX[-1850,750],Z[-650,1250];1098 previously screened preview parts restored.
   12 focused offline tests;87 native floor samples;22% avatar completed ALL87 waypoints,health100/supportPASS.
   573 updated barrier rays:0 misses. Park-facing desktop sample59.99FPS,p9518.48ms; not mobile/multiplayer/improvement proof.
-4 PARTIAL: runtime test NOT launched;89%budgetstop. Candidate archivedpending/Map1Task4; live/diskbaseline restored,QAfixtures removed. ResumeTask4afterallowance reset; do notadvanceTask5.
+4 PARTIAL: actual solo Practice -> Match -> shrink gates -> extraction -> Results -> Lobby PASS.
+  NormalReady(3) with1player stayedLobby. Real multiplayer stopped at2clients/446MBfreeRAM;6player3v3 BLOCKED.
+  LiveEdit/source has verified CASH CITY/Extraction/Detroit header metadata;7team-rule tests+panel regressionPASS.
+  SAVE BLOCKED: CtrlS andAltF inputs had no effect; UI automation stopped. Manually File > Save to File As > existingworkingfilename.
+  Diskbinary still testedTask3 (685260bytes,SHA256 DEC3AC3D6AEAB826957EB93CEF39AA1794095767993C43A223FF31B54427A402).
+  Newheader NOT confirmed saved in binary. Verify manualsave and synchronize before further testing.
+  Playstopped,observerremoved,noarmedQAfixtures. See docs/Map1_Task4_ACCEPTANCE.md and bothTask4JSONresults.
+  Do notadvanceTask5 or relaunch6clients under unchangedRAMconditions.
 5 PENDING: streaming + desktop/low-end mobile performance acceptance.
 6 PENDING: all routes/all4sizes/full offline suite + phone/multiplayer checklist.
 7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.

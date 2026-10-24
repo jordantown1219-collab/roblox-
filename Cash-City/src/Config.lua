@@ -1,6 +1,8 @@
 -- Working title only. All tuning is centralized here.
 return {
     ActiveMap = "DetroitRiverfront",
+    GameMode = "Extraction",
+    ModeLabel = "TEAM EXTRACTION",
     MapLabel = "DETROIT RIVERFRONT",
     Version = "0.3.0",
     MapStretch = 1.5,

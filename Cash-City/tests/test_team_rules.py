@@ -33,6 +33,12 @@ class TeamRules(unittest.TestCase):
         assert(C.Strength[4]~=C.Scales[4])
         ''')
 
+    def test_launch_map_mode_and_minimum_team_size(self):
+        self.lua.execute('''
+        assert(C.ActiveMap=='DetroitRiverfront' and C.GameMode=='Extraction')
+        assert(#C.TeamSizes==3 and C.TeamSizes[1]==3 and C.TeamSizes[2]==4 and C.TeamSizes[3]==5)
+        ''')
+
     def test_gate_sequence_and_team_phase_guards(self):
         self.lua.execute('''
         for stage=0,C.Stages-1 do

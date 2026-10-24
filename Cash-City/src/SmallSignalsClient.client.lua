@@ -51,8 +51,8 @@ end
 local menu=frame(UDim2.fromOffset(560,400),UDim2.new(0.05,0,0.5,-200))
 local constraint=Instance.new("UISizeConstraint") constraint.MaxSize=Vector2.new(560,440) constraint.Parent=menu
 menu.AnchorPoint=Vector2.new(0.5,0.5) menu.Position=UDim2.fromScale(0.5,0.5)
-label(menu,"★ SQUAD UP! ★",30,12)
-label(menu,"SMALL SIGNALS • CARTOON BARRACKS",15,48)
+label(menu,"CASH CITY",30,12)
+label(menu,(config.ModeLabel or "TEAM EXTRACTION").." • "..config.MapLabel.." (MAP 1)",15,48)
 local status=label(menu,"",16,82,60)
 local function button(parent,text,x,y,w,callback)
     local b=Instance.new("TextButton")

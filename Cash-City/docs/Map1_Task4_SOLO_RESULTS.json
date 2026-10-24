@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-24",
+  "task": 4,
+  "status": "PARTIAL_MULTIPLAYER_BLOCKED",
+  "studioId": "92bb2bd5-f0e8-4fe0-9300-40cf8d01dfb0",
+  "normalQueue": {
+    "requestedTeamSize": 3,
+    "actualPlayers": 1,
+    "phase": "Lobby",
+    "started": false
+  },
+  "soloPractice": {
+    "initialStage": 0,
+    "initialScale": 1,
+    "initialHealth": 100,
+    "stages": [
+      {
+        "stage": 1,
+        "health": 80,
+        "passed": true,
+        "scale": 0.65,
+        "expected": 1,
+        "maxHealth": 80,
+        "physicalScale": 0.6499999761581421
+      },
+      {
+        "stage": 2,
+        "health": 60,
+        "passed": true,
+        "scale": 0.4,
+        "expected": 2,
+        "maxHealth": 60,
+        "physicalScale": 0.4000000059604645
+      },
+      {
+        "stage": 3,
+        "health": 40,
+        "passed": true,
+        "scale": 0.22,
+        "expected": 3,
+        "maxHealth": 40,
+        "physicalScale": 0.2199999988079071
+      }
+    ],
+    "extraction": {
+      "events": {
+        "ExitShown": true,
+        "ExitTriggered": true,
+        "ExitHold": true
+      },
+      "snapshot": {
+        "map": "DetroitRiverfront",
+        "phase": "Results",
+        "teamSize": 3,
+        "round": 1,
+        "practice": true,
+        "message": "Amber wins — everyone extracted!",
+        "mapLabel": "DETROIT RIVERFRONT",
+        "stages": 3,
+        "deadline": 1792871734.097721,
+        "queueCount": 0,
+        "mode": "Extraction",
+        "teams": {
+          "Amber": {
+            "1": {
+              "downed": false,
+              "extracted": true,
+              "id": 1534603855,
+              "carrier": true,
+              "health": 40,
+              "maxArmor": 24,
+              "armor": 0,
+              "maxHealth": 40,
+              "stage": 3,
+              "name": "Smoke710Only"
+            }
+          },
+          "Cyan": []
+        },
+        "ready": false
+      }
+    },
+    "returnToLobby": {
+      "phase": "Lobby",
+      "queueCount": 0,
+      "neutral": true,
+      "roundInteractions": false
+    }
+  },
+  "method": "Real single-client Play; ordinary Ready/Unready/Practice requests and E key holds. Server-controlled positioning near prompts only; no manual stage, scale, health, extracted or phase mutation. Not navigation, 3v3 or device proof.",
+  "initialExtractionFailure": {
+    "reason": "Prompt below viewport at tiny close approach. Same prompt shown and triggered after visible-side approach. No production extraction change.",
+    "offscreenViewportY": 739.805969,
+    "viewportHeight": 660,
+    "visibleSideViewportY": 409.111389
+  },
+  "multiplayer": {
+    "status": "FAIL",
+    "runId": "10b12b20-f4d5-4add-a150-ba43b5f73e3f",
+    "evidence": {
+      "players": 2,
+      "freeRamMb": 446,
+      "progressionVerified": false,
+      "requiredPlayers": 6,
+      "matchActive": false,
+      "extractionVerified": false,
+      "resourceAbort": true
+    },
+    "reason": "Resource abort: only446MB RAM free with2clients; did not launch4or6"
+  },
+  "cleanup": {
+    "observerRemoved": true,
+    "armedEditFixtures": 0,
+    "playStopped": true
+  },
+  "performance": "No new FPS benchmark."
+}

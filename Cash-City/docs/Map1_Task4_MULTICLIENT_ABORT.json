@@ -1,0 +1,1 @@
+{"status":"FAIL","runId":"10b12b20-f4d5-4add-a150-ba43b5f73e3f","evidence":{"players":2,"freeRamMb":446,"progressionVerified":false,"requiredPlayers":6,"matchActive":false,"extractionVerified":false,"resourceAbort":true},"reason":"Resource abort: only446MB RAM free with2clients; did not launch4or6"}
