@@ -1,6 +1,8 @@
 -- Studio Server: actual Humanoid navigation, fresh scriptless rig; no player manipulation.
 assert(game:GetService('RunService'):IsStudio())
 local plan=require(game.ServerScriptService.RenaissanceLobbyData)
+local jefferson=false -- Select city-side entrance route; first open its production door.
+if jefferson then plan={routeSamples=plan.routeJefferson} end
 local reverse=false
 if reverse then local original=plan plan={routeSamples={}} for i=#original.routeSamples,1,-1 do table.insert(plan.routeSamples,original.routeSamples[i]) end end
 local template=assert(game.ServerStorage:FindFirstChild('CashCityLobbyRigTemplate'))

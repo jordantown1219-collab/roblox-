@@ -1,11 +1,11 @@
-# Wintergarden checkpoint: Step 1 remains open
+# Renaissance Center Step1 Studio review
 
-- Open the saved v0.14 place and inspect the curved green glass roof, ribs, spine and retained tower proportions from outside and inside. Roof rise is estimated, not surveyed.
-- In Studio solo practice, approach the river-side entrance and hold E; open and close it, then walk through. Repeat at all four sizes through the real progression flow when available. Native test avatars already passed geometry walks at1/.65/.4/.22; that is separate from real gate progression acceptance.
-- Check tiny prompt visibility/reach, jamb clearance, threshold and planter clearance. Confirm the door stops if a player/object obstructs it.
-- Check roof seams, glass sorting, framing readability and floor joins while moving the camera. No screenshot alone proves absence of flicker.
-- Check touch/controller prompts and navigation on real devices; these remain pending. Multiplayer door contention/replication also remains pending.
-- Compare foreground performance at the documented camera/view, accounting for streaming contents. Final solo sample was60.04FPS at1169x584; this is not an all-device guarantee.
-- Main hotel/Jefferson lobby, interior furnishing/lighting/signage and detailed visual finish are NOT complete. Continue Step1 before requesting separate approval for Step2stairs.
-
-Original replaced source parts remain recoverable in WintergardenSourceArchive and in the pre-change checkpoint. Do not delete or casually reveal archived geometry: its old collision and rendering would overlap the reconstruction.
+- Inspect the curved glass roof, ribs, tower/podium proportions, Wintergarden finish, circular circulation and furnished reception. Heights/interior/apron dimensions are explicit game estimates.
+- In solo Practice, use E at the river entrance and Jefferson city entrance. Walk from each to reception and back; repeat through the real four-size gate progression.
+- Try every seat in both lounges, especially22% touch/jump access. Native isolated rigs passed32seat cases; hardware controls remain untested.
+- With two clients, open/close the same door from opposite sides, obstruct the swing, retry, leave/rejoin and check replication. Do not treat solo tests as multiplayer acceptance.
+- Test touch/controller prompts and navigation on actual PC/mobile/tablet/console devices. Check text size and generic sign directions.
+- Walk the glass/floor joins and apron while moving the camera; inspect for flicker, clipping and door/railing gaps.
+- Profile foreground on each target device. Final local10sec reference-view sample60.06FPS,p9518.23ms; no all-device guarantee. Background15FPSis focus throttle.
+- Keep WintergardenSourceArchive(46) and RenaissanceLobbySourceArchive(2) hidden/nonphysical. The complete source geography remains unchanged.
+- Step2 external stairs/ramps to RiverWalk has not started and needs the user's separate approval.

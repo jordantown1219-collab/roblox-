@@ -25,6 +25,17 @@ def generate(root=ROOT):
     assert finish['record']==guard,'Approved finish guard differs'
     portal=[guard['pos'][0],.35,guard['pos'][2]]
     center=[70.973,36,6.539];west=[-24.812053,36,60.624336]
+    city_guard=source[19465]
+    assert city_guard['name']=='Facade_1307210646','Jefferson portal index changed'
+    city_finish=next(f for f in inputs['rencen_detail_plan.json']['sourceFinishChanges'] if f['sourceIndex']==19465)
+    assert city_finish['record']==city_guard,'Jefferson finish guard differs'
+    cm,cp,cs=city_guard['matrix'],city_guard['pos'],city_guard['size'];city_along=-7.927974693429661
+    city_portal=[cp[0]+cm[2]*city_along,.35,cp[2]+cm[8]*city_along]
+    city_length=math.hypot(center[0]-city_portal[0],center[2]-city_portal[2])
+    city_inward=[(center[0]-city_portal[0])/city_length,0,(center[2]-city_portal[2])/city_length]
+    city_outside=[city_portal[0]-cm[0]*10,-.25,city_portal[2]-cm[6]*10]
+    city_landing=[city_portal[i]+city_inward[i]*10 for i in range(3)]
+    city_ramp_end=[center[i]-city_inward[i]*55 for i in range(3)]
     length=math.hypot(portal[0]-center[0],portal[2]-center[2])
     outward=[(portal[0]-center[0])/length,0,(portal[2]-center[2])/length]
     ramp_end=[center[0]+outward[0]*55,36,center[2]+outward[2]*55]
@@ -69,7 +80,8 @@ def generate(root=ROOT):
              [hall_end[i]+hall_right[i]*4.875*sign for i in range(3)])
     # Omit circle-edge guards wherever the real connector/hallway joins.
     joins=unary_union([LineString([(portal[0],portal[2]),(center[0],center[2])]).buffer(5.2),
-           LineString([(center[0],center[2]),(west[0],west[2])]).buffer(5.2)])
+           LineString([(center[0],center[2]),(west[0],west[2])]).buffer(5.2),
+           LineString([(city_portal[0],city_portal[2]),(center[0],center[2])]).buffer(5.2)])
     for index in range(16):
         angles=[2*math.pi*index/16,2*math.pi*(index+1)/16]
         points=[[center[0]+54.7*math.cos(a),36,center[2]+54.7*math.sin(a)] for a in angles]
@@ -116,6 +128,33 @@ def generate(root=ROOT):
     add('Lobby_SourcePortalHeader',[s[0],s[1]-top,8],[p[0],(top+s[1])/2,p[2]],m,finish['color'],finish['material'])
     add('Lobby_SourcePortalSill',[s[0],bottom,8],[p[0],bottom/2,p[2]],m,finish['color'],finish['material'])
     rear={'center':[portal[0],5.35,portal[2]],'pos':[portal[0],5.35,portal[2]],'matrix':m,'width':8,'height':10,'bottomY':.35,'topY':10.35}
+    # Jefferson frontage: original estimated apron, a flat door sweep landing, then ramp.
+    deck('Lobby_JeffersonApronFloor',city_outside,city_portal,10)
+    deck('Lobby_JeffersonLandingFloor',city_portal,city_landing,10)
+    city_right=deck('Lobby_JeffersonRisingFloor',city_landing,city_ramp_end,10)
+    for side_sign in (-1,1):
+        rail('Lobby_JeffersonRampFallGuard',[city_landing[i]+city_right[i]*4.875*side_sign for i in range(3)],
+             [city_ramp_end[i]+city_right[i]*4.875*side_sign for i in range(3)])
+    # Offset doorway leaves unequal source-wall side spans; never assume a centered cut.
+    for lo,hi in [(-cs[2]/2,city_along-4),(city_along+4,cs[2]/2)]:
+        along=(lo+hi)/2
+        add('Lobby_JeffersonSourcePortalSideInfill',[cs[0],cs[1],hi-lo],
+            [cp[0]+cm[2]*along,cp[1],cp[2]+cm[8]*along],cm,city_finish['color'],city_finish['material'])
+    add('Lobby_JeffersonSourcePortalHeader',[cs[0],cs[1]-10.35,8],
+        [city_portal[0],(10.35+cs[1])/2,city_portal[2]],cm,city_finish['color'],city_finish['material'])
+    add('Lobby_JeffersonSourcePortalSill',[cs[0],.35,8],[city_portal[0],.175,city_portal[2]],cm,city_finish['color'],city_finish['material'])
+    city_sign=add('Lobby_JeffersonWayfinding',[.12,1.8,8],[city_portal[0]-cm[0]*.7,11.6,city_portal[2]-cm[6]*.7],cm,[54,66,68],'Metal',False)
+    city_sign['signText']='SKYLINE HOTEL';city_sign['returnText']='JEFFERSON / CITY'
+    city_door={'name':'Jefferson city entrance','pos':[city_portal[0],5.35,city_portal[2]],
+               'matrix':[cm[2],0,-cm[0],0,1,0,cm[8],0,-cm[6]],'width':8,'apertureWidth':8,'height':10,
+               'approachPoints':[[city_portal[0]-cm[0]*5,.35,city_portal[2]-cm[6]*5],city_landing]}
+    city_samples=[]
+    for point,label in [(city_outside,'external original apron'),(city_portal,'Jefferson doorway'),(city_landing,'flat inside door landing')]:
+        city_samples.append({'pos':point,'floorY':point[1],'width':6,'clearHeight':8,'span':label})
+    for t in (.2,.4,.6,.8,1):
+        point=[city_landing[i]+(city_ramp_end[i]-city_landing[i])*t for i in range(3)]
+        city_samples.append({'pos':point,'floorY':point[1],'width':6,'clearHeight':8,'span':'Jefferson rising connector'})
+    city_samples.append({'pos':center,'floorY':36,'width':6,'clearHeight':8,'span':'circular circulation'})
     samples=[]
     # Include source-floor approach, smooth ramp and flat circle/hall/room targets.
     source_inward=[m[0],0,m[6]]
@@ -126,14 +165,19 @@ def generate(root=ROOT):
     for point,name in [(center,'circular circulation'),(hall_end,'west entrance'),(west,'west reception')]:
         samples.append({'pos':point,'floorY':36,'width':6,'clearHeight':8,'span':name})
     assert len(records)<=120,'Bounded lobby budget exceeded'
-    return {'id':'RenaissanceLobby','records':records,'sourceReplacements':[{'sourceIndex':19478,'record':guard}],
-            'rearPortal':rear,'routeSamples':samples,'signAnchors':[sign],
+    return {'id':'RenaissanceLobby','records':records,'sourceReplacements':[{'sourceIndex':19478,'record':guard},{'sourceIndex':19465,'record':city_guard}],
+            'rearPortal':rear,'routeSamples':samples,'routeJefferson':city_samples,'doorAnchors':[city_door],'signAnchors':[sign],
             'metadata':{'sourceHashes':{name:hashlib.sha256((root/'data'/name).read_bytes()).hexdigest() for name in filenames},
                         'floorY':36,'classification':'Original estimated public hotel lobby; not measured historic Level3',
                         'center':center,'outerRadius':55,'innerReferenceRadius':22,'westRoomCenter':west,
                         'westRoomSize':[36,12,28],'rampStart':portal,'rampEnd':ramp_end,'rampWidth':10,
                         'rampGradeDegrees':math.degrees(math.atan2(35.65,math.hypot(ramp_end[0]-portal[0],ramp_end[2]-portal[2]))),
                         'podiumOsm':1307210646,'podiumSourceTopStuds':15/.28,'approvedPortalFinish':{'color':finish['color'],'material':finish['material']},
+                        'jefferson':{'sourceFaceIndex':19465,'sourceLocalZ':city_along,'doorway':city_portal,'outside':city_outside,'landingEnd':city_landing,
+                                     'rampEnd':city_ramp_end,'rampWidth':10,'groundYEstimate':-.25,'floorY':.35,'insideFlatLength':10,
+                                     'rampGradeDegrees':math.degrees(math.atan2(35.65,city_length-65)),
+                                     'nearestSourcePathOsm':325808775,'nearestSourcePathDistanceMeters':32.58958901532056,
+                                     'classification':'Original estimated apron/entrance; not verified existing sidewalk or historic entrance location'},
                         'assumptions':['Circular floor has no invented solid elevator core.','Sloped floor meets raised circle at its perimeter with no step, then route continues flat to center.',
                                        'Rear portal and shared Wintergarden back opening are Lead atomic integration dependencies.','No door or per-object script on ramp; west hallway has an open10stud entry.',
                                        'Prior native furniture/players/vehicles, actual walking at all sizes, guard continuity, sign rendering and FPS need Lead validation.']}}

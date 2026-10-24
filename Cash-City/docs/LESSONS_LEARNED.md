@@ -14,3 +14,6 @@ Updated2026-10-23. Read with DEVELOPMENT_STATUS.md before edits.
 - Template generator must snapshot inputs before yields, use stable blockID, protect manual content/commit ownership, reject non-Archivable descendants and clean private clones. Tests must exercise rollback+lock release.
 - Ordinary allowance and credits are distinct. Keep30credit reserve; do not buy or redeem resets. No hourly automation configured.
 - Git commit currently blocked by missing authoridentity. Do not invent user identity or alter global config; saved source/standalone place/backups remain the checkpoint.
+
+
+Latest2026-10-24: Model:ScaleTo also scales Humanoid.WalkSpeed (16->3.52at22%). Match production's explicit16 reset in navigation fixtures before diagnosing timeouts as geometry bugs. Never scale a seated/welded character: SeatWeld can scale connected furniture; use fresh scriptless rigs and destroy them between seat cases. Wait for WorldLoading spawn placement to finish before relocating a real player for prompt checks; verify serverdistance/LOS first. Hold testcamera using temporaryLast-priority binding, verify actualstart/end, unbind afterward. User's normal localscreen is distinct fromwhiteMCP images/WGCtimeouts; do not change geometry/lighting merely to repair a broken capture.
