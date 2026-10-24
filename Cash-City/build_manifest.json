@@ -1,6 +1,6 @@
 {
   "place": "SmallSignals_DetroitRiverfront_v0_14.rbxlx",
-  "bytes": 52050032,
+  "bytes": 52269756,
   "baseSHA256": "7ad16f608329dee0189ec2e2258adc3b109ff75820a920ee12c665ea303c4287",
   "primitiveCount": 19965,
   "sectorCount": 30,
@@ -8,8 +8,8 @@
   "runtimeVerified": false,
   "fpsMeasured": false,
   "sources": {
-    "Arena.lua": "464897902ba478b36fd86aa3ddc54a5dc4442ffcbd12ac69e045d679a84ad08a",
-    "ArrivalLounge.lua": "ccc02c0cbe6ee419c012b9192a667c758c94e723243b919ad8bc833c001a229f",
+    "Arena.lua": "4e4fbef97a8410f793cb4f8e34cd07848102f1964a436407e80a47bf2d30c083",
+    "ArrivalLounge.lua": "ade1ef2fc17c861bd8088683f2e7280dd36111e403d77b47d29fd083ee00a033",
     "ArrivalLoungeData.lua": "40bbe6a1e13cc52660a34515aa84eb0c6a7ef8b47d37fea028226387524be272",
     "BuildingInteractions.lua": "5ca34ea0a33619f9e1a5ad926526036f447718e4893f7050cf8771bd8889853b",
     "BuildingTemplates.lua": "8ea14f27d6a98b9516831907411aa93d765ac66c81b70d20685548c3417c6d0a",
@@ -26,6 +26,10 @@
     "LegacyArena.lua": "3f1081bf4b5f0ed6e89ab2293d998e23c18fb1aa16c6dd533241c4e6f440b931",
     "RenaissanceData.lua": "6c3bb285b41e844f09a943d64eea10a232fcb0674c832e3fa3a10f365d3ab231",
     "RenaissanceDetails.lua": "2d6ebb71016eb1d9f58ebb157af7de2003ede57da2b171cd9f35562f29704e31",
+    "RenaissanceLobby.lua": "2dd21db9846dd682e06773cc18b0b255ec1b8b41777950e7d0b53800cf2e51a6",
+    "RenaissanceLobbyData.lua": "0cb6cac0a450e29a52a6e6e3e20025da0024f37702f90359fe4284ccd37ff63c",
+    "RiverAccess.lua": "dd18c2992c30da67206a2fdc0acbe96d93809b2f9060d6d6b4b6e424fcd4c50a",
+    "RiverAccessData.lua": "a55d10d0a12a3f8ecbec2973531bb6a7010e69883a0eabc3906b3ff49400008a",
     "RiverfrontClient.client.lua": "724a9c5773f17baac695f7c37ccdefdbad9cb97d63505eb85d07f94f1ffb075d",
     "RiverfrontVehicles.lua": "f2beeb4abc6fcaddcaa25b1b8090434530a5e94693b12047c62b9451e1ac9d91",
     "Rules.lua": "c674c043edbe9b3e79cb4c56b5c946ca35ebdf39e45bea1ee76c2e3e13375bae",
@@ -37,7 +41,7 @@
     "VehicleClient.client.lua": "8bc98aaf8cbc1dc9dd0a8ee6067cd83f5095185f806e5520d590b7e6ee5c5b1f",
     "WeaponVisuals.lua": "42facf8805e91af25ebb6fa0d9d82c8a51d33c1b0867519993fb576fcf8b72ec",
     "Wintergarden.lua": "081d1a25f243f322460fb51ce73791b0c5e8858dd2a551df5669691f63fa1a55",
-    "WintergardenData.lua": "6a5cc6c1d0f46ebadd4b89773448ee2cf1a206bda2d3bcd342d5c048277141bb",
+    "WintergardenData.lua": "43d1f2cca419a8b5b88ef0b7705453c5c37a8b5970dcab494c162a704abdf45c",
     "WorldLoading.lua": "d326e382f82da6cd1bd2163720f0930105b38568f11b6705acc45306485a88bd"
   }
 }

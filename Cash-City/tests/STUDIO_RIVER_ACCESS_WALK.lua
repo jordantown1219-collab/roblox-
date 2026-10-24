@@ -11,6 +11,7 @@ local scale=1 -- Substitute .65, .4, .22 in separate bounded runs.
 local results={}
 local ok,err=xpcall(function()
  rig:ScaleTo(scale) humanoid.WalkSpeed=16 -- Match production applyScale, which restores world travel speed after ScaleTo.
+ humanoid.UseJumpPower=false humanoid.JumpHeight=7.2*scale
  rig.Name='CashCityRiverAccessWalkingProbe'
  local root=rig:FindFirstChild('HumanoidRootPart')
  local first=plan.routeSamples[1].pos
@@ -29,6 +30,13 @@ local ok,err=xpcall(function()
   table.insert(results,{index=index,reached=reached,health=humanoid.Health,y=root.Position.Y,floor=sample.floorY,speed=humanoid.WalkSpeed,position=tostring(root.Position)})
   assert(reached and humanoid.Health>0,'Route failed at '..index)
   assert(root.Position.Y>=sample.floorY-.1,'Fell below raised path')
+  -- Root height alone cannot prove floor support; full rigs can hide shallow drops.
+  -- The independent dense STUDIO_RIVER_ACCESS_FLOORS sweep is mandatory as well.
+  local ray=RaycastParams.new() ray.FilterType=Enum.RaycastFilterType.Include
+  ray.FilterDescendantsInstances={assert(workspace.SmallSignalsArena:FindFirstChild('DetroitCityRoot'))}
+  ray.RespectCanCollide=true
+  local support=workspace:Raycast(root.Position,Vector3.new(0,-humanoid.HipHeight-root.Size.Y/2-2,0),ray)
+  assert(support and math.abs(support.Position.Y-sample.floorY)<.24,'Unexpected actual supporting floor')
  end
 end,debug.traceback)
 rig:Destroy()

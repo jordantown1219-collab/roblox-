@@ -9,3 +9,5 @@
 - Profile foreground on each target device. Final local10sec reference-view sample60.06FPS,p9518.23ms; no all-device guarantee. Background15FPSis focus throttle.
 - Keep WintergardenSourceArchive(46) and RenaissanceLobbySourceArchive(2) hidden/nonphysical. The complete source geography remains unchanged.
 - Step2 external stairs/ramps to RiverWalk has not started and needs the user's separate approval.
+
+Step2 now approved/inprogress: final23part access preview passes dense native floor/width/headroom probes. Reconcile differingcloudArena before Play; test stairs/ramp forwardandreverse atall4sizes; finalFPS/device/multiplayerpending. Earlier Step2-not-started line is historical.
