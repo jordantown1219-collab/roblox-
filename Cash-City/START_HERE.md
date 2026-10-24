@@ -4,7 +4,7 @@ Visible Studioa64160b7-ad85-49c6-9527-8b5ef0ff4fd8, CashCity_RiverWalk_Section2.
 ## Rules
 Map1 only: RenCen, RiverWalk, surrounding park. No other districts/helpers/paid credits.
 One numbered task per run; save/checkpoint GitHub before and after; stop for "next".
-Stop before90%USED five-hour allowance, leaving10%remaining. UI failure twice: stop.
+Latest user override: use remaining INCLUDED five-hour allowance this continuation; no paid credits. Preserve save buffer. UI failure twice: stop.
 Map1 roads/edges/necessary full rebuild approved; preserve originals.
 ## Status
 1 PASS: inset stair-top + source-derived approach;6 offline +5064 native checks.
@@ -22,13 +22,16 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   Actual disk-reload now PASS: all3production sources equal tested version; boundary/park modules and preview present; noarmedQAfixtures.
   Canonical savedplace plus immutable manual-save checkpoint backed up; save blocker cleared.
   Playstopped,observerremoved,noarmedQAfixtures. See docs/Map1_Task4_ACCEPTANCE.md and bothTask4JSONresults.
-  Do notadvanceTask5 or relaunch6clients under unchangedRAMconditions.
+  User approved deferring real3v3 to a later private six-player playtest and advancingTask5. No publication authorized. Do not relaunch6localclients under unchangedRAMconditions.
   Latest recheck2026-10-24 18:15:4.4GBfree, essentially unchanged;0newclients launched.
   Waitingforuser tofreeRAM/choosehowtoproceed. Resource evidence:docs/Map1_Task4_RESOURCE_RECHECK.json.
   User chose stayTask4/freememory. Latestready:7183MBfree before reopening,5140-5390MBafter;6clienttest notlaunched.
   Savedplace reloaded/connected;3v3stillBLOCKED. NewStudioIDabove supersedes92bb. See docs/Map1_Task4_REOPEN_CHECK.json.
   Output error traced to preserved Workspace.FlayoDev Admin Messages, missingStarterGui.Messages; presetadminallowlist requiresreview beforeactivation.
-5 PENDING: streaming + desktop/low-end mobile performance acceptance.
+5 PARTIAL: StreamingEnabled true; fresh foreground desktop60.045FPS,p9518.343ms,10.009s/601frames,viewport1223x710,Automaticquality.
+  Engine memory2904->2799MB;6128loadedparts/44unanchored. Notmobile/multiplayer/gainproof. No rendering/codechanges justified by this sample.
+  Other streaming controls nonscriptable/unreadable here; manualProperties review pending. Low-endmobileFPS UNVERIFIED.
+  Playstopped,camera/renderlistener restored/removed. Evidence docs/Map1_Task5_DESKTOP.json and Map1_Task5_NOTES.md.
 6 PENDING: all routes/all4sizes/full offline suite + phone/multiplayer checklist.
 7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.
 ## Evidence and remaining work
