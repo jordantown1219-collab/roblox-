@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "researchedAt": "2026-10-23",
+  "purpose": "Reference brief only; not automatically consumed by generation",
+  "coordinates": "Reuse current project projection and preserved landmark anchors; no new surveyed coordinates supplied",
+  "visualReview": "Primary text and image discovery completed; full image fetch and drawing screenshots not visually available",
+  "targets": [
+    {
+      "id": "hart_plaza_riverwalk_transition",
+      "priority": 1,
+      "status": "Reference-inspired opt-in candidate; 2026 as-built configuration unverified",
+      "elements": ["upper paved landing", "broad stair flights", "lower terrace", "continuous accessible connector", "planting edges", "railings"],
+      "dimensions": {"classification": "gameplay estimates only", "surveyedDimensionsAvailable": false},
+      "preserve": ["shoreline", "existing source footprints", "manual landmarks", "extraction and transit anchors"],
+      "sources": [
+        {"url": "https://detroitmi.gov/sites/detroitmi.localhost/files/2024-07/Hart%20Plaza%20-%20grand%20staircase%20-%20PC%20review.pdf", "date": "2024-07-16", "page": "1 indexed aerial; direct fetch 403", "type": "proposed review"},
+        {"url": "https://detroitmi.gov/sites/detroitmi.localhost/files/2023-07/183497-2%20ARPA%20RFP-GSD%20HART%20PLAZA%20GRAND%20STAIRS.pdf", "page": "printed 3", "type": "design-build program"},
+        {"url": "https://www.detroitriverfront.org/files/assets/2026programbrochure.pdf", "page": "PDF index 3; printed 5-6 map spread", "type": "district relationship map"}
+      ],
+      "acceptance": ["linked walking route", "small-player traversal", "no flicker or holes", "same-view foreground FPS comparison", "Lead visual review"]
+    },
+    {
+      "id": "dodge_fountain_surrounds",
+      "priority": 2,
+      "elements": ["suspended stainless ring", "two supports", "lower basin", "retaining edge", "restrained spray and lighting"],
+      "dimensions": {"classification": "do not infer exact scale from unreviewed photos"},
+      "sources": [{"url": "https://www.fountainpeople.com/case-studies/the-dodge-fountain-renovation-at-hart-plaza", "date": "2024-07-11", "type": "restoration supplier primary account and photo gallery"}],
+      "imageReferences": ["https://5246063.fs1.hubspotusercontent-na1.net/hub/5246063/hubfs/Dodge%20Fountain_06.jpg?height=1667&name=Dodge+Fountain_06.jpg&width=2500", "https://www.fountainpeople.com/hs-fs/hubfs/FP%20Project%20Images/Dodge%20Fountain_29.jpg?height=1667&name=Dodge+Fountain_29.jpg&width=2500"],
+      "assetUse": "References only; no downloaded textures or copied models"
+    },
+    {
+      "id": "caymc_facade",
+      "priority": 3,
+      "elements": ["20-story vertical Courts Tower", "14-story horizontal Administration Tower", "Courts full-height marble piers on river/rear elevations", "Admin four-unit ribbon-window groups", "blank Woodward marble backdrop", "brick east side with two offset ribbon groups per floor", "glass link and long yellow metal canopy"],
+      "dimensions": {"tallestSectionHeightFeet": 318, "qualifier": "operator states just shy of this height", "metricConversionMeters": 96.9264, "surveyedFootprintAvailable": false},
+      "sources": [{"url": "https://www.caymc.com/main.cfm?pid=aboutprop&sid=tbuilding", "type": "property operator"}, {"url": "https://www.michiganmodern.org/modern-buildings/city-county-building-coleman-a-young-municipal-center/", "type": "City Historic Designation Advisory Board walking-tour text reproduced by Michigan Modern"}, {"url": "https://www.walterpmoore.com/projects/coleman-a-young-municipal-center-enclosure-consulting", "type": "primary facade engineering consultant photo discovered"}, {"url": "https://www.hines.com/properties/coleman-a.-young-municipal-building-detroit", "type": "primary property manager photo discovered"}],
+      "limitations": ["retain existing footprint", "verify bay counts visually", "no invented accessible interiors", "no copied civic seals"]
+    },
+    {
+      "id": "rencen_riverfront_podium",
+      "priority": 4,
+      "elements": ["river-facing plaza", "Wintergarden connection", "Riverwalk continuity", "preserved tower massing"],
+      "sources": [{"url": "https://gmrencen.com/wp-content/uploads/2021/09/GMRENCEN-Complex-Map-Update.pdf", "page": 1, "type": "historical operator layout map"}, {"url": "https://gmrencen.com/ontheplaza/", "type": "historical operator photo/event page with 2017 dates"}],
+      "limitations": ["not verified 2026 redevelopment status", "do not implement proposed demolitions", "no current access guarantee"]
+    }
+  ]
+}

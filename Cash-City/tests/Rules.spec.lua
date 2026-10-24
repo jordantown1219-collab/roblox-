@@ -1,0 +1,33 @@
+return function(Rules)
+    local count=0
+    local function check(value,message) assert(value,message) count=count+1 end
+    check(Rules.canEnter(0,1,"Amber","Amber",false,"Match"),"first door must work")
+    check(not Rules.canEnter(0,2,"Amber","Amber",false,"Match"),"cannot skip a door")
+    check(not Rules.canEnter(1,1,"Amber","Amber",false,"Match"),"cannot repeat a door")
+    check(not Rules.canEnter(0,1,"Amber","Cyan",false,"Match"),"cannot use enemy sequence")
+    check(not Rules.canEnter(0,1,"Amber","Amber",true,"Match"),"downed player cannot advance")
+    check(not Rules.canEnter(0,1,"Amber","Amber",false,"Vote"),"cannot advance before match")
+    check(Rules.damage(40,0.4)==16,"tiny knife must lose damage")
+    check(Rules.damage(28,0.4)==11,"tiny gun must lose damage")
+    check(not Rules.allFinished({},3),"empty roster must not win")
+    local done={required=true,connected=true,stage=3,extracted=true,downed=false}
+    local behind={required=true,connected=true,stage=1,extracted=false,downed=false}
+    check(not Rules.allFinished({done,behind},3),"one player behind blocks whole team")
+    check(Rules.allFinished({done,done},3),"whole team at exit wins")
+    check(not Rules.allFinished({done,{required=true,connected=false}},3),"disconnect grace blocks premature win")
+    check(Rules.allFinished({done,{required=false,connected=false}},3),"expired disconnect does not block victory")
+    check(not Rules.allFinished({{required=true,connected=true,stage=3,extracted=false}},3),"must extract after all doors")
+    check(not Rules.allFinished({{required=true,connected=true,stage=3,extracted=true,downed=true}},3),"downed players cannot finish")
+    check(Rules.canTakeArmor(1,"Amber",1,1,"Amber",1,true),"owner can collect fitting armor")
+    check(not Rules.canTakeArmor(2,"Amber",1,1,"Amber",1,true),"teammate cannot take assigned armor")
+    check(Rules.canTakeArmor(3,"Cyan",1,1,"Amber",1,true),"rival can steal fitting armor")
+    check(not Rules.canTakeArmor(3,"Cyan",2,1,"Amber",1,true),"wrong size cannot collect")
+    check(not Rules.canTakeArmor(1,"Amber",1,1,"Amber",1,false),"inactive owner cache cannot be claimed")
+    local armor,hp=Rules.absorbDamage(20,28)
+    check(armor==0 and hp==8,"damage overflows armor into health")
+    armor,hp=Rules.absorbDamage(60,28)
+    check(armor==32 and hp==0,"armor absorbs damage first")
+    armor,hp=Rules.absorbDamage(0,28)
+    check(armor==0 and hp==28,"no armor means full health damage")
+    print("Rules: "..count.." assertions passed")
+end

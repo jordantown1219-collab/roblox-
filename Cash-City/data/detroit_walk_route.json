@@ -1,0 +1,146 @@
+{
+  "amberSpawnDirectDistanceToTrialMeters": 221.80637879983496,
+  "amberSpawnMetersXZ": [
+    -397.02673356082363,
+    95.95240325494828
+  ],
+  "attribution": "\u00a9 OpenStreetMap contributors; ODbL 1.0; https://www.openstreetmap.org/copyright",
+  "clearancesMeters": {
+    "building": 75.39827435051788,
+    "generatedStandingCollider": 81.34920844188541,
+    "road": 15.578010762664713
+  },
+  "destination": {
+    "pathOsm": 106403203,
+    "type": "existing_Hart_paving_trial"
+  },
+  "elevationStatus": "Flat source datum; .35stud is an estimated review surface height, not per-waypoint native ground-ray result. Lead must raycast ground before humanoid placement.",
+  "fullBodyRadiusMeters": 0.65,
+  "fullBodyWidthStuds": 4.642857142857142,
+  "groundDatum": "local Y=0 flat estimate, not geodetic elevation",
+  "lengthMeters": 102.35034881108032,
+  "lengthStuds": 365.53696003957253,
+  "limitations": [
+    "Route starts at nearby source path because Amber spawn to trial exceeds150m.",
+    "Civic names mark viewing references, not line-of-sight guarantees or visits to their building entrances.",
+    "Only source polygon and static/generated collider clearance checked. Moving vehicles, characters, current runtime additions and streamed availability need native checks.",
+    "Plaza connector is continuous source plaza, not invented surveyed sidewalk geometry; slopes/steps absent from flat source remain unverified.",
+    "Walking completion, frame-rate capture, multiplayer and all device checks remain pending."
+  ],
+  "originLatLon": [
+    42.329,
+    -83.04
+  ],
+  "referenceIds": {
+    "CAYMC_Admin": 320396455,
+    "CAYMC_Courts": 69000343,
+    "HartPlaza": 69349404,
+    "pavingTrialPath": 106403203
+  },
+  "schemaVersion": 1,
+  "segmentMetersXZ": [
+    [
+      -341.9540356108861,
+      292.26932307780805
+    ],
+    [
+      -429.2935550545059,
+      315.39925765708074
+    ],
+    [
+      -418.09880055382683,
+      311.0775136029369
+    ]
+  ],
+  "sourceHashes": {
+    "detail_preview.json": "cfd5d1676d1350c74002ea36f61798cf12fc966cc4a2d5a7fc056fb12be45e82",
+    "detroit_geography.json": "49916c4f1da79e69753a2450f44bb5d5dc913f058be8b6eacac4a2d449c914ca",
+    "geometry.json": "4b7c4831ad764854baa2225752d26b1e9e7142bc828fde9f0736f70feba35464",
+    "playable_block.json": "e540b3108c593b2e218d6930bc02a9f6b3b16e9b719c1e64fa4d8f16b5916ee8"
+  },
+  "start": {
+    "osm": 55897361,
+    "sourceGeometry": {
+      "coordinates": [
+        [
+          -344.3571204559965,
+          298.53661040914903
+        ],
+        [
+          -344.8920537261279,
+          294.5736365372642
+        ],
+        [
+          -341.9540356108861,
+          292.26932307780805
+        ]
+      ],
+      "type": "LineString"
+    },
+    "type": "existing_source_path"
+  },
+  "status": "offline_source_clearance_verified_native_walk_pending",
+  "studsPerMeter": 3.571428571428571,
+  "waypoints": [
+    {
+      "id": "source_path_start",
+      "metersXZ": [
+        -341.9540356108861,
+        292.26932307780805
+      ],
+      "surfaceStudsXYZ": [
+        -1221.2644128960217,
+        0.35,
+        1043.8190109921716
+      ]
+    },
+    {
+      "id": "plaza_civic_vista",
+      "metersXZ": [
+        -372.522867416153,
+        300.3648001805535
+      ],
+      "surfaceStudsXYZ": [
+        -1330.4388122005464,
+        0.35,
+        1072.7314292162625
+      ]
+    },
+    {
+      "id": "riverfront_vista",
+      "metersXZ": [
+        -403.09169922141996,
+        308.4602772832989
+      ],
+      "surfaceStudsXYZ": [
+        -1439.6132115050711,
+        0.35,
+        1101.6438474403533
+      ]
+    },
+    {
+      "id": "paving_trial_start",
+      "metersXZ": [
+        -429.2935550545059,
+        315.39925765708074
+      ],
+      "surfaceStudsXYZ": [
+        -1533.1912680518067,
+        0.35,
+        1126.4259202038597
+      ]
+    },
+    {
+      "id": "paving_trial_end",
+      "metersXZ": [
+        -418.09880055382683,
+        311.0775136029369
+      ],
+      "surfaceStudsXYZ": [
+        -1493.210001977953,
+        0.35,
+        1110.9911200104889
+      ]
+    }
+  ]
+}

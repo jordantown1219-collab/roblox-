@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "researchedOn": "2026-10-23",
+  "status": "Reference only; no automatic generation integration",
+  "preserve": ["existing OSM footprints", "tower heights", "shoreline", "manual landmarks", "gameplay routes"],
+  "references": [
+    {"id":"som_renovation","url":"https://www.som.com/projects/general-motors-renaissance-center/","sourceType":"architect","visualInspection":"Browser gallery slides 1,2,3,6 viewed; slides1/2 exterior observations used","era":"2005 completion / 1998 design finish","caveat":"Street-side entrance photos must not be mistaken for river-side Wintergarden"},
+    {"id":"operator_complex_map","url":"https://gmrencen.com/wp-content/uploads/2021/09/GMRENCEN-Complex-Map-Update.pdf","sourceType":"operator site map","page":1,"inspection":"Text retrieved, screenshot pixels unavailable","era":"2021 URL"},
+    {"id":"plaza_photo","url":"https://upload.wikimedia.org/wikipedia/commons/2/2f/GM_Plaza_and_Promenade.JPG","record":"https://commons.wikimedia.org/wiki/File:GM_Plaza_and_Promenade.JPG","sourceType":"photographer own-work primary visual","author":"Bnosnhoj","recordDate":"2011-04-10","exifDate":"2010-08-25","license":"CC BY-SA 3.0; reference viewing only, no asset import","visualInspection":"Full image viewed in browser"},
+    {"id":"riverwalk_authority","url":"https://www.detroitriverfront.org/plan-your-visit/parks-greenways/the-riverwalk","sourceType":"Riverfront Conservancy","visualInspection":"Hero photo viewed; another trail segment, not exact RenCen location"},
+    {"id":"current_cbo","url":"https://detroitmi.gov/departments/planning-and-development-department/community-benefits-ordinance/current-cbo-engagements/renaissance-center-and-east-riverfront-projects","sourceType":"City proposal page","inspection":"Indexed text only; fetch403","status":"Proposed redevelopment, not as-built geometry"}
+  ],
+  "targets": [
+    {"id":"tower_accents","features":["thin silver-gray upper bands","sparse vertical metallic mullions","preserved dark reflective blue/teal glazing"],"dimensions":"Existing source dimensions; accent spacing estimated","sourceReferences":["som_renovation","plaza_photo"]},
+    {"id":"paved_riverwalk_strip","features":["gray rectangular paving joints","uninterrupted walking strip","sparse benches and planting","restrained slim poles"],"dimensions":"Proposed80mx2m gameplay overlay is not a measured real promenade width","surface":"Paved promenade; not all-timber boardwalk","sourceReferences":["plaza_photo","riverwalk_authority"]},
+    {"id":"future_podium_slice","features":["low glazed podium","pale panel bands","curved arched Wintergarden-inspired glazing on river side","broad low steps"],"dimensions":"Unmeasured; footprint/orientation review required","sourceReferences":["operator_complex_map","som_renovation","plaza_photo"],"deferUntil":"Lead verifies existing footprint/orientation and accessible-route plan"}
+  ],
+  "excluded": ["proposed tower demolition", "new redevelopment massing", "copied branding", "downloaded photo textures", "whole-city terrain changes"],
+  "acceptance": ["preservation check", "no coplanar flicker", "normal and shrunk-player traversal", "same-view foreground FPS", "Lead visual review"]
+}

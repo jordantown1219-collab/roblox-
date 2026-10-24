@@ -1,0 +1,84 @@
+import hashlib
+import json
+import math
+from pathlib import Path
+import sys
+import unittest
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "tools"))
+from inspect_playable_block import analyze, civic_facades, load_sources, shape, LineString, Point, unary_union
+
+
+class PlayableBlockTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.geography, cls.geometry, cls.hashes = load_sources()
+        cls.plan = analyze()
+
+    def test_saved_plan_determinism_datum_and_provenance(self):
+        self.assertEqual(self.plan, json.loads((ROOT / "data/playable_block.json").read_text()))
+        self.assertEqual(self.plan["sourceHashes"], self.hashes)
+        self.assertEqual(self.plan["mapOriginLatLon"], [42.329, -83.04])
+        self.assertAlmostEqual(self.plan["studsPerMeter"], 1 / .28)
+        self.assertEqual(self.plan["groundDatum"], self.geography["groundDatum"])
+        for landmark in self.plan["landmarks"]:
+            source = next(f for f in self.geography["features"] if f["osm"] == landmark["osm"])
+            self.assertEqual(landmark["footprintMeters"], source["geometry"])
+            self.assertEqual(landmark["sourceHeightMeters"], source.get("height"))
+
+    def test_route_is_source_derived_clear_land_corridor(self):
+        route = self.plan["firstMapSlice"]
+        line = LineString(route["segmentMetersXZ"])
+        corridor = line.buffer(route["reviewHalfWidthMeters"], cap_style=2)
+        source = next(f for f in self.geography["features"] if f["osm"] == route["pathOsm"])
+        self.assertEqual(source["kind"], "path")
+        self.assertFalse(source["steps"])
+        self.assertAlmostEqual(line.length, 12)
+        self.assertLess(line.difference(shape(source["geometry"]).buffer(1e-7)).length, 1e-7)
+        self.assertTrue(shape(self.geography["land"]).covers(corridor))
+        plaza = next(f for f in self.geography["features"] if f["osm"] == 69349404)
+        self.assertTrue(shape(plaza["geometry"]).covers(corridor))
+        for feature in self.geography["features"]:
+            if feature["kind"] == "building":
+                self.assertFalse(corridor.intersects(shape(feature["geometry"])))
+            if feature["kind"] == "road" and feature["elevation"] == 0:
+                self.assertFalse(corridor.intersects(shape(feature["geometry"]).buffer(feature["width"] / 2, cap_style=2)))
+        self.assertGreater(route["gameplayAnchorClearanceMeters"], 5)
+        for anchor, coordinate in zip(route["anchorsStudsXYZ"], (line.coords[0], line.coords[-1])):
+            self.assertAlmostEqual(anchor[0], coordinate[0] * self.plan["studsPerMeter"])
+            self.assertAlmostEqual(anchor[2], coordinate[1] * self.plan["studsPerMeter"])
+
+    def test_secondary_fit_is_not_false_placement_acceptance(self):
+        candidate = self.plan["secondaryFootprint"]
+        self.assertTrue(shape(candidate["sourceFeature"]["geometry"]).covers(shape(candidate["outerRoofFootprintMeters"])))
+        self.assertTrue(candidate["fitsSourceFootprint"])
+        self.assertIn("rejected", candidate["status"])
+        self.assertEqual(candidate["roadClearanceMeters"], 0)
+        self.assertTrue(candidate["existingShellRetained"])
+        config = candidate["templateConfig"]
+        self.assertTrue(24 <= config["width"] <= 80 and 16 <= config["depth"] <= 80 and 12 <= config["height"] <= 24)
+        cf = candidate["cframeComponents"]
+        self.assertAlmostEqual(cf[3] * cf[11] - cf[5] * cf[9], 1)
+
+    def test_civic_faces_preserve_exact_records_and_outward_normals(self):
+        civic = civic_facades()
+        self.assertEqual(civic, json.loads((ROOT / "data/civic_facades.json").read_text()))
+        self.assertEqual([len(b["faces"]) for b in civic["buildings"]], [4, 8])
+        for building in civic["buildings"]:
+            polygon = shape(building["sourceFeature"]["geometry"])
+            for face in building["faces"]:
+                self.assertEqual(face["record"], self.geometry[face["sourceIndex"]])
+                nx, _, nz = face["outwardNormalXYZ"]
+                self.assertAlmostEqual(math.hypot(nx, nz), 1)
+                # Existing generator simplifies facade footprints by .35m; retain that
+                # measured mismatch instead of pretending generated centers lie exactly on source.
+                self.assertLess(face["edgeDistanceMeters"], .35)
+                a, b = face["matchedSourceEdgeMetersXZ"]
+                midpoint = Point((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
+                self.assertFalse(polygon.covers(Point(midpoint.x + nx * .01, midpoint.y + nz * .01)))
+                self.assertTrue(polygon.covers(Point(midpoint.x - nx * .01, midpoint.y - nz * .01)))
+
+
+if __name__ == "__main__":
+    unittest.main()

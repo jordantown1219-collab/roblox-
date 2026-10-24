@@ -1,0 +1,146 @@
+{
+  "name": "SmallSignals Detroit - Code Sync",
+  "servePort": 34872,
+  "tree": {
+    "$className": "DataModel",
+    "$ignoreUnknownInstances": true,
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$ignoreUnknownInstances": true,
+      "SmallSignals": {
+        "$className": "Folder",
+        "$ignoreUnknownInstances": true,
+        "Config": {
+          "$path": "src/Config.lua",
+          "$ignoreUnknownInstances": true
+        },
+        "Rules": {
+          "$path": "src/Rules.lua",
+          "$ignoreUnknownInstances": true
+        },
+        "InteractionRules": {
+          "$path": "src/InteractionRules.lua",
+          "$ignoreUnknownInstances": true
+        },
+        "Action": {
+          "$className": "RemoteEvent"
+        },
+        "State": {
+          "$className": "RemoteEvent"
+        }
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$ignoreUnknownInstances": true,
+      "RenaissanceDetails": {
+        "$path": "src/RenaissanceDetails.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RenaissanceData": {
+        "$path": "src/RenaissanceData.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "HartPathData": {
+        "$path": "src/HartPathData.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "CivicFacadeData": {
+        "$path": "src/CivicFacadeData.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "CivicFacades": {
+        "$path": "src/CivicFacades.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "StorefrontInterior": {
+        "$path": "src/StorefrontInterior.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "BuildingInteractions": {
+        "$path": "src/BuildingInteractions.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "BuildingTemplates": {
+        "$path": "src/BuildingTemplates.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "CityBlockGenerator": {
+        "$path": "src/CityBlockGenerator.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "WorldLoading": {
+        "$path": "src/WorldLoading.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "WeaponVisuals": {
+        "$path": "src/WeaponVisuals.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RiverfrontVehicles": {
+        "$path": "src/RiverfrontVehicles.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "CityDetails": {
+        "$path": "src/CityDetails.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "Arena": {
+        "$path": "src/Arena.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "LegacyArena": {
+        "$path": "src/LegacyArena.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "CityConfig": {
+        "$path": "src/CityConfig.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "InteractionRegistry": {
+        "$path": "src/InteractionRegistry.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "InteractionWorkshop": {
+        "$path": "src/InteractionWorkshop.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "InteractionRules": {
+        "$path": "src/InteractionRules.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "SmallSignalsServer": {
+        "$path": "src/SmallSignalsServer.server.lua",
+        "$ignoreUnknownInstances": true
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "$ignoreUnknownInstances": true,
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$ignoreUnknownInstances": true,
+        "VehicleClient": {
+          "$path": "src/VehicleClient.client.lua",
+          "$ignoreUnknownInstances": true
+        },
+        "SmallSignalsClient": {
+          "$path": "src/SmallSignalsClient.client.lua",
+          "$ignoreUnknownInstances": true
+        },
+        "SmallSignalsHUD": {
+          "$path": "src/SmallSignalsHUD.lua",
+          "$ignoreUnknownInstances": true
+        },
+        "SmallSignalsSettings": {
+          "$path": "src/SmallSignalsSettings.lua",
+          "$ignoreUnknownInstances": true
+        },
+        "RiverfrontClient": {
+          "$path": "src/RiverfrontClient.client.lua",
+          "$ignoreUnknownInstances": true
+        }
+      }
+    }
+  }
+}

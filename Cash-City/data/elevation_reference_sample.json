@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "queriedOn": "2026-10-23",
+  "source": "USGS Elevation Point Query Service / dynamic 3DEP elevation service",
+  "documentation": "https://epqs.nationalmap.gov/v1/docs",
+  "requestedUnits": "Meters",
+  "requestedHorizontalWkid": 4326,
+  "status": "Feasibility samples only; not connected to generation or gameplay",
+  "coordinateCaveat": "Approximate vicinity selections except preserved Spirit anchor; not verified pavement or survey points",
+  "metadataCaveats": ["Individual dataset name and vertical datum unverified", "resolution field returned as 1; schema does not explicitly define its units", "AcquisitionDate literal 3/0/2017 has no valid calendar day", "2017 data predates Hart Plaza Grand Stairs renovation", "Bare-earth interpolated elevations do not supply stair or deck dimensions"],
+  "sampleRangeMeters": 2.208877564,
+  "referencePoint": "spirit_ground_vicinity",
+  "points": [
+    {"id":"spirit_ground_vicinity","url":"https://epqs.nationalmap.gov/v1/json?x=-83.0446278&y=42.3292972&units=Meters&wkid=4326&includeDate=true","response":{"location":{"x":-83.0446278,"y":42.3292972,"spatialReference":{"wkid":4326,"latestWkid":4326}},"locationId":0,"value":"183.141632080","rasterId":133020,"resolution":1,"attributes":{"AcquisitionDate":"3/0/2017"}},"relativeMeters":0},
+    {"id":"hart_upper_north","url":"https://epqs.nationalmap.gov/v1/json?x=-83.0445&y=42.3287&units=Meters&wkid=4326&includeDate=true","response":{"location":{"x":-83.0445,"y":42.3287,"spatialReference":{"wkid":4326,"latestWkid":4326}},"locationId":0,"value":"183.257461548","rasterId":133020,"resolution":1,"attributes":{"AcquisitionDate":"3/0/2017"}},"relativeMeters":0.115829468},
+    {"id":"hart_fountain_vicinity","url":"https://epqs.nationalmap.gov/v1/json?x=-83.04445&y=42.32805&units=Meters&wkid=4326&includeDate=true","response":{"location":{"x":-83.04445,"y":42.32805,"spatialReference":{"wkid":4326,"latestWkid":4326}},"locationId":0,"value":"183.162780762","rasterId":133020,"resolution":1,"attributes":{"AcquisitionDate":"3/0/2017"}},"relativeMeters":0.021148682},
+    {"id":"hart_lower_terrace_vicinity","url":"https://epqs.nationalmap.gov/v1/json?x=-83.0452&y=42.32735&units=Meters&wkid=4326&includeDate=true","response":{"location":{"x":-83.0452,"y":42.32735,"spatialReference":{"wkid":4326,"latestWkid":4326}},"locationId":0,"value":"181.967285156","rasterId":133020,"resolution":1,"attributes":{"AcquisitionDate":"3/0/2017"}},"relativeMeters":-1.174346924},
+    {"id":"riverwalk_west_vicinity","url":"https://epqs.nationalmap.gov/v1/json?x=-83.0458&y=42.327&units=Meters&wkid=4326&includeDate=true","response":{"location":{"x":-83.0458,"y":42.327,"spatialReference":{"wkid":4326,"latestWkid":4326}},"locationId":0,"value":"181.460281372","rasterId":133020,"resolution":1,"attributes":{"AcquisitionDate":"3/0/2017"}},"relativeMeters":-1.681350708},
+    {"id":"riverwalk_east_vicinity","url":"https://epqs.nationalmap.gov/v1/json?x=-83.0441&y=42.3275&units=Meters&wkid=4326&includeDate=true","response":{"location":{"x":-83.0441,"y":42.3275,"spatialReference":{"wkid":4326,"latestWkid":4326}},"locationId":0,"value":"181.048583984","rasterId":133020,"resolution":1,"attributes":{"AcquisitionDate":"3/0/2017"}},"relativeMeters":-2.093048096}
+  ]
+}

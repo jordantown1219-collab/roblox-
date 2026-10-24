@@ -1,0 +1,889 @@
+{
+  "buildings": [
+    {
+      "boundsMetersXZ": [
+        -377.5065237304073,
+        -77.13327517033751,
+        -323.8486018465642,
+        -33.1620763072749
+      ],
+      "centerStudsXYZ": [
+        -1252.424975014615,
+        0.0,
+        -196.92125817982827
+      ],
+      "faces": [
+        {
+          "edgeDistanceMeters": 0.0007805870839451835,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -377.5065237304073,
+              -54.12353642340448
+            ],
+            [
+              -367.82011666610333,
+              -36.34581374399228
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            -0.8781141839155004,
+            0,
+            0.47845112603735696
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              0.8780828922279523,
+              0,
+              0.4785085520412297,
+              0,
+              1,
+              0,
+              -0.4785085520412297,
+              0,
+              0.8780828922279523
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 69000343
+            },
+            "name": "Facade_69000343",
+            "pos": [
+              -1327.839579828257,
+              173.2142857142857,
+              -155.8671655904989
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              346.4285714285714,
+              85.35659504384375
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 12301
+        },
+        {
+          "edgeDistanceMeters": 0.0,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -366.08364097341666,
+              -33.1620763072749
+            ],
+            [
+              -323.8486018465642,
+              -56.171815054207926
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            0.47841051974987414,
+            0,
+            0.8781363075244386
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              -0.4784105197498742,
+              0,
+              0.8781363075244385,
+              0,
+              1,
+              0,
+              -0.8781363075244385,
+              0,
+              -0.4784105197498742
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 69000343
+            },
+            "name": "Facade_69000343",
+            "pos": [
+              -1232.021862178537,
+              173.2142857142857,
+              -159.5248060026479
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              346.4285714285714,
+              171.8722227865481
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 12302
+        },
+        {
+          "edgeDistanceMeters": 0.024723585497487717,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -325.0419145269878,
+              -58.62084385180453
+            ],
+            [
+              -332.73672387615215,
+              -72.20182172830704
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            0.8700518098778723,
+            0,
+            -0.4929602906200851
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              -0.8779380235946952,
+              0,
+              -0.478774296225936,
+              0,
+              1,
+              0,
+              0.478774296225936,
+              0,
+              -0.8779380235946952
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 69000343
+            },
+            "name": "Facade_69000343",
+            "pos": [
+              -1177.0148503433045,
+              173.2142857142857,
+              -238.04480397240255
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              346.4285714285714,
+              85.37066324235919
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 12303
+        },
+        {
+          "edgeDistanceMeters": 2.3640925757019636e-15,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -335.2797143456864,
+              -77.13327517033751
+            ],
+            [
+              -377.5065237304073,
+              -54.12353642340448
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            -0.4784824138891787,
+            0,
+            -0.8780971356283909
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              0.4784824138891787,
+              0,
+              -0.8780971356283909,
+              0,
+              1,
+              0,
+              0.8780971356283909,
+              0,
+              0.4784824138891787
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 69000343
+            },
+            "name": "Facade_69000343",
+            "pos": [
+              -1272.8325679930244,
+              173.2142857142857,
+              -234.38716356025353
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              346.4285714285714,
+              171.84641323586206
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 12304
+        }
+      ],
+      "floorCount": null,
+      "floorCountStatus": "Awaiting primary reference research; do not infer from facade height",
+      "heightSource": "OSM height tag (not independently surveyed)",
+      "name": "Coleman A. Young Municipal Center Courts Tower",
+      "osm": 69000343,
+      "sourceFeature": {
+        "base": 0,
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                -377.5065237304073,
+                -54.12353642340448
+              ],
+              [
+                -367.82011666610333,
+                -36.34581374399228
+              ],
+              [
+                -366.08364097341666,
+                -33.1620763072749
+              ],
+              [
+                -323.8486018465642,
+                -56.171815054207926
+              ],
+              [
+                -325.0419145269878,
+                -58.62084385180453
+              ],
+              [
+                -332.73672387615215,
+                -72.20182172830704
+              ],
+              [
+                -335.2797143456864,
+                -77.13327517033751
+              ],
+              [
+                -377.5065237304073,
+                -54.12353642340448
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "height": 97.0,
+        "heightSource": "OSM height tag (not independently surveyed)",
+        "kind": "building",
+        "material": "concrete",
+        "name": "Coleman A. Young Municipal Center Courts Tower",
+        "osm": 69000343,
+        "tags": {
+          "building:levels": "20",
+          "height": "97"
+        }
+      },
+      "sourceHeightMeters": 97.0
+    },
+    {
+      "boundsMetersXZ": [
+        -331.32120814531044,
+        -119.54600116306517,
+        -238.4156437061548,
+        -51.28488940822415
+      ],
+      "centerStudsXYZ": [
+        -1013.3728030647771,
+        0.0,
+        -301.22712221862434
+      ],
+      "faces": [
+        {
+          "edgeDistanceMeters": 0.0012976877263318324,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -325.79082110540566,
+              -72.83634282612503
+            ],
+            [
+              -331.32120814531044,
+              -69.70826513466375
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            -0.4923204578153942,
+            0,
+            -0.8704140203468925
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              0.49252568071373065,
+              0,
+              -0.8702979109692704,
+              0,
+              1,
+              0,
+              0.8702979109692704,
+              0,
+              0.49252568071373065
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 320396455
+            },
+            "name": "Facade_320396455",
+            "pos": [
+              -1166.1839212161515,
+              107.14285714285714,
+              -258.6389097697062
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              214.28571428571428,
+              39.410924819275564
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 13882
+        },
+        {
+          "edgeDistanceMeters": 0.0003415159751690574,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -331.32120814531044,
+              -69.70826513466375
+            ],
+            [
+              -325.0419145269878,
+              -58.62084385180453
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            -0.8701426196935967,
+            0,
+            0.4927999811209053
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              0.8701186788242905,
+              0,
+              0.492842251395993,
+              0,
+              1,
+              0,
+              -0.492842251395993,
+              0,
+              0.8701186788242905
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 320396455
+            },
+            "name": "Facade_320396455",
+            "pos": [
+              -1170.9160232237627,
+              107.14285714285714,
+              -227.1116396988302
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              214.28571428571428,
+              50.31487436023116
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 13883
+        },
+        {
+          "edgeDistanceMeters": 0.003305546738921637,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -324.3917648599967,
+              -57.47425309668117
+            ],
+            [
+              -319.3551623760568,
+              -60.335164009489354
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            0.4939056448997788,
+            0,
+            0.8695155052879353
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              -0.4933898039741313,
+              0,
+              0.8698083129830205,
+              0,
+              1,
+              0,
+              -0.8698083129830205,
+              0,
+              -0.4933898039741313
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 320396455
+            },
+            "name": "Facade_320396455",
+            "pos": [
+              -1141.2301659170676,
+              107.14285714285714,
+              -215.08515899775935
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              214.28571428571428,
+              39.906130113179564
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 13884
+        },
+        {
+          "edgeDistanceMeters": 1.5865670652953781e-15,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -314.6971280535611,
+              -62.973435942064086
+            ],
+            [
+              -308.07218524349014,
+              -51.28488940822415
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            -0.8699764296806538,
+            0,
+            0.49309330942540924
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              0.8699764296806538,
+              0,
+              0.4930933094254093,
+              0,
+              1,
+              0,
+              -0.4930933094254093,
+              0,
+              0.8699764296806538
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 320396455
+            },
+            "name": "Facade_320396455",
+            "pos": [
+              -1112.0880594590199,
+              107.14285714285714,
+              -204.0327238398004
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              214.28571428571428,
+              48.08383913085069
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 13885
+        },
+        {
+          "edgeDistanceMeters": 2.8402932657156744e-15,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -308.07218524349014,
+              -51.28488940822415
+            ],
+            [
+              -238.4156437061548,
+              -90.73651694525887
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            0.49281954824598473,
+            0,
+            0.8701315376807254
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              -0.4928195482459846,
+              0,
+              0.8701315376807254,
+              0,
+              1,
+              0,
+              -0.8701315376807254,
+              0,
+              -0.4928195482459846
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 320396455
+            },
+            "name": "Facade_320396455",
+            "pos": [
+              -975.8711231243659,
+              107.14285714285714,
+              -253.60965420264824
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              214.28571428571428,
+              286.00316734919
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 13886
+        },
+        {
+          "edgeDistanceMeters": 0.08948242123745356,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -238.5802385593126,
+              -91.0259476215398
+            ],
+            [
+              -247.2214683097486,
+              -106.0874747262843
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            0.8673824309470307,
+            0,
+            -0.497642159070571
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              -0.8700972441533573,
+              0,
+              -0.492880092635859,
+              0,
+              1,
+              0,
+              0.492880092635859,
+              0,
+              -0.8700972441533573
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 320396455
+            },
+            "name": "Facade_320396455",
+            "pos": [
+              -880.6265482657432,
+              107.14285714285714,
+              -375.5044966220072
+            ],
+            "sector": "-1_-1",
+            "size": [
+              0.7,
+              214.28571428571428,
+              118.35231691626764
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 13887
+        },
+        {
+          "edgeDistanceMeters": 0.0007285954169371924,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -279.92646548215373,
+              -105.27484244348857
+            ],
+            [
+              -324.50698125685636,
+              -80.01644998235551
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            -0.4929549598526638,
+            0,
+            -0.8700548302013262
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              0.49293914967621133,
+              0,
+              -0.8700637877285169,
+              0,
+              1,
+              0,
+              0.8700637877285169,
+              0,
+              0.49293914967621133
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 320396455
+            },
+            "name": "Facade_320396455",
+            "pos": [
+              -1034.3610796062817,
+              107.14285714285714,
+              -356.3615199025369
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              214.28571428571428,
+              286.4983690385863
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 13888
+        },
+        {
+          "edgeDistanceMeters": 3.4799448581713335e-15,
+          "matchedSourceEdgeMetersXZ": [
+            [
+              -324.50698125685636,
+              -80.01644998235551
+            ],
+            [
+              -321.7417877357345,
+              -75.12952433637174
+            ]
+          ],
+          "normalProvenance": "Right normal of CCW outer ring; left normal of clockwise ring, using projected source X/Z polygon winding",
+          "outwardNormalXYZ": [
+            -0.8703324895499256,
+            0,
+            0.4924645750039577
+          ],
+          "record": {
+            "cls": "Part",
+            "collide": true,
+            "color": [
+              143,
+              141,
+              130
+            ],
+            "material": "Concrete",
+            "matrix": [
+              0.8703324895499256,
+              0,
+              0.49246457500395774,
+              0,
+              1,
+              0,
+              -0.49246457500395774,
+              0,
+              0.8703324895499256
+            ],
+            "meta": {
+              "heightSource": "OSM height tag (not independently surveyed)",
+              "osm": 320396455
+            },
+            "name": "Facade_320396455",
+            "pos": [
+              -1154.0156589153407,
+              107.14285714285714,
+              -277.046382712013
+            ],
+            "sector": "-2_-1",
+            "size": [
+              0.7,
+              214.28571428571428,
+              20.15360719963363
+            ],
+            "trans": 0
+          },
+          "sourceIndex": 13889
+        }
+      ],
+      "floorCount": null,
+      "floorCountStatus": "Awaiting primary reference research; do not infer from facade height",
+      "heightSource": "OSM height tag (not independently surveyed)",
+      "name": "Coleman A. Young Municipal Center Administration Tower",
+      "osm": 320396455,
+      "sourceFeature": {
+        "base": 0,
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                -321.7417877357345,
+                -75.12952433637174
+              ],
+              [
+                -325.79082110540566,
+                -72.83634282612503
+              ],
+              [
+                -331.32120814531044,
+                -69.70826513466375
+              ],
+              [
+                -325.0419145269878,
+                -58.62084385180453
+              ],
+              [
+                -324.3917648599967,
+                -57.47425309668117
+              ],
+              [
+                -319.3551623760568,
+                -60.335164009489354
+              ],
+              [
+                -314.6971280535611,
+                -62.973435942064086
+              ],
+              [
+                -308.07218524349014,
+                -51.28488940822415
+              ],
+              [
+                -238.4156437061548,
+                -90.73651694525887
+              ],
+              [
+                -238.5802385593126,
+                -91.0259476215398
+              ],
+              [
+                -247.2214683097486,
+                -106.0874747262843
+              ],
+              [
+                -248.22549690945004,
+                -108.2693367452278
+              ],
+              [
+                -249.43526907530637,
+                -110.1840319871002
+              ],
+              [
+                -254.7352233226614,
+                -119.54600116306517
+              ],
+              [
+                -279.92646548215373,
+                -105.27484244348857
+              ],
+              [
+                -324.50698125685636,
+                -80.01644998235551
+              ],
+              [
+                -321.7417877357345,
+                -75.12952433637174
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "height": 60.0,
+        "heightSource": "OSM height tag (not independently surveyed)",
+        "kind": "building",
+        "material": "concrete",
+        "name": "Coleman A. Young Municipal Center Administration Tower",
+        "osm": 320396455,
+        "tags": {
+          "building:levels": "14",
+          "height": "60"
+        }
+      },
+      "sourceHeightMeters": 60.0
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceHashes": {
+    "detroit_geography.json": "49916c4f1da79e69753a2450f44bb5d5dc913f058be8b6eacac4a2d449c914ca",
+    "geometry.json": "4b7c4831ad764854baa2225752d26b1e9e7142bc828fde9f0736f70feba35464"
+  },
+  "status": "source_derived_no_geometry_changes",
+  "studsPerMeter": 3.571428571428571
+}

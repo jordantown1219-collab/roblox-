@@ -1,0 +1,12 @@
+**/__pycache__/
+**/*.pyc
+**/*.lock
+**/*.log
+**/*.pid
+Cash-City/tools/rojo/
+Cash-City/data/rojo*
+Cash-City/data/sourcemap.json
+Cash-City/assets/
+Cash-City/.venv/
+Cash-City/.env
+Cash-City/.env.*
