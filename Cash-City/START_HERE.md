@@ -17,9 +17,10 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
 4 PARTIAL: actual solo Practice -> Match -> shrink gates -> extraction -> Results -> Lobby PASS.
   NormalReady(3) with1player stayedLobby. Real multiplayer stopped at2clients/446MBfreeRAM;6player3v3 BLOCKED.
   LiveEdit/source has verified CASH CITY/Extraction/Detroit header metadata;7team-rule tests+panel regressionPASS.
-  SAVE BLOCKED: CtrlS andAltF inputs had no effect; UI automation stopped. Manually File > Save to File As > existingworkingfilename.
-  Diskbinary still testedTask3 (685260bytes,SHA256 DEC3AC3D6AEAB826957EB93CEF39AA1794095767993C43A223FF31B54427A402).
-  Newheader NOT confirmed saved in binary. Verify manualsave and synchronize before further testing.
+  SAVE VERIFIED: user manually saved2026-10-24 17:20:52;696633bytes.
+  SHA256 AE6AA260681DEAB439CF809D4FE6F3FA44FC0F072842355B70E8795418625E68.
+  LiveEdit three production sources still match tested header/metadata. No separate disk-reload test.
+  Canonical savedplace plus immutable manual-save checkpoint backed up; save blocker cleared.
   Playstopped,observerremoved,noarmedQAfixtures. See docs/Map1_Task4_ACCEPTANCE.md and bothTask4JSONresults.
   Do notadvanceTask5 or relaunch6clients under unchangedRAMconditions.
 5 PENDING: streaming + desktop/low-end mobile performance acceptance.
