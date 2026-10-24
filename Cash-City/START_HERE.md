@@ -23,6 +23,9 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   Canonical savedplace plus immutable manual-save checkpoint backed up; save blocker cleared.
   Playstopped,observerremoved,noarmedQAfixtures. See docs/Map1_Task4_ACCEPTANCE.md and bothTask4JSONresults.
   Do notadvanceTask5 or relaunch6clients under unchangedRAMconditions.
+  Latest recheck2026-10-24 18:15:4.4GBfree, essentially unchanged;0newclients launched.
+  Waitingforuser tofreeRAM/choosehowtoproceed. Resource evidence:docs/Map1_Task4_RESOURCE_RECHECK.json.
+  Output error traced to preserved Workspace.FlayoDev Admin Messages, missingStarterGui.Messages; presetadminallowlist requiresreview beforeactivation.
 5 PENDING: streaming + desktop/low-end mobile performance acceptance.
 6 PENDING: all routes/all4sizes/full offline suite + phone/multiplayer checklist.
 7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.

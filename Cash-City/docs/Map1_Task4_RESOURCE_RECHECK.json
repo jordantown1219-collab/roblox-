@@ -1,0 +1,34 @@
+{
+  "checkedLocal": "2026-10-24T18:15:23",
+  "task": 4,
+  "status": "BLOCKED_NO_NEW_LAUNCH",
+  "remoteBefore": "a9d8c56f2a246e24e5ebadbba4db53af480615c1",
+  "totalRamMb": 16326,
+  "freeRamMbFirst": 4400,
+  "freeRamMbSecond": 4419,
+  "studioWorkingSetMb": [737, 888, 1420],
+  "requiredRealPlayers": 6,
+  "priorTwoClientFreeRamMb": 446,
+  "newClientsLaunched": 0,
+  "reason": "Available RAM essentially unchanged from prior resource-aborted run. No duplicate test attempted.",
+  "nativeReadOnlyChecks": {
+    "editMode": true,
+    "armedTestMarker": false,
+    "activeMap": "DetroitRiverfront",
+    "mode": "Extraction",
+    "teamSizes": [3, 4, 5],
+    "scriptsInsidePreviewAndCityTemplate": 0
+  },
+  "separateOutputFinding": {
+    "model": "Workspace.FlayoDev Admin Messages",
+    "serverScript": "Place -> ServerScriptService",
+    "cause": "Line16 accesses missing StarterGui.Messages. Bundled GUI remains under the imported model.",
+    "reviewNeeded": "Announcement script also has a preset author-specific admin allowlist. Do not activate it by merely moving its GUI. Review ownership and intended use before enabling this unrelated system.",
+    "modified": false
+  },
+  "workingPlaceSHA256": "AE6AA260681DEAB439CF809D4FE6F3FA44FC0F072842355B70E8795418625E68",
+  "placeOrGameplayChanges": false,
+  "publication": false,
+  "paidCreditsUsed": false,
+  "waitingFor": "User resource choice / adequate RAM before genuine six-client attempt"
+}
