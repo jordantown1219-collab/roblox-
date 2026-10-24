@@ -16,3 +16,14 @@ class ArrivalLounge(unittest.TestCase):
   self.assertTrue(all(r['collide'] and r['touch'] for r in seats))
   self.assertEqual(sum('light' in r for r in records),2)
   self.assertTrue(all(r.get('light',{}).get('brightness',0)<=.600001 for r in records))
+
+ def test_saved_sign_has_two_readable_faces(self):
+  import xml.etree.ElementTree as ET
+  root=ET.parse(P/'SmallSignals_DetroitRiverfront_v0_14.rbxlx')
+  signs=[n for n in root.iter('Item') if n.find("Properties/string[@name='Name']") is not None and n.find("Properties/string[@name='Name']").text=='GenericAtriumSign']
+  self.assertEqual(len(signs),1)
+  surfaces=[n for n in signs[0].findall('Item') if n.get('class')=='SurfaceGui']
+  self.assertEqual({int(n.find("Properties/token[@name='Face']").text) for n in surfaces},{2,5})
+  for surface in surfaces:
+   label=surface.find("Item[@class='TextLabel']")
+   self.assertEqual(label.find("Properties/string[@name='Text']").text,'RIVERFRONT ATRIUM')

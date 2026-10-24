@@ -168,14 +168,15 @@ for b in json.loads((P/'data/arrival_lounge_preview.json').read_text()):
   light=item(node,'PointLight','ArrivalLight')
   prop(light,'float','Brightness',b['light']['brightness']);prop(light,'float','Range',b['light']['range']);prop(light,'bool','Shadows','false')
  if b.get('signText'):
-  surface=item(node,'SurfaceGui','AtriumSign')
-  size=prop(surface,'Vector2','CanvasSize','');ET.SubElement(size,'X').text='600';ET.SubElement(size,'Y').text='240'
-  prop(surface,'float','LightInfluence',0)
-  label=item(surface,'TextLabel','GenericTitle');prop(label,'string','Text',b['signText']);prop(label,'bool','TextScaled','true');prop(label,'float','BackgroundTransparency',1)
-  size=prop(label,'UDim2','Size','')
-  for key,value in [('XS',1),('XO',0),('YS',1),('YO',0)]:ET.SubElement(size,key).text=str(value)
-  rgb=prop(label,'Color3','TextColor3','')
-  for key,value in zip('RGB',[238/255,235/255,214/255]):ET.SubElement(rgb,key).text=str(value)
+  for face in (5,2): # Roblox Front and Back; readable from either approach.
+   surface=item(node,'SurfaceGui','AtriumSign_'+str(face));prop(surface,'token','Face',face)
+   size=prop(surface,'Vector2','CanvasSize','');ET.SubElement(size,'X').text='600';ET.SubElement(size,'Y').text='240'
+   prop(surface,'float','LightInfluence',0)
+   label=item(surface,'TextLabel','GenericTitle');prop(label,'string','Text',b['signText']);prop(label,'bool','TextScaled','true');prop(label,'float','BackgroundTransparency',1)
+   size=prop(label,'UDim2','Size','')
+   for key,value in [('XS',1),('XO',0),('YS',1),('YO',0)]:ET.SubElement(size,key).text=str(value)
+   rgb=prop(label,'Color3','TextColor3','')
+   for key,value in zip('RGB',[238/255,235/255,214/255]):ET.SubElement(rgb,key).text=str(value)
 for entry in json.loads((P/'data/detail_preview.json').read_text(encoding='utf-8')):
  group=item(preview,'Model',entry['name']);prop(group,'token','ModelStreamingMode',1)
  for b in entry['parts']:primitive(group,b)

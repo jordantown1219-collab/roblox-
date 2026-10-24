@@ -26,8 +26,10 @@ function Lounge.build(garden,data)
   local a=data.seats[1] local cf=CFrame.new(a.pos[1],a.pos[2],a.pos[3],table.unpack(a.matrix))
   local sign=part("Part","GenericAtriumSign",Vector3.new(6,2.4,.15),cf*CFrame.new(0,4.2,1.5),Color3.fromRGB(31,42,45))
   sign.CanCollide=false
-  local surface=Instance.new("SurfaceGui") surface.CanvasSize=Vector2.new(600,240) surface.LightInfluence=0 surface.Parent=sign
+  for _,face in ipairs({Enum.NormalId.Front,Enum.NormalId.Back}) do
+  local surface=Instance.new("SurfaceGui") surface.Face=face surface.CanvasSize=Vector2.new(600,240) surface.LightInfluence=0 surface.Parent=sign
   local label=Instance.new("TextLabel") label.Size=UDim2.fromScale(1,1) label.BackgroundTransparency=1 label.Text=data.sign label.TextColor3=Color3.fromRGB(238,235,214) label.TextScaled=true label.Font=Enum.Font.GothamMedium label.Parent=surface
+  end
  end)
  if not ok then model:Destroy() error(err) end
  if old then old:Destroy() end model.Parent=garden
