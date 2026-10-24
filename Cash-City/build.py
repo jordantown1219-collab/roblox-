@@ -72,7 +72,7 @@ mapping={'Arena':'Arena.lua','SmallSignalsServer':'SmallSignalsServer.server.lua
 for n in root.iter('Item'):
  props=n.find('Properties');name=props.findtext("string[@name='Name']") if props is not None else None
  if name in mapping:prop(n,'ProtectedString','Source',(P/'src'/mapping[name]).read_text(encoding='utf-8-sig'))
-for name in ['LegacyArena','CityConfig','InteractionRegistry','InteractionWorkshop','InteractionRules','WorldLoading','WeaponVisuals','RiverfrontVehicles','CityDetails','CityBlockGenerator','BuildingTemplates','BuildingInteractions','StorefrontInterior','CivicFacades','CivicFacadeData','HartPathData','RenaissanceDetails','RenaissanceData','Wintergarden','WintergardenData','ArrivalLounge','ArrivalLoungeData']:
+for name in ['LegacyArena','CityConfig','InteractionRegistry','InteractionWorkshop','InteractionRules','WorldLoading','WeaponVisuals','RiverfrontVehicles','CityDetails','CityBlockGenerator','BuildingTemplates','BuildingInteractions','StorefrontInterior','CivicFacades','CivicFacadeData','HartPathData','RenaissanceDetails','RenaissanceData','Wintergarden','WintergardenData','ArrivalLounge','ArrivalLoungeData','RenaissanceLobby','RenaissanceLobbyData']:
  source(server,'ModuleScript',name,(P/'src'/f'{name}.lua').read_text(encoding='utf-8-sig'))
 source(shared,'ModuleScript','InteractionRules',(P/'src/InteractionRules.lua').read_text(encoding='utf-8-sig'))
 source(sp,'LocalScript','RiverfrontClient',(P/'src/RiverfrontClient.client.lua').read_text(encoding='utf-8-sig'))
@@ -176,6 +176,38 @@ for b in json.loads((P/'data/arrival_lounge_preview.json').read_text()):
    size=prop(surface,'Vector2','CanvasSize','');ET.SubElement(size,'X').text='600';ET.SubElement(size,'Y').text='240'
    prop(surface,'float','LightInfluence',0)
    label=item(surface,'TextLabel','GenericTitle');prop(label,'string','Text',b['signText']);prop(label,'bool','TextScaled','true');prop(label,'float','BackgroundTransparency',1)
+   size=prop(label,'UDim2','Size','')
+   for key,value in [('XS',1),('XO',0),('YS',1),('YO',0)]:ET.SubElement(size,key).text=str(value)
+   rgb=prop(label,'Color3','TextColor3','')
+   for key,value in zip('RGB',[238/255,235/255,214/255]):ET.SubElement(rgb,key).text=str(value)
+lobby=json.loads((P/'data/rencen_lobby_plan.json').read_text())
+lobby_archive=item(preview,'Folder','RenaissanceLobbySourceArchive')
+marker=item(lobby_archive,'StringValue','CashCityLobbyArchiveManifest');prop(marker,'string','Value',lobby['id'])
+for guard in lobby['sourceReplacements']:
+ b=guard['record'];found=None
+ for parent in preview.iter('Item'):
+  for node in list(parent.findall('Item')):
+   props=node.find('Properties')
+   if props.findtext("string[@name='Name']")!=b['name']:continue
+   cf=props.find("CoordinateFrame[@name='CFrame']")
+   if cf is not None and all(abs(float(cf.findtext(axis))-v)<.001 for axis,v in zip('XYZ',b['pos'])):found=(parent,node);break
+  if found:break
+ if not found:raise ValueError('Missing guarded lobby source')
+ parent,node=found
+ state={key:node.find('Properties').findtext("*[@name='"+key+"']") for key in ['CanCollide','CanTouch','CanQuery','CastShadow','Transparency']};state['index']=guard['sourceIndex']
+ saved=item(node,'StringValue','RLOriginalState');prop(saved,'string','Value',json.dumps(state))
+ for key in ['CanCollide','CanTouch','CanQuery','CastShadow']:prop(node,'bool',key,'false')
+ prop(node,'float','Transparency',1);parent.remove(node);lobby_archive.append(node)
+lobby_preview=item(preview,'Model',lobby['id']);prop(lobby_preview,'token','ModelStreamingMode',1)
+marker=item(lobby_preview,'StringValue','CashCityGeneratedBlockManifest');prop(marker,'string','Value',lobby['id'])
+for b in lobby['records']:
+ if b.get('seat'):b=dict(b,cls='Seat',touch=True)
+ node=primitive(lobby_preview,b);prop(node,'bool','CastShadow','false')
+ if b['name']=='Lobby_GenericHotelSignBoard' or b.get('signText'):
+  for face in (0,3):
+   surface=item(node,'SurfaceGui','HotelTitle_'+str(face));prop(surface,'token','Face',face);prop(surface,'float','LightInfluence',0)
+   size=prop(surface,'Vector2','CanvasSize','');ET.SubElement(size,'X').text='800';ET.SubElement(size,'Y').text='240'
+   label=item(surface,'TextLabel','GenericTitle');prop(label,'string','Text',(b.get('returnText') if face==0 else None) or b.get('signText') or lobby['signAnchors'][0]['text']);prop(label,'bool','TextScaled','true');prop(label,'float','BackgroundTransparency',1)
    size=prop(label,'UDim2','Size','')
    for key,value in [('XS',1),('XO',0),('YS',1),('YO',0)]:ET.SubElement(size,key).text=str(value)
    rgb=prop(label,'Color3','TextColor3','')

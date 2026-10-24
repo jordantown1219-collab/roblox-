@@ -79,7 +79,14 @@ def generate(root=ROOT):
     edges=list(zip(ring,ring[1:]))
     target_point=Point(target['pos'][0],target['pos'][2])
     entry_index=min(range(len(edges)),key=lambda i:LineString(edges[i]).distance(target_point))
+    # Source-aligned rear portal to the estimated public-lobby connector.
+    rear_source=source[19478]
+    assert rear_source['name']=='Facade_1307210646', 'Rear source identity changed'
+    rear_center=Point(rear_source['pos'][0],rear_source['pos'][2])
+    rear_index=min(range(len(edges)),key=lambda i:LineString(edges[i]).distance(rear_center))
+    assert rear_index!=entry_index
     door=None
+    rear_portal=None
     for edge_index,(a,b) in enumerate(edges):
         dx,dz=b[0]-a[0],b[1]-a[1]; length=math.hypot(dx,dz); tx,tz=dx/length,dz/length
         # Right handed frame: local X outward normal, local Z along edge.
@@ -101,12 +108,22 @@ def generate(root=ROOT):
                   'width':8,'apertureWidth':8,'height':10,
                   'approachPoints':[[midpoint[0]+nx*5,FLOOR,midpoint[1]+nz*5],[midpoint[0]-nx*8,FLOOR,midpoint[1]-nz*8]],
                   'outwardNormal':[nx,0,nz]}
+        rear_interval=None
+        if edge_index==rear_index:
+            mid=((rear_center.x-a[0])*dx+(rear_center.y-a[1])*dz)/(length*length)
+            rear_interval=(mid-4/length,mid+4/length)
+            assert 0<rear_interval[0]<rear_interval[1]<1
+            cuts+=list(rear_interval)
+            rear_portal={'pos':[a[0]+dx*mid,FLOOR+5,a[1]+dz*mid],
+                         'matrix':[-nz,0,-nx,0,1,0,nx,0,-nz],
+                         'width':8,'height':10,'outwardNormal':[nx,0,nz]}
         cuts=sorted(set(cuts))
         for t0,t1 in zip(cuts,cuts[1:]):
             p=(a[0]+dx*t0,a[1]+dz*t0); q=(a[0]+dx*t1,a[1]+dz*t1)
             yp,yq=roof_y(local(p)[0]),roof_y(local(q)[0]); low=min(yp,yq)
             bottom=FLOOR
             if edge_index==entry_index and abs((t0+t1)/2-.5)<4/length-1e-7:bottom=FLOOR+10
+            if rear_interval and rear_interval[0]<(t0+t1)/2<rear_interval[1]:bottom=FLOOR+10
             segment=math.dist(p,q)
             add('Wintergarden_GlassWall',[.22,low-bottom,segment],[(p[0]+q[0])/2,(bottom+low)/2,(p[1]+q[1])/2],matrix,[141,185,172],'Glass',True,.38)
             if abs(yp-yq)>.001:
@@ -164,7 +181,7 @@ def generate(root=ROOT):
                         'roofFootprintStuds':{'type':'Polygon','coordinates':[list(map(list,footprint.exterior.coords))]},
                         'axisAcrossRiverXZ':[ux,uz],'axisInlandXZ':[vx,vz], 'sourceTopStuds':30*scale,
                         'profileSpringlineStuds':spring,'profilePeakStuds':peak,'profileClassification':'Unsurveyed original gameplay estimate; reference-informed orientation/material only',
-                        'roofSlices':8,'floorTopStuds':FLOOR,'glassTint':'Original muted green; no copied texture','decorativePlanters':planter_count,
+                        'rearLobbyPortal':rear_portal,'roofSlices':8,'floorTopStuds':FLOOR,'glassTint':'Original muted green; no copied texture','decorativePlanters':planter_count,
                         'identity':'Anonymous source glass part, Wintergarden candidate by map/reference correlation',
                         'limitations':['Functional door components and registry are Lead integration tasks.','Exclude previous atrium facade-grid accents on replaced source faces.','No tower/podium/stair replacement, authentic interior or measured roof-section claim.','Native collision/walking/size/device/multiplayer/FPS and visual acceptance pending.']}}
 

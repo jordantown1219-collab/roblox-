@@ -31,7 +31,7 @@ class WintergardenTests(unittest.TestCase):
     def test_deterministic_exact_source_guards_and_bounded_original_records(self):
         p=self.plan
         self.assertEqual(p,json.loads((ROOT/'data/wintergarden_plan.json').read_text()))
-        self.assertEqual(len(p['records']),177)
+        self.assertEqual(len(p['records']),183)
         self.assertLessEqual(len(p['records'])+8,220)
         self.assertEqual(len(p['replacements']),46)
         counts={}

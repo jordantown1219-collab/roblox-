@@ -12,7 +12,7 @@ for _,seat in ipairs(seats) do
  local cf,size=seat.CFrame,seat.Size
  local rig=template:Clone() local h=rig:FindFirstChildOfClass('Humanoid')
  local ok,err=xpcall(function()
-  rig:ScaleTo(scale) rig:PivotTo(cf*CFrame.new(0,3*scale,-4)) rig.Parent=workspace
+  rig:ScaleTo(scale) h.WalkSpeed=16 rig:PivotTo(cf*CFrame.new(0,3*scale,-4)) rig.Parent=workspace
   rig.HumanoidRootPart:SetNetworkOwner(nil)
   task.wait(.4) h:MoveTo(seat.Position) h.Jump=true
   local deadline=os.clock()+3

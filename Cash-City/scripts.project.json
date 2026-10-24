@@ -33,6 +33,14 @@
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "$ignoreUnknownInstances": true,
+      "RenaissanceLobby": {
+        "$path": "src/RenaissanceLobby.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RenaissanceLobbyData": {
+        "$path": "src/RenaissanceLobbyData.lua",
+        "$ignoreUnknownInstances": true
+      },
       "ArrivalLounge": {
         "$path": "src/ArrivalLounge.lua",
         "$ignoreUnknownInstances": true
