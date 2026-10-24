@@ -4,8 +4,8 @@ Step3 RiverWalk: second40m section added to visibleStudio92bb2bd5-f0e8-4fe0-9300
 NewWorkspace.DetroitCityPreview.RenCenRiverWalkExtension2:79anchoredparts,4Seats,2lights,planters/lowrails; first79partsection untouched.
 Original80m+two40mextensions=160m detailedpavedroute. No newroads/mapedges.
 ## SAVE NEEDED
-SaveAsdialog open inStudio. Usermustenter CashCity_RiverWalk_Section2.rbxl andclickSave.
-Previous CashCity_Visible_Working.rbxl remains safe butcontainsONLYfirstextension.
+User saved CashCity_RiverWalk_Section2.rbxl at11:12:15 on2026-10-24;670519bytes. This is the latest fullplace, with bothsections.
+Previous CashCity_Visible_Working.rbxl remains safe; useCashCity_RiverWalk_Section2.rbxl now.
 TwoUIoperationsfailed(set_value notsettable;click coordinategeometryunavailable); nofurtherautomationretries.
 Source+standaloneJSON arepreservedinGitHub; donotclaimfullplacecontainssection2untiluserconfirmsSave.
 ## Where to look
@@ -20,3 +20,4 @@ Avatar/device/visualacceptance pending. No newnativeharness/noFPS/fullrebuild/he
 UserfinishSaveAs; verifybinaryandbackuptoGitHub. Thenuservisualreview.
 No paidcredits. Stopbefore40%USEDfivehour; one task thenstop.
 Roads/mapedges/fullrebuildneedapproval.
+
