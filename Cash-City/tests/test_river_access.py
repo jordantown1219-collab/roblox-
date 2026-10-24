@@ -44,6 +44,23 @@ class RiverAccessTests(unittest.TestCase):
             self.assertLess(polygon.difference(self.land).area,1e-6)
             self.assertLess(polygon.intersection(self.roads).area,1e-6,r['name'])
 
+    def test_inset_stair_sample_and_polygon_derived_approach(self):
+        p=self.plan;meta=p['metadata'];origin=meta['doorOriginXZ'];f=meta['outwardXZ'];right=[f[1],-f[0]]
+        def point(t,s=0):return Point(origin[0]+f[0]*t+right[0]*s,origin[1]+f[1]*t+right[1]*s)
+        top=next(s for s in p['routeStairs'] if s['span']=='stairs top')
+        self.assertAlmostEqual(top['pos'][0],point(58.5,6).x)
+        self.assertAlmostEqual(top['pos'][2],point(58.5,6).y)
+        self.assertTrue(shape(meta['landingPolygonStuds']).contains(Point(top['pos'][0],top['pos'][2])))
+        a,b=meta['approachWalkEndT'],meta['approachRoadStartT']
+        self.assertTrue(self.surfaces['JoinedWalk'].covers(point(a-.01)))
+        self.assertFalse(self.surfaces['JoinedWalk'].covers(point(a+.01)))
+        self.assertFalse(self.roads.covers(point(b-.01)))
+        self.assertTrue(self.roads.covers(point(b+.01)))
+        self.assertEqual(meta['approachEndHeights'],[.35,.55])
+        vertices=[v for r in p['records'] if r['name']=='RiverAccess_SourceGapApproach' for v in r['meta']['surfaceTriangleVertices']]
+        self.assertAlmostEqual(min(v[1] for v in vertices),.35)
+        self.assertAlmostEqual(max(v[1] for v in vertices),.55)
+
     def test_low_stair_risers_and_gentle_ramp_continuity_all_scales(self):
         p=self.plan
         stairs=[r for r in p['records'] if r['name']=='RiverAccess_LowStairTread']

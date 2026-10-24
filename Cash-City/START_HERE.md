@@ -1,23 +1,27 @@
-# START HERE
-## Current visible work
-Step3 RiverWalk: second40m section added to visibleStudio92bb2bd5-f0e8-4fe0-9300-40cf8d01dfb0.
-NewWorkspace.DetroitCityPreview.RenCenRiverWalkExtension2:79anchoredparts,4Seats,2lights,planters/lowrails; first79partsection untouched.
-Original80m+two40mextensions=160m detailedpavedroute. No newroads/mapedges.
-## SAVE NEEDED
-User saved CashCity_RiverWalk_Section2.rbxl at11:12:15 on2026-10-24;670519bytes. This is the latest fullplace, with bothsections.
-Previous CashCity_Visible_Working.rbxl remains safe; useCashCity_RiverWalk_Section2.rbxl now.
-TwoUIoperationsfailed(set_value notsettable;click coordinategeometryunavailable); nofurtherautomationretries.
-Source+standaloneJSON arepreservedinGitHub; donotclaimfullplacecontainssection2untiluserconfirmsSave.
+# Map 1 release preparation — START HERE
+## Working place
+CashCity_RiverWalk_Section2.rbxl (latest saved binary; both40m extensions + original80mwalk).
+Visible Studio92bb2bd5-f0e8-4fe0-9300-40cf8d01dfb0; MCPmayreportoldAutoRecoveryname.
+## Scope and rules
+Map1only: RenaissanceCenter/RiverWalk/surroundingpark. Nootherdistricts; neverpublish.
+UserapprovedMap1roads/mapedges/neededfullrebuild. One numberedtask perrun; STOPandwaitfor"next".
+Checkpoint/placebackupGitHub BEFOREandAFTEReach task. Stopbefore40%USEDfivehour; no paidcredits/helpers.
+UI save/click failsTWICE: stopandgive manualsteps. Measureperformance; neverinventresults.
+## Task status
+1. PASS: floor-join corrections; six focusedoffline tests8.552s; native2532floor/width+2532headroomPASS.
+   Stairs-top atpoint58.5/6/.55; landing.coversassert. Approachjoins derivedfromrenderedpolygons; grade.35to.55.
+   Preservecurrent23parts (old9->10instruction referredtosupersededbaseline); no existingrepairremoved.
+   Regenerateddata/module. Savedworkingplace671785bytes, SHA82D08FA18C8C4E4C7BDDD13170584D2663B0269A04F79A1EFE59422BB4983C0C.
+2. PENDING: Map1roads/edges, sealarea/hideunfinishedwork. StartONLYafteruser"next".
+3. PENDING: walkableRenCen/RiverWalk/park connections.
+4. UNVERIFIED: fullmatchloop incl3v3minimum,4sizes,extraction/results; fixonlyblockers.
+5. UNVERIFIED: streaming + freshdesktop/low-endmobileFPS; actualhardwareevidencerequired.
+6. PENDING: allroutes/all4sizes/offlinesuite + phone/multiplayerchecklist.
+7. PENDING: rollbacktestedplace/releasechecklist/PRIVATEtestpublishinginstructions. Neverpublishwithoutapproval.
+## Evidence/limits
+Task1geometrychecksarenotactualnewavatarwalk,matchloop,multiplayer/mobile/performanceacceptance.
+BothRiverWalkextensionspreserved. MapNOTrelease-ready.
 ## Where to look
-Section2starts-11.32/.41/567.46 andends-145.66/.41/616.06.
-Camera-5/65/685 looks-79/0/593; section2selected.
-## Implementation/checks
-Reuse tools/generate_riverwalk_extension.py --section2 (actualCLI: --section 2).
-Generatedsrc/RiverWalkExtension2.lua/data/riverwalk_extension2_plan.json; Arena/futurebuild/Rojo mappingsregistered.
-ExistingRiverWalktestfile6/6PASS12.594s; native79parts/4Seats/2lights,allanchored,firstsectionobject/countpreserved.
-Avatar/device/visualacceptance pending. No newnativeharness/noFPS/fullrebuild/helper/publish.
-## Next
-UserfinishSaveAs; verifybinaryandbackuptoGitHub. Thenuservisualreview.
-No paidcredits. Stopbefore40%USEDfivehour; one task thenstop.
-Roads/mapedges/fullrebuildneedapproval.
-
+RenCenRiverAccess selected nearstairs-top; camera317/12/356 looks304/1/338.
+## Postlaunch only
+Districts,votingpolish,extrainteriors,vehicles,consoletuning.

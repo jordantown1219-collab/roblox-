@@ -70,8 +70,18 @@ def generate(root=ROOT):
             for tri in shapely.constrained_delaunay_triangles(piece).geoms:
                 triangle3(name,[[x,height(x,z),z] for x,z in list(tri.exterior.coords)[:3]],depth)
     surface('RiverAccess_DryUpperLanding',landing,lambda x,z:.55)
-    approach=rectangle(6,20,-4.5,4.5).difference(roads.union(walks))
+    # Derive the two grade joins from rendered source surfaces, not guessed t values.
+    axis=LineString([(point(0,0,0)[0],point(0,0,0)[2]),(point(80,0,0)[0],point(80,0,0)[2])])
+    def crossing_distances(surface):
+        intersection=axis.intersection(surface)
+        pieces=list(intersection.geoms) if hasattr(intersection,'geoms') else [intersection]
+        return [axis.project(Point(c)) for piece in pieces if not piece.is_empty for c in piece.coords]
+    road_start=min(t for t in crossing_distances(roads) if t>0)
+    walk_end=max(t for t in crossing_distances(walks) if t<road_start)
+    assert 0<walk_end<road_start<42,'Unexpected entrance crossing; preserve existing source'
+    approach=rectangle(max(0,walk_end-3),road_start+3,-4.5,4.5).difference(roads.union(walks))
     if approach.geom_type=='MultiPolygon':approach=next(p for p in approach.geoms if p.covers(Point(point(12,0,0)[0],point(12,0,0)[2])))
+    assert land.covers(approach) and approach.intersection(roads.union(walks)).area<1e-6,'Approach must be dry and off existing surfaces'
     def approach_height(x,z):
         p=Point(x,z);dw=p.distance(walks);dr=p.distance(roads)
         return .35+.2*dw/(dw+dr)
@@ -131,7 +141,9 @@ def generate(root=ROOT):
         p=connector_line.interpolate(distance);y=.41 if promenade_poly.covers(p) else .35 if walks.covers(p) else connector_height(p.x,p.y)
         continuation.append(sample([p.x,y,p.y],'source-aware paving / existing walk'))
     ramp=route_prefix+[sample(point(60,-6,.55),'ramp top'),sample(point(66,-6,.15),'gentle ramp'),sample(point(72,-6,-.25),'ramp bottom')]+continuation
-    stairs=route_prefix+[sample(point(60,6,.55),'stairs top')]+[sample(point(61.5+3*i,6,top),'broad tread') for i,top in enumerate((.35,.15,-.05))]+[sample(point(70.5,6,-.25),'unchanged source land fourth landing')]+continuation
+    stair_top=point(58.5,6,.55)
+    assert landing.covers(Point(stair_top[0],stair_top[2])),'Stairs-top route sample must be inside landing'
+    stairs=route_prefix+[sample(stair_top,'stairs top')]+[sample(point(61.5+3*i,6,top),'broad tread') for i,top in enumerate((.35,.15,-.05))]+[sample(point(70.5,6,-.25),'unchanged source land fourth landing')]+continuation
     # Bound native MoveTo fixture legs without changing any geometry/profile.
     def short_legs(route):
         result=[route[0]]
@@ -150,6 +162,8 @@ def generate(root=ROOT):
                         'rampRunStuds':12,'rampRiseStuds':.8,'rampGradeDegrees':math.degrees(math.atan2(.8,12)),
                         'landingPolygonStuds':{'type':'Polygon','coordinates':[list(map(list,landing.exterior.coords))]},
                         'approachPolygonStuds':{'type':'Polygon','coordinates':[list(map(list,approach.exterior.coords))]},
+                        'approachWalkEndT':walk_end,'approachRoadStartT':road_start,'approachEndHeights':[.35,.55],
+                        'stairsTopT':58.5,
                         'surfaceAuthority':'Exact horizontal JoinedWalk/JoinedRoad WedgePart and Part footprints from saved geometry.json; matches Lead native t8/9/17/18 probes',
                         'connectorExistingWalkIntervalsStuds':[[connector_line.project(Point(p.coords[0])),connector_line.project(Point(p.coords[-1]))] for p in crossing_pieces],
                         'landingDownstreamOverlapStuds':.15,

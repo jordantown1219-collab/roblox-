@@ -1,0 +1,11 @@
+test_all_new_surfaces_are_land_and_disjoint_from_roads (test_river_access.RiverAccessTests.test_all_new_surfaces_are_land_and_disjoint_from_roads) ... ok
+test_determinism_hashes_originals_and_budget (test_river_access.RiverAccessTests.test_determinism_hashes_originals_and_budget) ... ok
+test_inset_stair_sample_and_polygon_derived_approach (test_river_access.RiverAccessTests.test_inset_stair_sample_and_polygon_derived_approach) ... ok
+test_low_stair_risers_and_gentle_ramp_continuity_all_scales (test_river_access.RiverAccessTests.test_low_stair_risers_and_gentle_ramp_continuity_all_scales) ... ok
+test_rendered_source_probe_regressions_and_no_walk_overlays (test_river_access.RiverAccessTests.test_rendered_source_probe_regressions_and_no_walk_overlays) ... ok
+test_source_and_rebuilt_wintergarden_full_body_headroom (test_river_access.RiverAccessTests.test_source_and_rebuilt_wintergarden_full_body_headroom) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 8.552s
+
+OK
