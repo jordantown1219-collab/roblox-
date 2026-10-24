@@ -55,5 +55,20 @@ class RenCenWalk(unittest.TestCase):
         self.assertEqual(saved,self.plan)
         for name,digest in hashes.items(): self.assertEqual(hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest(),digest)
 
+    def test_extension_keeps_completed_walk_and_reproduces_furnishings(self):
+        from generate_riverwalk_extension import generate
+        before=hashlib.sha256((ROOT/'data/rencen_walk_plan.json').read_bytes()).hexdigest()
+        plan=generate()
+        self.assertEqual(plan,generate())
+        self.assertEqual(plan['lengthMeters'],40)
+        self.assertEqual(plan['bayCount'],2)
+        self.assertEqual(sum(bool(r.get('seat')) for r in plan['records']),4)
+        self.assertEqual(sum(bool(r.get('lamp')) for r in plan['records']),2)
+        self.assertLess(len(plan['records']),150)
+        self.assertEqual(before,hashlib.sha256((ROOT/'data/rencen_walk_plan.json').read_bytes()).hexdigest())
+        old=json.loads((ROOT/'data/rencen_walk_plan.json').read_text())
+        expected=[old['segmentMetersXZ'][-1][0]*old['studsPerMeter'],.41,old['segmentMetersXZ'][-1][1]*old['studsPerMeter']]
+        for a,b in zip(plan['routeSamples'][0]['pos'],expected):self.assertAlmostEqual(a,b)
+
 
 if __name__=='__main__': unittest.main()

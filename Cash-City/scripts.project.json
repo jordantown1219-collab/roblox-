@@ -33,6 +33,14 @@
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "$ignoreUnknownInstances": true,
+      "RiverAccess": {
+        "$path": "src/RiverAccess.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RiverAccessData": {
+        "$path": "src/RiverAccessData.lua",
+        "$ignoreUnknownInstances": true
+      },
       "RenaissanceLobby": {
         "$path": "src/RenaissanceLobby.lua",
         "$ignoreUnknownInstances": true
@@ -135,6 +143,10 @@
       },
       "SmallSignalsServer": {
         "$path": "src/SmallSignalsServer.server.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RiverWalkExtension": {
+        "$path": "src/RiverWalkExtension.lua",
         "$ignoreUnknownInstances": true
       }
     },
