@@ -1,4 +1,4 @@
-# Step 1: Renaissance Center and Wintergarden — awaiting approval
+# Step 1: Renaissance Center and Wintergarden — approved, partially implemented
 1. Reuse saved OSM/photo research; verify missing roof, entrance and interior dimensions from primary references, recording estimates explicitly.
 2. Checkpoint the place/source; preserve existing towers, podium, framing and all completed map work.
 3. Build original reusable curved-glass roof geometry fitted to the existing Wintergarden footprint, with restrained framing and simple collision.

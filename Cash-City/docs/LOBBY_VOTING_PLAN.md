@@ -1,4 +1,4 @@
-# Lobby and voting — awaiting user approval
+# Lobby and voting — paused by user scope change; do not resume
 1. Preserve current queues, carrier/loadout vote, Extraction rules, map and settings; checkpoint before implementation and integrate only through Lead.
 2. Add server-owned mode/map catalogs and lobby state with validated requests, queue counts for 3v3/4v4/5v5, balanced teams, and automatic start when full.
 3. After a proposed90-second wait, queued players may vote by strict majority to start with fewer players; require equal teams and at least one player per side. No placeholder bots.

@@ -1,11 +1,13 @@
 # Cash City checkpoint — October 23, 2026
 
-Open `SmallSignals_DetroitRiverfront_v0_14.rbxlx` in Roblox Studio. The complete generated place is included, together with source, geography, references, generators, tests, and development status. The repository root README is preserved.
+Open `SmallSignals_DetroitRiverfront_v0_14.rbxlx` in Studio. Source, map data, reference notes, tests and rebuild baseline are included. Read HANDOFF.md, latest DEVELOPMENT_STATUS.md and docs/LESSONS_LEARNED.md before work; check GitHub for newer edits before changing the local project.
 
-Start any further work by reading HANDOFF.md, the latest DEVELOPMENT_STATUS.md entries, and docs/LESSONS_LEARNED.md. Preserve individual shrinking and whole-team extraction. Do not publish without approval. Automatic resuming is not enabled. Development is paused until included allowance is verified; do not spend credits.
+Current focus is Step1 Renaissance Center/Wintergarden only. Tested curved roof, accessible atrium and server-controlled entrance are saved. Main hotel/Jefferson lobby, interior finish and visual refinement remain unfinished. No Step2stairs, RiverWalk extension, roads or map edges have been started. No game publication.
 
-Verified before this upload: 58 offline tests passed, five native preservation/integration cases passed, 83 promenade ground probes passed, and the full-size 80 m walking check passed with health 100. Final controlled Renaissance Center FPS comparison, curved Wintergarden roof, authentic interior/entry, multiplayer and device acceptance remain pending. This is a development checkpoint, not a release candidate.
+62 offline tests and11bounded native checks passed. Actual avatar geometry walks passed at1/.65/.4/.22; actual E prompt opened at full size and closed/reopened at .22. These do not establish multiplayer/device or real gate-progression acceptance. Final foreground sample60.04FPS at1169x584; read status for limitations.
 
-To rebuild with Python, install requirements-dev.txt in a local environment, then run `python build.py`. `data/base_v0_8.rbxlx` is included so the builder does not require the original author's external baseline path. Run `python -m unittest discover -s tests -p "test_*.py" -v` for the offline suite. Roblox Studio native tests remain separate from offline checks. `tools/create_rojo_project.py` regenerates model exports if needed; no bundled Rojo executable or old generated test places are committed.
+Place SHA256:85581ABDF461ED12848BA588F7C2E66DC6ADF21DFDA8D332CAF4FAC90313D94A
 
-Place SHA256: C6BFB113B75855B1D14B2B2D906B2CB94E61B0E9F59E2FE1A4C7DDA7053B81F9
+Original replaced atrium parts are recoverable in WintergardenSourceArchive and local checkpoints. Paused lobby source/tests/docs are preserved under `paused/paused_lobby_20261023T205549`; they are NOT active/build-integrated. Do not revive that work under current scope.
+
+For rebuilding, install requirements-dev.txt in a Python environment, run `python build.py`, then `python -m unittest discover -s tests -p "test_*.py" -v`. Native Studio checks remain separate. The included data/base_v0_8.rbxlx removes the external baseline-file dependency. Do not spend credits; verify included allowance before resuming.
