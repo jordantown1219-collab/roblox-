@@ -70,5 +70,17 @@ class RenCenWalk(unittest.TestCase):
         expected=[old['segmentMetersXZ'][-1][0]*old['studsPerMeter'],.41,old['segmentMetersXZ'][-1][1]*old['studsPerMeter']]
         for a,b in zip(plan['routeSamples'][0]['pos'],expected):self.assertAlmostEqual(a,b)
 
+    def test_second_section_connects_and_preserves_first(self):
+        from generate_riverwalk_extension import generate
+        path=ROOT/'src/RiverWalkExtension.lua'
+        before=hashlib.sha256(path.read_bytes()).hexdigest()
+        first=generate();second=generate(section=2)
+        self.assertEqual(first['routeSamples'][-1]['pos'],second['routeSamples'][0]['pos'])
+        self.assertNotEqual(first['id'],second['id'])
+        self.assertEqual(second['id'],'RenCenRiverWalkExtension2')
+        self.assertEqual(second['lengthMeters'],40)
+        self.assertEqual(sum(bool(r.get('seat')) for r in second['records']),4)
+        self.assertEqual(before,hashlib.sha256(path.read_bytes()).hexdigest())
+
 
 if __name__=='__main__': unittest.main()

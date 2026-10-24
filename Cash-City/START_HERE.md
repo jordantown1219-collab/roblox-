@@ -1,21 +1,22 @@
 # START HERE
-## Active saved place
-CashCity_Visible_Working.rbxl — use this latest visible working copy.
-Studio MCP92bb2bd5-f0e8-4fe0-9300-40cf8d01dfb0 may report its oldAutoRecoveryname; Windowswindowtitle confirms this saved filename.
-## Current goal
-Step3 RiverWalk: approved40m extension, awaiting uservisualreview.
-## Present in visible copy
-- RenCenRiverWalkExtension:79parts,2seatingbays,4nativeSeats,4planters/shrubs,2lights,lowbayrailings.
-- RiverWalkExtension module andArena runtimehook verified present.
-- Original80mpromenade andStep2stairs/ramp preserved.
-- FivefocusedofflineRiverWalktestsPASS; nativeassemblycountsPASS. No extensionavatar/device/FPS acceptance claim.
+## Current visible work
+Step3 RiverWalk: second40m section added to visibleStudio92bb2bd5-f0e8-4fe0-9300-40cf8d01dfb0.
+NewWorkspace.DetroitCityPreview.RenCenRiverWalkExtension2:79anchoredparts,4Seats,2lights,planters/lowrails; first79partsection untouched.
+Original80m+two40mextensions=160m detailedpavedroute. No newroads/mapedges.
+## SAVE NEEDED
+SaveAsdialog open inStudio. Usermustenter CashCity_RiverWalk_Section2.rbxl andclickSave.
+Previous CashCity_Visible_Working.rbxl remains safe butcontainsONLYfirstextension.
+TwoUIoperationsfailed(set_value notsettable;click coordinategeometryunavailable); nofurtherautomationretries.
+Source+standaloneJSON arepreservedinGitHub; donotclaimfullplacecontainssection2untiluserconfirmsSave.
 ## Where to look
-Workspace.DetroitCityPreview.RenCenRiverWalkExtension selected.
-Camera110/65/635 looks56/0/543, beyondwesternend oforiginal80mwalk.
-## Saved/resume
-Visiblebinarycopy backedup locally andGitHub; useit instead ofolderPRE-extension.rbxlx.
-Source+generator+standaloneJSON also preserved. No rebuild/publish/newgeometry this task.
-HiddenStudio983d9191 leftuntouched; do not close/kill automatically.
+Section2starts-11.32/.41/567.46 andends-145.66/.41/616.06.
+Camera-5/65/685 looks-79/0/593; section2selected.
+## Implementation/checks
+Reuse tools/generate_riverwalk_extension.py --section2 (actualCLI: --section 2).
+Generatedsrc/RiverWalkExtension2.lua/data/riverwalk_extension2_plan.json; Arena/futurebuild/Rojo mappingsregistered.
+ExistingRiverWalktestfile6/6PASS12.594s; native79parts/4Seats/2lights,allanchored,firstsectionobject/countpreserved.
+Avatar/device/visualacceptance pending. No newnativeharness/noFPS/fullrebuild/helper/publish.
 ## Next
-Userlooks at newsection andsaysgood/wrong. Roads/mapedges/fullrebuildneedapproval.
-No paidcredits; stopbefore40%USEDfivehourmeter. One task thenstop perAGENTS.
+UserfinishSaveAs; verifybinaryandbackuptoGitHub. Thenuservisualreview.
+No paidcredits. Stopbefore40%USEDfivehour; one task thenstop.
+Roads/mapedges/fullrebuildneedapproval.

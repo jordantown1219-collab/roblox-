@@ -148,6 +148,10 @@
       "RiverWalkExtension": {
         "$path": "src/RiverWalkExtension.lua",
         "$ignoreUnknownInstances": true
+      },
+      "RiverWalkExtension2": {
+        "$path": "src/RiverWalkExtension2.lua",
+        "$ignoreUnknownInstances": true
       }
     },
     "StarterPlayer": {
