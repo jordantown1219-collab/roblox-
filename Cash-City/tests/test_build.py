@@ -27,11 +27,12 @@ class BuildAcceptance(unittest.TestCase):
   root=ET.parse(P/'SmallSignals_DetroitRiverfront_v0_14.rbxlx').getroot()
   mapping={'HartPathData':'HartPathData.lua','CivicFacadeData':'CivicFacadeData.lua','CivicFacades':'CivicFacades.lua','StorefrontInterior':'StorefrontInterior.lua','BuildingInteractions':'BuildingInteractions.lua','BuildingTemplates':'BuildingTemplates.lua','CityBlockGenerator':'CityBlockGenerator.lua','WorldLoading':'WorldLoading.lua','WeaponVisuals':'WeaponVisuals.lua','RiverfrontVehicles':'RiverfrontVehicles.lua','CityDetails':'CityDetails.lua','VehicleClient':'VehicleClient.client.lua','Arena':'Arena.lua','LegacyArena':'LegacyArena.lua','CityConfig':'CityConfig.lua','InteractionRegistry':'InteractionRegistry.lua','InteractionWorkshop':'InteractionWorkshop.lua','InteractionRules':'InteractionRules.lua','SmallSignalsServer':'SmallSignalsServer.server.lua','SmallSignalsClient':'SmallSignalsClient.client.lua','SmallSignalsHUD':'SmallSignalsHUD.lua','SmallSignalsSettings':'SmallSignalsSettings.lua','RiverfrontClient':'RiverfrontClient.client.lua','Config':'Config.lua','Rules':'Rules.lua'}
   mapping.update(RenaissanceDetails='RenaissanceDetails.lua',RenaissanceData='RenaissanceData.lua')
+  mapping.update(Wintergarden='Wintergarden.lua',WintergardenData='WintergardenData.lua')
   found=set();refs=[]
   for n in root.iter('Item'):
    refs.append(n.get('referent'))
    props=n.find('Properties');name=props.findtext("string[@name='Name']") if props is not None else None
-   if name in mapping:
+   if name in mapping and n.get('class') in ('ModuleScript','Script','LocalScript'):
     self.assertEqual(props.findtext("ProtectedString[@name='Source']"),(P/'src'/mapping[name]).read_text(encoding='utf-8-sig'));found.add(name)
   self.assertEqual(found,set(mapping));self.assertEqual(len(refs),len(set(refs)))
 if __name__=='__main__':unittest.main()

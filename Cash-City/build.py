@@ -72,7 +72,7 @@ mapping={'Arena':'Arena.lua','SmallSignalsServer':'SmallSignalsServer.server.lua
 for n in root.iter('Item'):
  props=n.find('Properties');name=props.findtext("string[@name='Name']") if props is not None else None
  if name in mapping:prop(n,'ProtectedString','Source',(P/'src'/mapping[name]).read_text(encoding='utf-8-sig'))
-for name in ['LegacyArena','CityConfig','InteractionRegistry','InteractionWorkshop','InteractionRules','WorldLoading','WeaponVisuals','RiverfrontVehicles','CityDetails','CityBlockGenerator','BuildingTemplates','BuildingInteractions','StorefrontInterior','CivicFacades','CivicFacadeData','HartPathData','RenaissanceDetails','RenaissanceData']:
+for name in ['LegacyArena','CityConfig','InteractionRegistry','InteractionWorkshop','InteractionRules','WorldLoading','WeaponVisuals','RiverfrontVehicles','CityDetails','CityBlockGenerator','BuildingTemplates','BuildingInteractions','StorefrontInterior','CivicFacades','CivicFacadeData','HartPathData','RenaissanceDetails','RenaissanceData','Wintergarden','WintergardenData']:
  source(server,'ModuleScript',name,(P/'src'/f'{name}.lua').read_text(encoding='utf-8-sig'))
 source(shared,'ModuleScript','InteractionRules',(P/'src/InteractionRules.lua').read_text(encoding='utf-8-sig'))
 source(sp,'LocalScript','RiverfrontClient',(P/'src/RiverfrontClient.client.lua').read_text(encoding='utf-8-sig'))
@@ -130,6 +130,36 @@ for block in [rencen['towers'],rencen['walk']]:
  for b in block['records']:
   node=primitive(group,b);prop(node,'bool','CastShadow','false')
   if block['id']==rencen['towers']['id']:prop(node,'bool','CanQuery','false')
+from package_wintergarden import package as wintergarden_package
+winter=wintergarden_package()
+archive=item(preview,'Folder','WintergardenSourceArchive')
+marker=item(archive,'StringValue','CashCityWintergardenArchiveManifest');prop(marker,'string','Value','Wintergarden')
+for guard in winter['replacements']:
+ b=guard['record']; found=None
+ for parent in preview.iter('Item'):
+  for node in list(parent.findall('Item')):
+   props=node.find('Properties')
+   if props.findtext("string[@name='Name']")!=b['name']:continue
+   cf=props.find("CoordinateFrame[@name='CFrame']")
+   if cf is not None and all(abs(float(cf.findtext(axis))-v)<.001 for axis,v in zip('XYZ',b['pos'])):
+    found=(parent,node);break
+  if found:break
+ if not found:raise ValueError('Missing Wintergarden source '+b['name'])
+ parent,node=found
+ # Archive the original geometry and flags; no geography/source record is deleted.
+ state={key:node.find('Properties').findtext("*[@name='"+key+"']") for key in ['CanCollide','CanTouch','CanQuery','CastShadow','Transparency']}
+ state.update(index=guard['sourceIndex'])
+ saved=item(node,'StringValue','WGOriginalState');prop(saved,'string','Value',json.dumps(state))
+ for key in ['CanCollide','CanTouch','CanQuery','CastShadow']:prop(node,'bool',key,'false')
+ prop(node,'float','Transparency',1)
+ parent.remove(node);archive.append(node)
+winter_preview=item(preview,'Model',winter['id'])
+marker=item(winter_preview,'StringValue','CashCityGeneratedBlockManifest');prop(marker,'string','Value',winter['id'])
+for b in winter['records']:
+ node=primitive(winter_preview,b);prop(node,'bool','CastShadow','false')
+for index,anchor in enumerate(winter['doorAnchors']):
+ # Edit preview leaf; runtime installs the complete authoritative interaction component.
+ primitive(winter_preview,dict(name='WintergardenDoorPreview_'+str(index),size=[anchor.get('apertureWidth',anchor['width'])-.6,anchor['height']-.3,.28],pos=anchor['pos'],matrix=anchor['matrix'],color=[126,142,146],material='Metal',collide=True))
 for entry in json.loads((P/'data/detail_preview.json').read_text(encoding='utf-8')):
  group=item(preview,'Model',entry['name']);prop(group,'token','ModelStreamingMode',1)
  for b in entry['parts']:primitive(group,b)

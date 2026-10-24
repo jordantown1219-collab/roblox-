@@ -1,6 +1,6 @@
 {
   "place": "SmallSignals_DetroitRiverfront_v0_14.rbxlx",
-  "bytes": 51673522,
+  "bytes": 52030462,
   "baseSHA256": "7ad16f608329dee0189ec2e2258adc3b109ff75820a920ee12c665ea303c4287",
   "primitiveCount": 19965,
   "sectorCount": 30,
@@ -8,7 +8,7 @@
   "runtimeVerified": false,
   "fpsMeasured": false,
   "sources": {
-    "Arena.lua": "c97848f0cb96c4adff400315f32ef70517f14799afda8ecbf378ce6604504072",
+    "Arena.lua": "464897902ba478b36fd86aa3ddc54a5dc4442ffcbd12ac69e045d679a84ad08a",
     "BuildingInteractions.lua": "5ca34ea0a33619f9e1a5ad926526036f447718e4893f7050cf8771bd8889853b",
     "BuildingTemplates.lua": "8ea14f27d6a98b9516831907411aa93d765ac66c81b70d20685548c3417c6d0a",
     "CityBlockGenerator.lua": "62a203ade78f8036a806d3d4bf5257fe28750a4a8198aca685aa659f57075ab8",
@@ -22,7 +22,7 @@
     "InteractionRules.lua": "4e0a28e9bcb570569b8ecb7c7316cac95ef09243a8148aad6b522c4ff34251b8",
     "InteractionWorkshop.lua": "6b5f409c76bb0d66e053fbdb698501b61c47dd41655f36ccbf3cca88542f29c9",
     "LegacyArena.lua": "3f1081bf4b5f0ed6e89ab2293d998e23c18fb1aa16c6dd533241c4e6f440b931",
-    "RenaissanceData.lua": "2053eed001280968df628d2c9e40e7fc1abd9e6b74169c0afaee3d2993a02a31",
+    "RenaissanceData.lua": "6c3bb285b41e844f09a943d64eea10a232fcb0674c832e3fa3a10f365d3ab231",
     "RenaissanceDetails.lua": "2d6ebb71016eb1d9f58ebb157af7de2003ede57da2b171cd9f35562f29704e31",
     "RiverfrontClient.client.lua": "724a9c5773f17baac695f7c37ccdefdbad9cb97d63505eb85d07f94f1ffb075d",
     "RiverfrontVehicles.lua": "f2beeb4abc6fcaddcaa25b1b8090434530a5e94693b12047c62b9451e1ac9d91",
@@ -34,6 +34,8 @@
     "StorefrontInterior.lua": "e815bcee8c4a01888cd5775cfa36630307b74996ef5550cbd87bc39ed419fcd7",
     "VehicleClient.client.lua": "8bc98aaf8cbc1dc9dd0a8ee6067cd83f5095185f806e5520d590b7e6ee5c5b1f",
     "WeaponVisuals.lua": "42facf8805e91af25ebb6fa0d9d82c8a51d33c1b0867519993fb576fcf8b72ec",
+    "Wintergarden.lua": "4e066e08b28b0b6c4f725d35eaebe5f31419b376d047cec6b0dfb7db44ace950",
+    "WintergardenData.lua": "6a5cc6c1d0f46ebadd4b89773448ee2cf1a206bda2d3bcd342d5c048277141bb",
     "WorldLoading.lua": "d326e382f82da6cd1bd2163720f0930105b38568f11b6705acc45306485a88bd"
   }
 }

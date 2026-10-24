@@ -1,0 +1,21 @@
+{
+  "schemaVersion":1,
+  "researchedOn":"2026-10-23",
+  "scope":"Step1 Wintergarden/Renaissance Center only; no stairs, RiverWalk, roads or lobby changes",
+  "sourceOsm":419447156,
+  "identity":"Anonymous source glass building part; map-correlated Wintergarden candidate",
+  "preservedEnvelope":{"baseMeters":0,"peakMeters":30,"heightProvenance":"OSM height tag, not independently surveyed","footprint":"Existing source polygon must remain unchanged"},
+  "fitGuides":{"coordinateSystem":"Existing local projected meters","riverChordEndpoints":[[44.91793522198028,96.24683173985122],[86.50282468184177,72.7695511316595]],"riverChordApproxUnit":[0.8708,-0.4917],"inwardBarrelAxisApproxUnit":[-0.4917,-0.8708],"status":"Derived orientation guide, not architectural measurement"},
+  "roof":{"verifiedType":"Glazed barrel vault","crossSectionRecommendation":"Span river-facing width; spine extends inward toward complex","springlineMeasured":false,"estimatedSpringlineRangeMeters":[18,21],"estimatedRiseRangeMeters":[9,12],"maximumOverallPeakMeters":30,"estimateCaveat":"Artistic envelope-fitting parameters, not actual surveyed proportions; select paired rise and springline summing to30","preserveIrregularFootprint":true},
+  "materialsAndRhythm":{"supplierReported":["green-tinted insulating glazing","curved yellow-painted wide-flange beams","white suspended masts parallel to barrel spine"],"actualImageObserved":["rectangular glazing grid","pale yellow curved ribs","slender cables","white projecting mast"],"recreation":"Simplified original geometry and shared materials, no copied artwork or photo textures"},
+  "references":[
+    {"url":"https://www.som.com/projects/general-motors-renaissance-center/","type":"architect","finding":"Five-story south-facing Wintergarden; no dimensions for roof springline"},
+    {"url":"https://www.barbourproductsearch.info/general-motors-renaissance-center-wintergarden-news013416.html","date":"2009-02-28","type":"Novum supplier account","finding":"Barrel vault and structural/glazing systems"},
+    {"url":"https://www.barbourproductsearch.info/212710cs15c-file014969.jpg","visualInspection":"Actually viewed in browser this task"},
+    {"url":"https://upload.wikimedia.org/wikipedia/commons/2/2f/GM_Plaza_and_Promenade.JPG","record":"https://commons.wikimedia.org/wiki/File:GM_Plaza_and_Promenade.JPG","visualInspection":"Actually viewed preceding reference pass","dateCaveat":"Record2011-04-10; EXIF2010-08-25; historical oblique photo"},
+    {"url":"https://gmrencen.com/wp-content/uploads/2021/09/GMRENCEN-Complex-Map-Update.pdf","type":"historical operator site map","page":1},
+    {"url":"https://gmrencen.com/wp-content/uploads/2017/05/GMRENCENMap_2017-05.pdf","type":"historical operator level map","inspection":"Indexed text; no exact entrance dimensions extracted"}
+  ],
+  "unverified":["exact springline and rise","architectural roof axis azimuth","door count and widths","vestibule and current public interior routes","2026 as-built access"],
+  "forbiddenInThisBatch":["replace main lobby","change tower heights","change source footprint","add copied logos","extend RiverWalk","add stairs or roads","implement proposed redevelopment"]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "FB4722C82D548548CD8822C71996AB5925985F6DFF8D3C707997EE8D39793AE9",
+    "Path": "C:\\Users\\jorda\\AppData\\Local\\SmallSignalsProjects\\Detroit_Riverfront_v0_14\\src\\SmallSignalsServer.server.lua"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "978B8A3946A8CD5A7D566D251C799E42263F573E0F01236348BB3170F23CEA36",
+    "Path": "C:\\Users\\jorda\\AppData\\Local\\SmallSignalsProjects\\Detroit_Riverfront_v0_14\\src\\SmallSignalsClient.client.lua"
+  }
+]

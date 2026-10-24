@@ -17,7 +17,8 @@ def package():
             entry=finishes[face['sourceIndex']]
             guard['finish']={'color':entry['color'],'material':entry['material']}
         guards.append(guard)
-    return {'guards':guards,'towers':{'id':'RenCenExteriorDetails','records':[compact(r) for r in towers['details']]},
+    # Original atrium grid is superseded by the reviewed barrel-vault reconstruction.
+    return {'guards':guards,'towers':{'id':'RenCenExteriorDetails','records':[compact(r) for r in towers['details'] if r.get('osm')!=419447156]},
             'walk':{'id':walk['id'],'records':[compact(r) for r in walk['records']],'referenceStatus':walk['referenceStatus']}}
 if __name__=='__main__':
     payload=json.dumps(package(),separators=(',',':'),allow_nan=False)

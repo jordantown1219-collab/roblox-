@@ -33,6 +33,14 @@
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "$ignoreUnknownInstances": true,
+      "Wintergarden": {
+        "$path": "src/Wintergarden.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "WintergardenData": {
+        "$path": "src/WintergardenData.lua",
+        "$ignoreUnknownInstances": true
+      },
       "RenaissanceDetails": {
         "$path": "src/RenaissanceDetails.lua",
         "$ignoreUnknownInstances": true
