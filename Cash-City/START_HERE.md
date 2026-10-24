@@ -1,25 +1,19 @@
-# START HERE (keep under 40 lines; update at the end of each task)
-
+# START HERE
 ## Current goal
-Renaissance Center, Step 2: stairs/ramp from the lobby down to the RiverWalk.
-Only this. No lobby/voting (that's archived in paused/), no other maps.
-
-## Done (do not redo)
-- Step 1: Wintergarden curved roof, arrival lounge, connected hotel lobby
-  with seating, Jefferson entrance with working door. 71 offline tests passed.
-- ~60 FPS in foreground. FPS is solved (NVIDIA setting). No more FPS work.
-- Step 2 so far: low steps + gentle ramp across the road. A 23-part repair
-  of the floor joins passes 2,526 floor checks. Saved at GitHub 14e140c.
-
-## Still open, in order
-1. Studio is showing a place named "cash city" whose runtime script differs
-   from the repo. Keep ONE Studio open and compare before editing.
-2. One avatar walk test at 22% only, over the stairs and the ramp.
-3. I look at it in Studio and say good/wrong.
-
-## Needs my approval first
-RiverWalk extension, roads, map edges, anything rebuilding the whole map.
-
-## Credits
-One task per session, then stop and report. No paid credits unless I say
-"use credits for this task". Stop before any step you can't finish.
+Renaissance Center Step2: stairs/ramp to RiverWalk. No new maps/lobby/voting.
+## Done
+- Step1 exterior/roof/lounges/Jefferson entry preserved.
+- Step2 final23part floor repair preserved; native dense floor/width/headroom PASS.
+- 2026-10-24: opened saved local project; Arena includes correct RiverAccess runtime build.
+- One22% native scriptless avatar loop PASS:69waypoints, down stairs to RiverWalk and back up ramp; health100 and actual support rays passed.
+- No new geometry/source changes, rebuild, FPS work or paid-credit authorization this task.
+## Next
+- User visual review: Studio Edit, DetroitCityPreview.RenCenRiverAccess selected.
+- Camera355/45/430 looks294/0/375; river-facing Wintergarden, lowstairs/parallelramp and pavedconnector.
+- Earlier cloud cashcity Arena remains preserved separately; not overwritten/published.
+- Actualplayer/input/multiplayer/device acceptance remains pending; isolatedrig is not proof of these.
+## Approval required
+RiverWalk extension, roads, mapedges, wholemap rebuild.
+## Usage
+User limit40% USED on five-hour included meter. No paidcredits. Stop with buffer.
+One task per session, then save/report/stop per rootAGENTS.md.
