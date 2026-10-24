@@ -152,6 +152,10 @@
       "RiverWalkExtension2": {
         "$path": "src/RiverWalkExtension2.lua",
         "$ignoreUnknownInstances": true
+      },
+      "Map1Boundary": {
+        "$path": "src/Map1Boundary.lua",
+        "$ignoreUnknownInstances": true
       }
     },
     "StarterPlayer": {

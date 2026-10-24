@@ -11,8 +11,8 @@ UI save/click failsTWICE: stopandgive manualsteps. Measureperformance; neverinve
 1. PASS: floor-join corrections; six focusedoffline tests8.552s; native2532floor/width+2532headroomPASS.
    Stairs-top atpoint58.5/6/.55; landing.coversassert. Approachjoins derivedfromrenderedpolygons; grade.35to.55.
    Preservecurrent23parts (old9->10instruction referredtosupersededbaseline); no existingrepairremoved.
-   Regenerateddata/module. Savedworkingplace671785bytes, SHA82D08FA18C8C4E4C7BDDD13170584D2663B0269A04F79A1EFE59422BB4983C0C.
-2. PENDING: Map1roads/edges, sealarea/hideunfinishedwork. StartONLYafteruser"next".
+   Regenerateddata/module. Task1rollback preserved. CurrentTask2candidateplace676637bytes, SHA522C34FC71AFD39531880E71FBC6F828A7E855754184DCF5FC917727D09F225A.
+2. PARTIAL: reversible38partperimeter+12waterblockers implemented;14723exteriorparts hiddenwithrestoreattributes. Fiveofflinechecks/6nativebarrierraysPASS. Actualescape/sightline/unfinishedroof-interioracceptance UNVERIFIED. Next resumesTask2, NOTTask3.
 3. PENDING: walkableRenCen/RiverWalk/park connections.
 4. UNVERIFIED: fullmatchloop incl3v3minimum,4sizes,extraction/results; fixonlyblockers.
 5. UNVERIFIED: streaming + freshdesktop/low-endmobileFPS; actualhardwareevidencerequired.
@@ -22,6 +22,7 @@ UI save/click failsTWICE: stopandgive manualsteps. Measureperformance; neverinve
 Task1geometrychecksarenotactualnewavatarwalk,matchloop,multiplayer/mobile/performanceacceptance.
 BothRiverWalkextensionspreserved. MapNOTrelease-ready.
 ## Where to look
-RenCenRiverAccess selected nearstairs-top; camera317/12/356 looks304/1/338.
+CashCityMap1Boundary selected at northroadcutoff; camera200/100/-300 looks0/0/-520.
 ## Postlaunch only
 Districts,votingpolish,extrainteriors,vehicles,consoletuning.
+

@@ -11,6 +11,22 @@ from inspect_playable_block import analyze, civic_facades, load_sources, shape, 
 
 
 class PlayableBlockTests(unittest.TestCase):
+    def test_map1_boundary_contains_existing_gameplay_and_rejects_exits(self):
+        from lupa import LuaRuntime
+        lua=LuaRuntime()
+        boundary=lua.execute((ROOT/'src/Map1Boundary.lua').read_text())
+        lua.execute('Vector3={new=function(x,y,z) return {X=x,Y=y,Z=z} end}')
+        config=lua.execute((ROOT/'src/CityConfig.lua').read_text())
+        for category in ('Spawns','Transit','Exits'):
+            for _,position in config[category].items():self.assertTrue(boundary.contains(position),category)
+        for _,spots in config['Sockets'].items():
+            for _,position in spots.items():self.assertTrue(boundary.contains(position),'Gate outside enclosure')
+        b=boundary.limits
+        center={'X':(b.minX+b.maxX)/2,'Y':5,'Z':(b.minZ+b.maxZ)/2}
+        for key,value in [('X',b.minX-1),('X',b.maxX+1),('Z',b.minZ-1),('Z',b.maxZ+1),('Y',b.resetY-1),('Y',b.floorY+3),('Y',b.ceilingY+1)]:
+            p=dict(center);p[key]=value
+            self.assertFalse(boundary.contains(lua.table_from(p)))
+
     @classmethod
     def setUpClass(cls):
         cls.geography, cls.geometry, cls.hashes = load_sources()
