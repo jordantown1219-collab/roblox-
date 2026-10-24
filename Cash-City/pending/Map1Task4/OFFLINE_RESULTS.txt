@@ -1,0 +1,12 @@
+test_armor_assignment_and_size_are_independent_of_team_completion (test_team_rules.TeamRules.test_armor_assignment_and_size_are_independent_of_team_completion) ... ok
+test_damage_conservation_through_stage_armor (test_team_rules.TeamRules.test_damage_conservation_through_stage_armor) ... ok
+test_disconnect_grace_blocks_until_member_no_longer_required (test_team_rules.TeamRules.test_disconnect_grace_blocks_until_member_no_longer_required) ... ok
+test_every_required_teammate_must_finish (test_team_rules.TeamRules.test_every_required_teammate_must_finish) ... ok
+test_gate_sequence_and_team_phase_guards (test_team_rules.TeamRules.test_gate_sequence_and_team_phase_guards) ... ok
+test_launch_map_mode_and_minimum_team_size (test_team_rules.TeamRules.test_launch_map_mode_and_minimum_team_size) ... ok
+test_stage_tuning_and_all_weapon_damage (test_team_rules.TeamRules.test_stage_tuning_and_all_weapon_damage) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.012s
+
+OK

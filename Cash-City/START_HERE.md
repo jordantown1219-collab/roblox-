@@ -14,7 +14,7 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   Fixed boundary cropping: limitsX[-1850,750],Z[-650,1250];1098 previously screened preview parts restored.
   12 focused offline tests;87 native floor samples;22% avatar completed ALL87 waypoints,health100/supportPASS.
   573 updated barrier rays:0 misses. Park-facing desktop sample59.99FPS,p9518.48ms; not mobile/multiplayer/improvement proof.
-4 NEXT: fullmatchloop incl3v3 minimum,mode/team/map/shrink/extraction/results; fix only blockers. Start only after"next".
+4 PARTIAL: runtime test NOT launched;89%budgetstop. Candidate archivedpending/Map1Task4; live/diskbaseline restored,QAfixtures removed. ResumeTask4afterallowance reset; do notadvanceTask5.
 5 PENDING: streaming + desktop/low-end mobile performance acceptance.
 6 PENDING: all routes/all4sizes/full offline suite + phone/multiplayer checklist.
 7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.
@@ -27,3 +27,4 @@ PNG request was canceled by user after renderer failed twice; no PNG produced. D
 Camera atpark join:target-1480/1/1120,eye-1415/36/1195;selectionclear.
 ## Postlaunch only
 Newdistricts,votingpolish,extra interiors,vehicles,console tuning.
+
