@@ -14,7 +14,7 @@ Status: PARTIAL. Actual solo flow passed; real 3v3 blocked by RAM. No publicatio
 ## Limits
 - Official multiplayer run aborted at2clients/446MBfreeRAM before6players.
 - No 3v3, whole-team extraction, mobile/tablet/controller or FPS acceptance from this run.
-- Manual save confirmed2026-10-24 17:20:52:696633bytes; SHA256 AE6AA260681DEAB439CF809D4FE6F3FA44FC0F072842355B70E8795418625E68. LiveEdit production sources match tested version; no separate disk-reload test.
+- Manual save confirmed2026-10-24 17:20:52:696633bytes; SHA256 AE6AA260681DEAB439CF809D4FE6F3FA44FC0F072842355B70E8795418625E68. Later reopened same binary: all3production sources match tested version; boundary/park modules and preview present; noarmedQAfixtures.
 - No claim the entire Output panel is error-free; unrelated visible errors were not attributed.
 
 ## Next Studio checks

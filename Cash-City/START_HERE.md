@@ -1,6 +1,6 @@
 # Map 1 release preparation — START HERE
 Working place: CashCity_RiverWalk_Section2.rbxl. Never publish.
-Visible Studio92bb2bd5-f0e8-4fe0-9300-40cf8d01dfb0 (MCP may report old AutoRecovery name).
+Visible Studioa64160b7-ad85-49c6-9527-8b5ef0ff4fd8, CashCity_RiverWalk_Section2.rbxl, reopened from verified saved binary.
 ## Rules
 Map1 only: RenCen, RiverWalk, surrounding park. No other districts/helpers/paid credits.
 One numbered task per run; save/checkpoint GitHub before and after; stop for "next".
@@ -19,12 +19,14 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   LiveEdit/source has verified CASH CITY/Extraction/Detroit header metadata;7team-rule tests+panel regressionPASS.
   SAVE VERIFIED: user manually saved2026-10-24 17:20:52;696633bytes.
   SHA256 AE6AA260681DEAB439CF809D4FE6F3FA44FC0F072842355B70E8795418625E68.
-  LiveEdit three production sources still match tested header/metadata. No separate disk-reload test.
+  Actual disk-reload now PASS: all3production sources equal tested version; boundary/park modules and preview present; noarmedQAfixtures.
   Canonical savedplace plus immutable manual-save checkpoint backed up; save blocker cleared.
   Playstopped,observerremoved,noarmedQAfixtures. See docs/Map1_Task4_ACCEPTANCE.md and bothTask4JSONresults.
   Do notadvanceTask5 or relaunch6clients under unchangedRAMconditions.
   Latest recheck2026-10-24 18:15:4.4GBfree, essentially unchanged;0newclients launched.
   Waitingforuser tofreeRAM/choosehowtoproceed. Resource evidence:docs/Map1_Task4_RESOURCE_RECHECK.json.
+  User chose stayTask4/freememory. Latestready:7183MBfree before reopening,5140-5390MBafter;6clienttest notlaunched.
+  Savedplace reloaded/connected;3v3stillBLOCKED. NewStudioIDabove supersedes92bb. See docs/Map1_Task4_REOPEN_CHECK.json.
   Output error traced to preserved Workspace.FlayoDev Admin Messages, missingStarterGui.Messages; presetadminallowlist requiresreview beforeactivation.
 5 PENDING: streaming + desktop/low-end mobile performance acceptance.
 6 PENDING: all routes/all4sizes/full offline suite + phone/multiplayer checklist.
