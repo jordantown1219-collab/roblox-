@@ -2,7 +2,7 @@
 import json,hashlib,math
 from pathlib import Path
 from generate_walk_route import collider_polygon
-from generate_river_access import surface_polygon
+from generate_river_access import surface_polygon,rendered_surfaces
 from generate_riverwalk_extension import TAIL
 from generate_wintergarden import sub,dot,cross,norm
 import shapely
@@ -34,28 +34,39 @@ def generate(root=ROOT):
             if r['name'] in ('RenCenContinuousPromenadeCollision','Extension_PaleConcreteWalk'):old_surfaces.append(surface_polygon(r))
     old=unary_union(old_surfaces)
     paving=shapely.affinity.scale(corridor,xfact=s,yfact=s,origin=(0,0)).difference(old)
-    records=[]
-    pieces=list(paving.geoms) if paving.geom_type=='MultiPolygon' else [paving]
-    for piece in pieces:
-        if piece.is_empty:continue
-        for tri in shapely.constrained_delaunay_triangles(piece).geoms:
-            a,b,c=[[x,.35,z] for x,z in list(tri.exterior.coords)[:3]]
-            ab,ac,bc=sub(b,a),sub(c,a),sub(c,b)
-            if dot(ab,ab)>dot(ac,ac) and dot(ab,ab)>dot(bc,bc):c,a=a,c
-            elif dot(ac,ac)>dot(bc,bc) and dot(ac,ac)>dot(ab,ab):a,b=b,a
-            ab,ac,bc=sub(b,a),sub(c,a),sub(c,b)
-            if dot(cross(ac,ab),cross(ac,ab))<1e-10:continue
-            normal=norm(cross(ac,ab));back=norm(bc);up=norm(cross(bc,normal));width=abs(dot(ab,up))
-            for other,v,flip in [(b,ab,1),(c,ac,-1)]:
-                length=abs(dot(v,back))
-                if min(width,length)<.001:continue
-                matrix=[normal[0]*flip,up[0],back[0]*flip,normal[1]*flip,up[1],back[1]*flip,normal[2]*flip,up[2],back[2]*flip]
-                records.append(dict(name='Map1_ContinuousParkWalk',cls='WedgePart',size=[.12,width,length],pos=[(a[i]+other[i])/2 for i in range(3)],matrix=matrix,material='Concrete',color=[174,171,161],collide=True))
-    assert len(records)<250 and all(0<min(r['size']) and max(r['size'])<=2048 for r in records)
     samples=[]
     distances=sorted(set([0,route.length]+list(range(5,math.ceil(route.length),5))))
     for d in distances:
         p=route.interpolate(d);samples.append({'pos':[p.x*s,.41,p.y*s],'floorY':.41,'width':2.5*s,'clearHeight':8})
+    # Humanoids move along chords between sampled targets. At two bends those
+    # chords cut the inside corner of the mapped centerline's buffered paving.
+    # Append only missing core-width support; leave all existing records intact.
+    rendered=rendered_surfaces(geometry)
+    movement=LineString([(p['pos'][0],p['pos'][2]) for p in samples]).buffer(2.6,cap_style=2,join_style=2)
+    patches=movement.difference(unary_union([paving,old,rendered['JoinedWalk']]))
+    patch_meters=shapely.affinity.scale(patches,xfact=1/s,yfact=1/s,origin=(0,0))
+    assert land.covers(patch_meters),'Corner repair would leave land'
+    assert patches.intersection(rendered['JoinedRoad']).area<1e-6,'Corner repair overlaps a road'
+    assert not patch_meters.intersects(forbidden),'Corner repair meets standing geometry'
+    records=[]
+    for name,area in [('Map1_ContinuousParkWalk',paving),('Map1_ParkCornerInfill',patches)]:
+        pieces=list(area.geoms) if area.geom_type=='MultiPolygon' else [area]
+        for piece in pieces:
+            if piece.is_empty or piece.area<1e-8:continue
+            for tri in shapely.constrained_delaunay_triangles(piece).geoms:
+                a,b,c=[[x,.35,z] for x,z in list(tri.exterior.coords)[:3]]
+                ab,ac,bc=sub(b,a),sub(c,a),sub(c,b)
+                if dot(ab,ab)>dot(ac,ac) and dot(ab,ab)>dot(bc,bc):c,a=a,c
+                elif dot(ac,ac)>dot(bc,bc) and dot(ac,ac)>dot(ab,ab):a,b=b,a
+                ab,ac,bc=sub(b,a),sub(c,a),sub(c,b)
+                if dot(cross(ac,ab),cross(ac,ab))<1e-10:continue
+                normal=norm(cross(ac,ab));back=norm(bc);up=norm(cross(bc,normal));width=abs(dot(ab,up))
+                for other,v,flip in [(b,ab,1),(c,ac,-1)]:
+                    length=abs(dot(v,back))
+                    if min(width,length)<.001:continue
+                    matrix=[normal[0]*flip,up[0],back[0]*flip,normal[1]*flip,up[1],back[1]*flip,normal[2]*flip,up[2],back[2]*flip]
+                    records.append(dict(name=name,cls='WedgePart',size=[.12,width,length],pos=[(a[i]+other[i])/2 for i in range(3)],matrix=matrix,material='Concrete',color=[174,171,161],collide=True))
+    assert len(records)<250 and all(0<min(r['size']) and max(r['size'])<=2048 for r in records)
     return dict(id='Map1ParkConnection',records=records,routeSamples=samples,lengthMeters=route.length,
                 mappedRiverMeters=river_route.length,sourceOSM=69706033,destinationOSM=hart['sourceOSM'],
                 classification='Existing mapped RiverWalk plus original short park join; flat grade estimated',

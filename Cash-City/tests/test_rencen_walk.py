@@ -85,6 +85,7 @@ class RenCenWalk(unittest.TestCase):
         for n,digest in before.items():self.assertEqual(digest,hashlib.sha256((ROOT/'data'/n).read_bytes()).hexdigest())
 
     def test_second_section_connects_and_preserves_first(self):
+        # Existing completed sections remain independent of the park repair.
         from generate_riverwalk_extension import generate
         path=ROOT/'src/RiverWalkExtension.lua'
         before=hashlib.sha256(path.read_bytes()).hexdigest()
@@ -95,6 +96,19 @@ class RenCenWalk(unittest.TestCase):
         self.assertEqual(second['lengthMeters'],40)
         self.assertEqual(sum(bool(r.get('seat')) for r in second['records']),4)
         self.assertEqual(before,hashlib.sha256(path.read_bytes()).hexdigest())
+
+    def test_park_native_width_samples_have_real_paving_support(self):
+        from generate_park_connection import generate
+        from generate_river_access import surface_polygon
+        from shapely.geometry import Point
+        from shapely.ops import unary_union
+        plan=generate()
+        covered=unary_union([surface_polygon(r) for r in plan['records']])
+        failures=json.loads((ROOT/'docs/Map1_Task6_PARK_WALKS.json').read_text())['denseSupport']['failures']
+        self.assertEqual(len(failures),12)
+        for sample in failures:
+            x,_,z=sample['pos']
+            self.assertTrue(covered.buffer(1e-5).covers(Point(x,z)),sample['label'])
 
 
 if __name__=='__main__': unittest.main()
