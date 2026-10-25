@@ -40,7 +40,7 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   OlderXMLsources synced; legacyserverInteractionRules preserved as ServerStorage.ArchivedInteractionRules_ServerCopy_RF09_5. Physicalgeometry unchanged41216nodes.
   WorkingcanonicalrbxlUNCHANGED; XMLstaticpreview still not reconciled withsavedworkingmap. Olderfailedcandidate retainedas history pending/Map1Task6.
   Parkcornerrepair TESTSPASS: preserved68records+4infillwedges=72. Editor+freshRuntime9048floor/width+9048headroom checks each0fail;22%retest87/87PASS;83offlinePASS.
-  MANUALSAVE PENDING: liveEdit/source updated but canonicaldiskbinary stilloldAE6AA... User asked File > Save toFileAs > CashCity_RiverWalk_Section2.rbxl. Verify/saveGitHubbinary afterconfirmation; do notcloseStudio unsaved.
+  SAVE VERIFIED: repairedcanonical697054bytes,22:54:27,SHA256 ACB7CAFF81360E07A33B0176FD28DA287C13D91687D105446EF1CAAC7945340D; GitHubbinary/checkpointbackedup. No independentdiskreloadthissave.
   Othernative routes/phone/private3v3 stillPENDING. See docs/Map1_Task6_PARK_NOTES.md and Map1_Task6_PARK_WALKS.json.
   Latestnativeattempt INVALID:100%ramp starts inclosedWintergardendoor; clientopeningattempt ranbeforedoormodelstreamed. Stoppedafter2failures; no geometrydefectconfirmed.
   CleanupPASS:template/rigremoved,camerarestored,Playstopped. NextprefetchandWaitForChilddoor,normalpromptOpenverifiedBEFOREexistingwalkfixture. See docs/Map1_Task6_NATIVE_ATTEMPT.json.

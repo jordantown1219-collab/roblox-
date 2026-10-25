@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "status": "TESTS_PASS_MANUAL_SAVE_PENDING",
+  "status": "TESTS_PASS_MANUAL_SAVE_VERIFIED",
   "beforeCommit": "5810255",
   "originalRecordsPreserved": 68,
   "newCornerWedges": 4,
@@ -847,6 +847,6 @@
     "markerRemoved": true,
     "playStopped": true
   },
-  "save": "Awaiting user manual local save; no automatic UI save retries",
+  "save": "Manualsaveverified697054bytes,2026-10-24T22:54:27America/New_York,SHA256 ACB7CAFF81360E07A33B0176FD28DA287C13D91687D105446EF1CAAC7945340D",
   "otherRoutesPhonePrivate3v3": "PENDING"
 }
