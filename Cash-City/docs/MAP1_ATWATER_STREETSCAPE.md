@@ -1,0 +1,11 @@
+# Atwater junction signs and lighting - 2026-10-25
+
+Added14 static detail parts: two street-name posts with four green blades, plus two complete lamps (base/pole/arm/lit head). Eight SurfaceGuis make all four blades readable on both sides. Real road names ATWATER ST and BEAUBIEN ST come from the source ways; no business branding or logos. Original placements and fixtures are not surveyed replicas.
+
+Four anchor points selected deterministically from source sidewalk polygons around the existing junction. Bases have at least1stud sidewalk containment and3stud clearance from the road polygon; building footprints excluded and anchors separated by at least14studs. Native four ground rays hit JoinedWalk at declared height and four upward clearance rays found no obstacles. All14 new parts anchored/noncolliding/no touch/query/shadow. Two PointLights enabled, brightness.45/range28/shadowsfalse; no per-frame scripts.
+
+Original23 paint records and native paint parts preserved exactly (name/pose/size/color/collision). Native full generator build produced37parts,8two-sided labels,2lights; repeated finish pass retained those counts, confirming decoration idempotence. Existing all-source Lua syntax test PASS0.432s; deterministic saved-plan comparison PASS. These are Edit construction checks, not actual device/multiplayer/nighttime visual/FPS acceptance. No performance improvement claim.
+
+Visible selection: Workspace.DetroitCityPreview.Map1AtwaterCrossing.JunctionFurniture. Camera framed entire junction. Source and rollback copies in work/agent_checkpoints/atwater_streetscape_20261025 and ServerStorage.AtwaterBeforeStreetscape_20261025 / RoadMarkingsBeforeFurniture_20261025. Before saved-baseline checkpoint06e8590. Previous roof/tower/RiverWalk retained.
+
+SAVE PENDING for both crossing and furniture: canonical local .rbxl remains EA30D895369A5302A93EEC4B8AC3A75504F27F6A3D12690014DC5C251C5F62CE (tower save). Active Studio is cloud-linked downtown think e2c0b334-5bfc-46b8-b9b8-07104a1fce89. Use File > Save to File As > project CashCity_RiverWalk_Section2.rbxl before claiming a new local binary backup. Source/data/docs backed up separately. Older XML still stale. No publishing, helpers, paid-credit fallback or interaction tests.

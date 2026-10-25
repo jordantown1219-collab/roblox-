@@ -74,10 +74,60 @@ def generate(root=ROOT):
         add('ApproachStopLine_'+str(f['osm']),crossing+2.8,-stop_width/4,stop_width/2-.3,.35)
         arms.append(dict(osm=f['osm'],name=f['name'],crosswalkStripes=count,widthMeters=f['width'],paintableWidthMeters=width,crossingDistanceMeters=crossing))
     assert len(records)<=32
+    # Small, original streetscape set on source sidewalk corners, off the roadway.
+    center=Point(junction.x*scale,junction.y*scale)
+    walks=unary_union([surface_polygon(r) for r in geometry if r['name']=='JoinedWalk' and surface_polygon(r).distance(center)<90])
+    buildings=unary_union([shape(f['geometry']) for f in geography['features'] if f['kind']=='building'])
+    candidates=[]
+    for radius in (25,32,40,48,56):
+        for degrees in range(0,360,10):
+            angle=math.radians(degrees);point=Point(center.x+math.cos(angle)*radius,center.y+math.sin(angle)*radius)
+            if walks.covers(point.buffer(1)) and road_union.distance(point)>3 and not buildings.intersects(Point(point.x/scale,point.y/scale).buffer(.6)):
+                candidates.append((degrees,radius,point))
+    anchors=[]
+    identity=[1,0,0,0,1,0,0,0,1]
+    for index,wanted in enumerate((45,135,225,315)):
+        available=[c for c in candidates if all(c[2].distance(p)>14 for p in anchors)]
+        assert available,'Insufficient clear sidewalk corners'
+        degrees,radius,point=min(available,key=lambda c:(abs((c[0]-wanted+180)%360-180),c[1]))
+        anchors.append(point)
+        support=[r for r in geometry if r['name']=='JoinedWalk' and surface_polygon(r).covers(point)]
+        assert support
+        ground=max(r['pos'][1]+sum(abs(r['matrix'][3+i])*r['size'][i]/2 for i in range(3)) for r in support)
+        def prop(label,offset,size,color,material='Metal',matrix=identity,**extra):
+            records.append(dict(name='Junction_'+str(index)+'_'+label,size=size,pos=[point.x+offset[0],ground+offset[1],point.y+offset[2]],matrix=matrix,color=color,material=material,collide=False,groundTop=ground,anchor=[point.x,point.y],**extra))
+        if index%2==0:
+            prop('SignPost',[0,6.5,0],[.22,13,.22],[122,133,129])
+            east=selected[1]['geometry']['coordinates'];dx,dz=east[1][0]-east[0][0],east[1][1]-east[0][1];length=math.hypot(dx,dz);fx,fz=dx/length,dz/length
+            prop('AtwaterBlade',[0,12.7,0],[9,1.1,.14],[34,78,61],matrix=[fx,0,-fz,0,1,0,fz,0,fx],text='ATWATER ST')
+            prop('BeaubienBlade',[0,11.4,0],[9,1.1,.14],[34,78,61],matrix=[-fz,0,-fx,0,1,0,fx,0,-fz],text='BEAUBIEN ST')
+        else:
+            dx,dz=center.x-point.x,center.y-point.y;length=math.hypot(dx,dz);fx,fz=dx/length,dz/length
+            prop('LampBase',[0,.2,0],[1.4,.4,1.4],[65,73,70])
+            prop('LampPole',[0,8.4,0],[.25,16,.25],[141,150,146])
+            prop('LampArm',[fx*1.8,16.3,fz*1.8],[3.6,.22,.22],[141,150,146],matrix=[fx,0,-fz,0,1,0,fz,0,fx])
+            prop('LampHead',[fx*3.6,16.15,fz*3.6],[1.7,.3,1.1],[250,235,205],'Neon',light=True)
+    assert len(records)<=48
     return dict(id='Map1AtwaterCrossing',records=records,arms=arms,junctionStuds=[junction.x*scale,junction.y*scale],classification='Mapped junction; original paint spacing and assumed two-way approach lanes; not surveyed',sourceHashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
 
 TAIL='''
 local Markings={}
+function Markings.finish(model)
+ local byName={} for _,r in ipairs(plan.records) do byName[r.name]=r end
+ for _,p in ipairs(model:GetDescendants()) do if p:IsA('BasePart') then
+  local r=byName[p.Name]
+  if r and r.text then for _,face in ipairs({Enum.NormalId.Front,Enum.NormalId.Back}) do
+   local name='StreetName'..face.Name
+   if not p:FindFirstChild(name) then
+    local gui=Instance.new('SurfaceGui');gui.Name=name;gui.Face=face;gui.SizingMode=Enum.SurfaceGuiSizingMode.PixelsPerStud;gui.PixelsPerStud=50;gui.Parent=p
+    local label=Instance.new('TextLabel');label.Size=UDim2.fromScale(1,1);label.BackgroundTransparency=1;label.Text=r.text;label.TextScaled=true;label.Font=Enum.Font.GothamMedium;label.TextColor3=Color3.fromRGB(240,242,232);label.Parent=gui
+   end
+  end end
+  if r and r.light and not p:FindFirstChild('StreetLight') then
+   local light=Instance.new('PointLight');light.Name='StreetLight';light.Brightness=.45;light.Range=28;light.Color=Color3.fromRGB(255,235,200);light.Shadows=false;light.Parent=p
+  end
+ end end
+end
 function Markings.build(root)
  local model,stats=require(script.Parent.CityBlockGenerator).build(root,plan,nil,80)
  model.ModelStreamingMode=Enum.ModelStreamingMode.Atomic
@@ -85,6 +135,7 @@ function Markings.build(root)
  for _,p in ipairs(model:GetDescendants()) do if p:IsA('BasePart') then
   p.Anchored=true;p.CanCollide=false;p.CanTouch=false;p.CanQuery=false;p.CastShadow=false
  end end
+ Markings.finish(model)
  return model,stats
 end
 return Markings

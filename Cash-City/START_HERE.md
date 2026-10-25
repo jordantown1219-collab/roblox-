@@ -53,3 +53,5 @@ LATEST: Roof+RiverWalkbeds saved/backedup a1af498; canonicalC0FA9161/708037bytes
 LATEST: tower detail SAVE VERIFIED EA30D895/711811bytes;canonicalbackedup660aa79. Atwater/Beaubien marking task BLOCKED after2generatorclearancefailures;zero livechanges. Candidate quarantinedpending/Map1AtwaterCrossing;readREADME before anyretry. Nextreviewjunctiongeometry. No doorwork.
 
 LATEST: Atwater crossing RESOLVED/BUILT23paintparts;207nativepavementchecks+7offline testsPASS. Selected/framedinEdit. ActiveStudio e2c0b334-5bfc-46b8-b9b8-07104a1fce89 downtownthink,place82361696555229;old6bebclosed. SAVE TO FILE AS canonical .rbxl required before newbinarybackup;CtrlScloudplace maynotupdatelocalEA30. Evidence docs/MAP1_ATWATER_CROSSING.md. No publish. Previouspendingcandidatehistorical;activegeneratorunder tools.
+
+LATEST: junction signs/lights BUILT14newparts;23paintpartspreserved. Nativefactory37parts/8two-sidedlabels/2lights+idempotencePASS,8placementraysPASS,Lua syntaxPASS. JunctionFurnitureselected/framed. Roadpaint+furniturelocalSAVE PENDING (canonicalEA30);useFileSaveToFileAs. Evidence docs/MAP1_ATWATER_STREETSCAPE.md. No newFPS/device/visualacceptanceclaim.
