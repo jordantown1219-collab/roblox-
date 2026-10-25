@@ -1,6 +1,6 @@
 # Map 1 release preparation — START HERE
 Working place: CashCity_RiverWalk_Section2.rbxl. Never publish.
-Visible Studioa64160b7-ad85-49c6-9527-8b5ef0ff4fd8, CashCity_RiverWalk_Section2.rbxl, reopened from verified saved binary.
+Visible Studio6beb19f8-2e46-4f3c-b2de-3c3387505131, CashCity_RiverWalk_Section2.rbxl, reopened after included allowance reset.
 ## Rules
 Map1 only: RenCen, RiverWalk, surrounding park. No other districts/helpers/paid credits.
 One numbered task per run; save/checkpoint GitHub before and after; stop for "next".
@@ -32,6 +32,9 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   Engine memory2904->2799MB;6128loadedparts/44unanchored. Notmobile/multiplayer/gainproof. No rendering/codechanges justified by this sample.
   Other streaming controls nonscriptable/unreadable here; manualProperties review pending. Low-endmobileFPS UNVERIFIED.
   Playstopped,camera/renderlistener restored/removed. Evidence docs/Map1_Task5_DESKTOP.json and Map1_Task5_NOTES.md.
+  UIreview blocked: click failed coordinategeometry, Tabhadnoeffect; stoppedthisUIflow at2failedinputs.
+  Properties filterset successfully toStreaming; Workspace selected. Nativeinspect returnedemptyproperties.
+  Read docs/Map1_Task5_MANUAL_CHECKLIST.md. SettingsvaluesandactualphoneFPSrequirehumanverification; no settingschanged.
 6 PENDING: all routes/all4sizes/full offline suite + phone/multiplayer checklist.
 7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.
 ## Evidence and remaining work
