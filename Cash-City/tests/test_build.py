@@ -31,11 +31,20 @@ class BuildAcceptance(unittest.TestCase):
   mapping.update(RiverAccess='RiverAccess.lua',RiverAccessData='RiverAccessData.lua')
   mapping.update(RenaissanceLobby='RenaissanceLobby.lua',RenaissanceLobbyData='RenaissanceLobbyData.lua')
   mapping.update(ArrivalLounge='ArrivalLounge.lua',ArrivalLoungeData='ArrivalLoungeData.lua')
-  found=set();refs=[]
+  mapping.update(RiverWalkExtension='RiverWalkExtension.lua',RiverWalkExtension2='RiverWalkExtension2.lua',Map1Boundary='Map1Boundary.lua',ParkConnection='ParkConnection.lua')
+  found=set();refs=[];counts={name:0 for name in mapping}
+  parents={child:parent for parent in root.iter() for child in parent}
+  client_names={'SmallSignalsClient','SmallSignalsHUD','SmallSignalsSettings','RiverfrontClient','VehicleClient'}
+  shared_names={'Config','Rules','InteractionRules'}
   for n in root.iter('Item'):
    refs.append(n.get('referent'))
    props=n.find('Properties');name=props.findtext("string[@name='Name']") if props is not None else None
    if name in mapping and n.get('class') in ('ModuleScript','Script','LocalScript'):
-    self.assertEqual(props.findtext("ProtectedString[@name='Source']"),(P/'src'/mapping[name]).read_text(encoding='utf-8-sig'));found.add(name)
+    self.assertEqual(props.findtext("ProtectedString[@name='Source']"),(P/'src'/mapping[name]).read_text(encoding='utf-8-sig'));found.add(name);counts[name]+=1
+    parent=parents[n]
+    if name in client_names:self.assertEqual(parent.get('class'),'StarterPlayerScripts',name)
+    elif name in shared_names:self.assertEqual(parent.findtext("Properties/string[@name='Name']"),'SmallSignals',name)
+    else:self.assertEqual(parent.get('class'),'ServerScriptService',name)
   self.assertEqual(found,set(mapping));self.assertEqual(len(refs),len(set(refs)))
+  self.assertEqual(counts,{name:1 for name in mapping},'Each production source must occur once')
 if __name__=='__main__':unittest.main()

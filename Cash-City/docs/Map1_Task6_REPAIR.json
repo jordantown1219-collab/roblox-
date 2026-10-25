@@ -1,0 +1,51 @@
+{
+  "changedSources": [
+    "Arena",
+    "Config",
+    "Map1Boundary",
+    "ParkConnection",
+    "RiverAccessData",
+    "RiverWalkExtension",
+    "RiverWalkExtension2",
+    "SmallSignalsClient",
+    "SmallSignalsServer"
+  ],
+  "addedSources": [
+    "Map1Boundary",
+    "ParkConnection",
+    "RiverWalkExtension",
+    "RiverWalkExtension2"
+  ],
+  "geometryBefore": {
+    "count": 41216,
+    "sha256": "21a6124c3055cd2e41c53e5e30c389959fafd685ea1d4cbb1781dddb0fdbfd99"
+  },
+  "geometryAfter": {
+    "count": 41216,
+    "sha256": "21a6124c3055cd2e41c53e5e30c389959fafd685ea1d4cbb1781dddb0fdbfd99"
+  },
+  "sourceOnlySync": true,
+  "canonicalBinaryUnchanged": true,
+  "exportSHA256": "249bbd618b36f00487a8fe48344cf372ca4291746f29c22c5489e67578b9d83c",
+  "removedOwnCandidateDuplicates": [
+    "SmallSignalsHUD",
+    "SmallSignalsSettings"
+  ],
+  "legacyArchived": "ServerStorage.ArchivedInteractionRules_ServerCopy_RF09_5",
+  "legacySourceSHA256": "be7a3f9d12d1e3fca50554e81afd281375b0a137f4963e58f3d8ff2ca7879d77",
+  "status": "OFFLINE_PASS_NATIVE_ACCEPTANCE_PENDING",
+  "fullSuite": {
+    "tests": 82,
+    "passed": 82,
+    "seconds": 98.817
+  },
+  "focusedBuild": {
+    "tests": 4,
+    "passed": 4,
+    "seconds": 5.495
+  },
+  "staticPreviewReconciled": false,
+  "canonicalPlaceSHA256": "ae6aa260681deab439cf809d4fe6f3fa44fc0f072842355b70e8795418625e68",
+  "normalizedLf": true,
+  "xmlSemanticFingerprintBeforeAndAfter": "7ec4f74178395e5bd9a643b2ca509945af701ed40771f49bcfde6a47610fe1d5"
+}

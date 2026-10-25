@@ -35,9 +35,10 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   UIreview blocked: click failed coordinategeometry, Tabhadnoeffect; stoppedthisUIflow at2failedinputs.
   Properties filterset successfully toStreaming; Workspace selected. Nativeinspect returnedemptyproperties.
   Read docs/Map1_Task5_MANUAL_CHECKLIST.md. SettingsvaluesandactualphoneFPSrequirehumanverification; no settingschanged.
-6 BLOCKED/PARTIAL: baseline fullsuite81/82PASS; staleXMLsourceembedding failed. Candidate source-sync reached82/82, then strongercontainercheck found legacyInteractionRules underServerScriptService instead ofsharedpackage.
-  Stoppedrepair atsecondtestfailure perAGENTS. Baselineexport/test restoredbyhash; canonicalrbxlUNCHANGED. Candidate+strongerguard archivedpending/Map1Task6,NOTintegrated.
-  No newnativewalk/phone/3v3acceptance. See docs/Map1_Task6_OFFLINE_QA.md and Map1_Task6_CHECKLIST.md.
+6 PARTIAL: offline repair PASS. Full82/82tests98.817s; strictbuild4/4tests5.495s. Sourceembedding covers39productionfiles exactlyonce/correctcontainers.
+  OlderXMLsources synced; legacyserverInteractionRules preserved as ServerStorage.ArchivedInteractionRules_ServerCopy_RF09_5. Physicalgeometry unchanged41216nodes.
+  WorkingcanonicalrbxlUNCHANGED; XMLstaticpreview still not reconciled withsavedworkingmap. Olderfailedcandidate retainedas history pending/Map1Task6.
+  All4size nativewalks/phone/private3v3 stillPENDING. See docs/Map1_Task6_OFFLINE_QA.md, Map1_Task6_REPAIR.json and Map1_Task6_CHECKLIST.md.
 7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.
 ## Evidence and remaining work
 See docs/Map1_Task3_ACCEPTANCE.md and Map1_Task3_WALK_RESULTS.json.

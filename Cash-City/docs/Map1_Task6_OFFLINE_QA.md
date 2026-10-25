@@ -1,4 +1,15 @@
-# Task6 offline QA — BLOCKED / PARTIAL
+# Task6 offline QA — PASS / overall Task6 PARTIAL
+
+## Latest approved continuation
+User Next authorized resuming the stopped repair. Before-run remote7346f0d matched clean checkout; original before-place checkpoint66be7aa remains unchanged.
+Confirmed two InteractionRules modules in older export: correct sharedFolder copy RF09_27 and legacyServerScriptService copy RF09_5.
+Preserved legacy module, source and referent under ServerStorage with archive name ArchivedInteractionRules_ServerCopy_RF09_5; shared production copy retained.
+Strict existing build test now checks exact source equality, all39production files, uniqueness and correct server/client/shared containers.
+Focused4/4PASS5.495s; finalfull82/82PASS98.817s. Actual suite log and source-sync preservation report saved.
+Physicalgeometry fingerprint unchanged41216nodes. No geometry regeneration or liveStudio change. Canonical working binary unchanged.
+Updated XML export is source-consistent; its static preview is NOT newly reconciled with canonical working-map geometry. Do not replace working .rbxl with this older preview.
+Buildmanifest source hashes/bytes refreshed with sourceSyncOnly=true and staticPreviewReconciled=false. Prior failed candidate remains archived as historical evidence.
+The failure/rollback account below is historical; its offline blocker is resolved. Native all4size/phone/private3v3 acceptance remains pending.
 
 Before-run remote81098b8 matched clean checkout. GitHub before-place checkpoint66be7aa/checkpoints/Map1_Task6_before_20261024.rbxl.
 Canonical working place CashCity_RiverWalk_Section2.rbxl preserved throughout; SHA256 AE6AA260681DEAB439CF809D4FE6F3FA44FC0F072842355B70E8795418625E68.
