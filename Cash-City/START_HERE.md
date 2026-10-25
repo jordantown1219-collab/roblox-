@@ -47,3 +47,5 @@ Latest access QA:2532floor/width+2532headroom checks PASS; walks awaiting normal
 CURRENT PRIORITY: map construction, no more door tests unless explicitly requested. Roof finish visible in Edit:11new pieces,15focused tests PASS; manual place SAVE PENDING. See docs/MAP1_ROOF_GLAZING_FINISH.md. Original binary/hash is before roof; olderXML now also stale in source. Do not overwrite liveEdit.
 
 Latest Map1 change:2low plantingbeds/10parts behind benches in farther40m RiverWalk section;79originalparts preserved;8offline tests and849floor+849headroom native checks PASS. Roof remainslive. BOTH roof+bed place SAVE PENDING; pressCtrlS thenverifyhash/backup. See docs/MAP1_RIVERWALK_PLANTING_BEDS.json. Continueconstruction, not door tests.
+
+LATEST: Roof+RiverWalkbeds saved/backedup a1af498; canonicalC0FA9161/708037bytes. NEW77tower framing accents nowvisible/framed in Edit;280existingliveaccents preserved;10focusedtestsPASS. Newframing SAVE PENDING untilCtrlS. Evidence docs/MAP1_TOWER_FRAMING_FINISH.md. Source/data backedup separately; olderXML remainsstale. Nextverifynewsave thencontinueMap1construction.

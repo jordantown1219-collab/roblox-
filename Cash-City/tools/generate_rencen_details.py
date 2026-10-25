@@ -114,8 +114,9 @@ def make_plan(geography, geometry):
             else:
                 # A narrow upper reveal, not a replacement crown or occupied floor band.
                 add("UpperReveal", top - 1.2, max(.2, size[2] - .08), 1.2, .16, [130, 143, 150], "Metal")
-                # Only alternate faces on cylindrical source masses: restrained vertical rhythm.
-                if osm not in (107551662, 56019569) and face_number % 2 == 0:
+                # Complete the vertical frame rhythm on all five main tower masses.
+                # Each narrow bar still uses its exact source-face clearance guard.
+                if osm not in (107551662, 56019569):
                     add("VerticalMullion", (base + top) / 2, .22, size[1] * .96, .12, [164, 173, 175], "Metal")
                 if osm == 30258238:
                     add("BodyBaseReveal", base + 1.2, max(.2, size[2] - .08), 1.2, .16, [118, 132, 138], "Metal")

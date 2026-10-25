@@ -22,7 +22,7 @@ class RenCenDetailTests(unittest.TestCase):
         self.assertEqual(self.plan, generate())
         self.assertEqual(self.plan, json.loads((ROOT / "data/rencen_detail_plan.json").read_text()))
         self.assertEqual(self.geometry, before)
-        self.assertEqual(len(self.plan["details"]), 304)
+        self.assertEqual(len(self.plan["details"]), 381)
         self.assertLessEqual(len(self.plan["details"]), 420)
         self.assertEqual(len(self.plan["buildings"]), 9)
         self.assertEqual(len(self.plan["faces"]), 216)
@@ -61,7 +61,7 @@ class RenCenDetailTests(unittest.TestCase):
         for detail in self.plan["details"]:
             self.assertEqual(overlapping_wall_indices(detail, walls, polygons, tree), [], detail["name"])
         adjustments = self.plan["neighborWallAdjustments"]
-        self.assertEqual(sum(a["action"] == "omitted" for a in adjustments), 9)
+        self.assertEqual(sum(a["action"] == "omitted" for a in adjustments), 14)
         # Independent RED/GREEN reproduction of QA's concrete neighboring-wall regression.
         name = "RenCen_UpperReveal_419447171_06"
         fixed = next(r for r in self.plan["details"] if r["name"] == name)
