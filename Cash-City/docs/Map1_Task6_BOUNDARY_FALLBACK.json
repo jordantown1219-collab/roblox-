@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-25",
+  "test": "Real Practice player controlled placement beyond expanded bounds",
+  "restored": true,
+  "cameraUnchanged": true,
+  "controlledPlacement": true,
+  "results": {
+    "1": {
+      "seconds": 0.06515009992290288,
+      "distanceToSpawn": 0,
+      "returned": true,
+      "health": 100,
+      "case": "west"
+    },
+    "2": {
+      "seconds": 0.5641443999484181,
+      "distanceToSpawn": 0,
+      "returned": true,
+      "health": 100,
+      "case": "east"
+    },
+    "3": {
+      "seconds": 0.5006085999775678,
+      "distanceToSpawn": 0,
+      "returned": true,
+      "health": 100,
+      "case": "north"
+    },
+    "4": {
+      "seconds": 0.45120010001119226,
+      "distanceToSpawn": 0,
+      "returned": true,
+      "health": 100,
+      "case": "south"
+    },
+    "5": {
+      "seconds": 0.5330215999856591,
+      "distanceToSpawn": 0,
+      "returned": true,
+      "health": 100,
+      "case": "below"
+    },
+    "6": {
+      "seconds": 0.4992993999039754,
+      "distanceToSpawn": 0,
+      "returned": true,
+      "health": 100,
+      "case": "above"
+    }
+  },
+  "limitations": [
+    "Controlled placement tests recovery only; physical escape resistance and visual approval remain pending.",
+    "No source or saved-place changes; full offline suite not rerun (previous 83/83)."
+  ]
+}

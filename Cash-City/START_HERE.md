@@ -21,7 +21,7 @@ Engram is parked at user's request2026-10-25; do not keep inspecting it unless a
 ## Current status
 1 PASS: source-derived approach/inset stair sample; completed geometry preserved.
 2 Mechanical containment PASS; visual road-screen/sightline approval stillPENDING.
-  BoundsX[-1850,750],Z[-650,1250]; current-expanded-bound player escape/fall/roof cases still need native checks.
+  BoundsX[-1850,750],Z[-650,1250]; expanded-bound recovery PASS6/6 (four sides, below, above); physical escape resistance still unverified.
 3 Park connection:68originalrecords preserved+4cornerinfill=72;87routepoints.
   All4size baseline walks passed348waypoints. Corner repair then22%87/87+Edit/runtime9048floor/width+9048headroom each0failures.
 4 Solo flow PASS; real6player3v3 DEFERRED to later approved private playtest. Do not launch6localclients again on unchangedRAM.
@@ -33,10 +33,11 @@ Engram is parked at user's request2026-10-25; do not keep inspecting it unless a
 7 PENDING: tested rollback/release/private-publish instructions; no release-ready claim.
 
 ## Next independent native checks
-- Expanded-boundary player return/escape cases under actual gameplay, or remaining interior/access routes.
+- Remaining interior/access routes. Boundary recovery PASS6/6; see docs/Map1_Task6_BOUNDARY_FALLBACK.json.
 - Wintergarden/RenCen interiors, access ramp/stairs still need complete all4size route acceptance.
 - Never repeat failed door setup blindly; no forcedOpen attributes or collision disabling to manufacture a pass.
 - Real phone controls/FPS and six-player private match testing remain required before public release.
 - Tall road screens still need human visual approval.
 Root SmallSignals_DetroitRiverfront_v0_14.rbxlx is source-consistent but its static preview is NOT the canonical saved map; do not replace the working .rbxl with it.
 Postlaunch only: extra districts/maps/modes, voting polish, extra interiors, full vehicles, console polish.
+
