@@ -1,0 +1,34 @@
+{
+  "changedSources": [
+    "Arena",
+    "Config",
+    "Map1Boundary",
+    "ParkConnection",
+    "RiverAccessData",
+    "RiverWalkExtension",
+    "RiverWalkExtension2",
+    "SmallSignalsClient",
+    "SmallSignalsServer"
+  ],
+  "addedSources": [
+    "Map1Boundary",
+    "ParkConnection",
+    "RiverWalkExtension",
+    "RiverWalkExtension2"
+  ],
+  "geometryBefore": {
+    "count": 41216,
+    "sha256": "21a6124c3055cd2e41c53e5e30c389959fafd685ea1d4cbb1781dddb0fdbfd99"
+  },
+  "geometryAfter": {
+    "count": 41216,
+    "sha256": "21a6124c3055cd2e41c53e5e30c389959fafd685ea1d4cbb1781dddb0fdbfd99"
+  },
+  "sourceOnlySync": true,
+  "canonicalBinaryUnchanged": true,
+  "exportSHA256": "7101aec9be6b650062ab813b305b5c713bd8d9ac8319d134b59f3a45011810b3",
+  "removedOwnCandidateDuplicates": [
+    "SmallSignalsHUD",
+    "SmallSignalsSettings"
+  ]
+}
