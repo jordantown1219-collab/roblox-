@@ -1,0 +1,11 @@
+# Renaissance podium exterior finish - 2026-10-25
+
+Added30 decorative parts:22limestone base-course strips,4fictional RIVERFRONT CENTER nameplates,4small accent-light strips. Existing381source detail records preserved exactly; rawplan411 remains under420budget. Packagedlive exterior357oldparts+30new=387. No real business branding/logos or imported art. Original estimated architectural finish; no surveyed cladding/signage claim.
+
+Two exact portal faces19465/19478 explicitly excluded, matching RenaissanceLobby's protected source guards. Native22active podiumface guards matched current collision geometry before insertion. Allsource height/alignment/gap andall-neighbor-wall checks retained. Underlying building, roof, entry/interior andwalk geometry untouched. Newpieces anchored/noncolliding/no touch/query/shadows. Nameplates face outward; fourSurfaceLights enabled/range12/brightness.3/angle90/shadowsfalse. PriorBloom/atmosphere unaffected.
+
+Offline existing facade5/5PASS2.616s, lobby5/5PASS7.273s, all-source Lua syntax1/1PASS.057s. Lobby regenerated only forsource-hash metadata; exact oldgeometry/routes assertedunchanged. NativeEdit preserved357oldliveparts byclass/name/pose/size/color/material/transparency/collision comparison. ActualfreshPlay runtime387exteriorparts/4nameplates/4accentlightsPASS. Playstopped, no realplayer movement/resizing/camera overrides, no interaction tests. Visual approval, FPS/device/multiplayer/fullmatch/fullsuite acceptance remainpending.
+
+Files: generate_rencen_details.py,package_renaissance.py,rencen_detail_plan.json,RenaissanceData.lua,RenaissanceDetails.lua,existingfacadetests,lobbydata/provenance. NativefinishhelpertestedusingfreshModuleScript toavoidEdit requirecache. Selection cleared; Editcamera framesriver-side nameplate around(64.464,34.821,401.702).
+
+Rollbackbefore4068097,work/agent_checkpoints/podium_finish_20261025 andServerStorage.RenCenBeforePodiumFinish_20261025 plus3BeforePodium modulecopies. Localcanonical728778bytes,modified2026-10-25 18:54:17America/New_York,SHA2568B29618824B8E96068A135FBD45723317AEC3CBCB4C48176A81A4F48FBCCE8B5. CtrlS exactlocalwindow verifiednewhash; no separatepostsave diskreload. Currentbinary+immutableaftercheckpoint backedupGitHub. CorrectworkingStudio847a66df/window1442798;cloudcopyolder/oldXMLstale. Nohelpers/paidfallback/publish.

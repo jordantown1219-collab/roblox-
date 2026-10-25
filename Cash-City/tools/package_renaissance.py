@@ -5,7 +5,7 @@ P=Path(__file__).resolve().parents[1]
 def package():
     towers=json.loads((P/'data/rencen_detail_plan.json').read_text())
     walk=json.loads((P/'data/rencen_walk_plan.json').read_text())
-    keys=('name','pos','size','matrix','collide','color','material','trans')
+    keys=('name','pos','size','matrix','collide','color','material','trans','plaqueText','plaqueFace','lightFace')
     def compact(record):
         return {k:([round(v,7) for v in value] if isinstance(value,list) else value)
                 for k,value in record.items() if k in keys}

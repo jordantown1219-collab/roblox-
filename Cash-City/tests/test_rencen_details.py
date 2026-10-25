@@ -22,7 +22,7 @@ class RenCenDetailTests(unittest.TestCase):
         self.assertEqual(self.plan, generate())
         self.assertEqual(self.plan, json.loads((ROOT / "data/rencen_detail_plan.json").read_text()))
         self.assertEqual(self.geometry, before)
-        self.assertEqual(len(self.plan["details"]), 381)
+        self.assertEqual(len(self.plan["details"]), 411)
         self.assertLessEqual(len(self.plan["details"]), 420)
         self.assertEqual(len(self.plan["buildings"]), 9)
         self.assertEqual(len(self.plan["faces"]), 216)
@@ -35,7 +35,7 @@ class RenCenDetailTests(unittest.TestCase):
         for detail in self.plan["details"]:
             self.assertNotIn(detail["name"], names)
             names.add(detail["name"])
-            self.assertIn(detail["osm"], IDS + (ATRIUM_CANDIDATE,))
+            self.assertIn(detail["osm"], IDS + (ATRIUM_CANDIDATE,PODIUM))
             self.assertFalse(detail["collide"])
             self.assertTrue(all(math.isfinite(n) and n > 0 for n in detail["size"]))
             guard = guards[detail["sourceIndex"]]
@@ -93,7 +93,11 @@ class RenCenDetailTests(unittest.TestCase):
         self.assertEqual(len(entry), 24)
         self.assertEqual(sum("Vertical" in d["name"] for d in entry), 6)
         self.assertTrue(all(d["material"] == "Metal" for d in entry))
-        self.assertFalse(any(d["osm"] == PODIUM for d in self.plan["details"]))
+        podium=[d for d in self.plan['details'] if d['osm']==PODIUM]
+        self.assertEqual(len(podium),30)
+        self.assertTrue(all(d['sourceIndex'] not in (19465,19478) for d in podium))
+        self.assertEqual(sum(bool(d.get('plaqueText')) for d in podium),4)
+        self.assertTrue(all(d.get('plaqueText') in (None,'RIVERFRONT CENTER') for d in podium))
 
 
 if __name__ == "__main__":

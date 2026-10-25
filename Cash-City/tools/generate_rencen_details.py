@@ -14,6 +14,8 @@ ROOT = Path(__file__).resolve().parents[1]
 IDS = (30258238, 419447171, 419447172, 419447173, 419447174, 107551662, 56019569)
 ATRIUM_CANDIDATE = 419447156
 PODIUM = 1307210646
+# These are the two exact portal guards owned by RenaissanceLobby.build.
+PODIUM_PORTALS = (19465,19478)
 REFERENCES = ["https://www.som.com/projects/general-motors-renaissance-center/",
               "https://gmrencen.com/wp-content/uploads/2021/09/GMRENCEN-Complex-Map-Update.pdf"]
 
@@ -60,6 +62,8 @@ def make_plan(geography, geometry):
         center = [n * scale for n in polygon_center(feature["geometry"]["coordinates"])]
         faces = [(i, r) for i, r in enumerate(geometry) if r["name"] == "Facade_" + str(osm)]
         assert faces, f"Missing existing source facade {osm}"
+        plaque_faces={i for i,r in sorted(faces,key=lambda pair:(-pair[1]['size'][2],pair[0])) if i not in PODIUM_PORTALS and r['size'][2]>35}
+        if osm==PODIUM:plaque_faces=set(sorted(plaque_faces,key=lambda i:(-geometry[i]['size'][2],i))[:4])
         plan["buildings"].append({"osm": osm, "name": feature["name"], "centerStudsXZ": center,
                                    "sourceFootprint": feature["geometry"], "sourceBaseMeters": feature["base"],
                                    "sourceHeightMeters": feature["height"], "heightSource": feature["heightSource"],
@@ -76,7 +80,6 @@ def make_plan(geography, geometry):
             if osm == PODIUM:
                 plan["sourceFinishChanges"].append({"sourceIndex": source_index, "record": record,
                                                      "color": [190, 190, 179], "material": "Limestone"})
-                continue
 
             def add(label, y, length, tall, depth, color, material):
                 gap = .10
@@ -102,8 +105,19 @@ def make_plan(geography, geometry):
                                                             "action": "omitted" if overlaps else "end_trimmed"})
                 if not overlaps:
                     plan["details"].append(detail)
+                    return detail
 
-            if osm == ATRIUM_CANDIDATE:
+            if osm == PODIUM:
+                if source_index in PODIUM_PORTALS:continue
+                add('PodiumBaseCourse',base+1.2,max(.2,size[2]-.2),.65,.14,[172,174,164],'Limestone')
+                if source_index in plaque_faces:
+                    y=base+size[1]*.65
+                    plaque=add('PodiumNameplate',y,18,1.8,.16,[43,62,68],'Metal')
+                    if plaque:
+                        plaque['plaqueText']='RIVERFRONT CENTER';plaque['plaqueFace']='Right' if sign>0 else 'Left'
+                        light=add('PodiumSignLight',y+1.5,12,.18,.18,[249,233,203],'Neon')
+                        if light:light['lightFace']='Right' if sign>0 else 'Left'
+            elif osm == ATRIUM_CANDIDATE:
                 # Only existing river-facing facets, not the backs occluded by source podium.
                 if normal[2] > .4:
                     for fraction in (.25, .5, .75):
@@ -125,7 +139,7 @@ def make_plan(geography, geometry):
                                "roofChanges": False, "curvedRoofCreated": False, "sourceFacadeCount": 10}
     plan["limitations"] = ["No duplicate source facade or glass sheet is created; 24 podium finish-only changes are explicit and guarded.",
                            "Source base/top bounds govern every accent. Separate source cap, podium and Wintergarden remain untouched.",
-                           "No logos, signage, authentic interior, exact real-world bay count or current redevelopment status claimed.",
+                           "Generic fictional building labels only; no logos, real business names, authentic interior, exact real-world bay count or current redevelopment status claimed.",
                            "Metal color and spacing need Lead visual review against primary reference photos.",
                            "Decorative records must be anchored with collision/touch disabled by the integration consumer.",
                            "Live walking, FPS, streaming, multiplayer and device acceptance remain pending."]

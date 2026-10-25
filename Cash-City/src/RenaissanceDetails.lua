@@ -1,6 +1,20 @@
 -- Source-guarded exterior pass. Lead is the sole caller during city assembly.
 local Details={}
 local function colorNear(a,b) return math.abs(a.R-b.R)+math.abs(a.G-b.G)+math.abs(a.B-b.B)<.005 end
+function Details.finish(model,records)
+ local byName={}for _,r in ipairs(records) do byName[r.name]=r end
+ for _,p in ipairs(model:GetDescendants()) do if p:IsA('BasePart') then
+  p.CastShadow=false;p.CanQuery=false
+  local r=byName[p.Name]
+  if r and r.plaqueText and not p:FindFirstChild('CashCityBuildingName') then
+   local gui=Instance.new('SurfaceGui');gui.Name='CashCityBuildingName';gui.Face=Enum.NormalId[r.plaqueFace];gui.SizingMode=Enum.SurfaceGuiSizingMode.PixelsPerStud;gui.PixelsPerStud=40;gui.Parent=p
+   local label=Instance.new('TextLabel');label.Size=UDim2.fromScale(1,1);label.BackgroundTransparency=1;label.Text=r.plaqueText;label.TextScaled=true;label.Font=Enum.Font.GothamMedium;label.TextColor3=Color3.fromRGB(238,237,225);label.Parent=gui
+  end
+  if r and r.lightFace and not p:FindFirstChild('PodiumAccentLight') then
+   local light=Instance.new('SurfaceLight');light.Name='PodiumAccentLight';light.Face=Enum.NormalId[r.lightFace];light.Brightness=.3;light.Range=12;light.Angle=90;light.Color=Color3.fromRGB(255,235,199);light.Shadows=false;light.Parent=p
+  end
+ end end
+end
 function Details.build(root)
  local plan=require(script.Parent.RenaissanceData)
  local byName={}
@@ -42,9 +56,7 @@ function Details.build(root)
   if old then old:SetAttribute("CashCityGeneratedBlock",true) end
  end
  local tower,towerStats=generator.build(root,plan.towers,nil,80)
- for _,part in ipairs(tower:GetDescendants()) do
-  if part:IsA("BasePart") then part.CastShadow=false part.CanQuery=false end
- end
+ Details.finish(tower,plan.towers.records)
  tower:SetAttribute("ReferenceStatus","Original exterior interpretation; estimated framing spacing")
  local walk,walkStats=generator.build(root,plan.walk,nil,80)
  for _,part in ipairs(walk:GetDescendants()) do
