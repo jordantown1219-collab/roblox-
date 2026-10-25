@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-25",
+  "scope": "Four park seating bays with native benches, paving pads and four low lights",
+  "newParts": 40,
+  "totalParkParts": 65,
+  "treePartsPreserved": 25,
+  "placementChecks": {
+    "passed": true,
+    "count": 48
+  },
+  "physicalSeating": {
+    "fixture": "Existing STUDIO_RENCEN_LOBBY_SEATING.lua, park path substituted in memory; added fail-fast assertion; no new harness file",
+    "scale": 0.22,
+    "results": {
+      "1": {
+        "seated": true,
+        "scale": 0.22,
+        "health": 100,
+        "seat": "376, 1.2999999523162842, 304"
+      },
+      "2": {
+        "seated": true,
+        "scale": 0.22,
+        "health": 100,
+        "seat": "624, 1.2999999523162842, 244"
+      },
+      "3": {
+        "seated": true,
+        "scale": 0.22,
+        "health": 100,
+        "seat": "492, 1.2999999523162842, 236"
+      },
+      "4": {
+        "seated": true,
+        "scale": 0.22,
+        "health": 100,
+        "seat": "468, 1.2999999523162842, 332"
+      }
+    },
+    "realPlayerMovedOrResized": false,
+    "cameraOverride": false,
+    "geometryUnchangedDuringTest": true
+  },
+  "runtimeBuild": {
+    "parts": 65,
+    "seats": 4,
+    "enabledLights": 4,
+    "lightShadows": false
+  },
+  "offlineChecks": {
+    "sourceSyntax": "PASS0.047s",
+    "generatorDeterminism": "PASS",
+    "original25TreeRecords": "exact prefix match"
+  },
+  "cleanup": {
+    "probeRigsDestroyed": true,
+    "templateDestroyed": true,
+    "playStopped": true
+  },
+  "limitations": [
+    "Other avatar sizes, mobile/controller interaction, multiplayer and FPS acceptance not run this batch",
+    "Original game furniture layout, not surveyed Detroit fixture positions",
+    "No post-save disk-reload test; older XML export remains stale"
+  ],
+  "saved": {
+    "file": "CashCity_RiverWalk_Section2.rbxl",
+    "bytes": 722053,
+    "modifiedEastern": "2026-10-25 18:21:51",
+    "sha256": "7090B4B4C7FD5F1F39AA3ACD12DEB9A5ED2F32C37AA1D3FF2FE612B670275E59"
+  },
+  "rollback": {
+    "beforeCommit": "d76d7cc",
+    "disk": "work/agent_checkpoints/park_seating_20261025",
+    "live": "ServerStorage.ParkBeforeSeating_20261025 and RiverfrontParkBeforeSeating_20261025"
+  },
+  "published": false
+}

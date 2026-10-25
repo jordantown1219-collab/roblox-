@@ -1,8 +1,9 @@
 """Original low-part trees inside existing mapped lawn; source geometry read-only."""
 import hashlib,json,math
 from pathlib import Path
-from generate_river_access import surface_polygon,shape,Point,unary_union
+from generate_river_access import surface_polygon,shape,Point,Polygon,unary_union
 from shapely import affinity
+from shapely.ops import nearest_points
 ROOT=Path(__file__).resolve().parents[1]
 
 def generate(root=ROOT):
@@ -42,16 +43,60 @@ def generate(root=ROOT):
             assert lawn.covers(Point(p.x+offset[0],p.y+offset[2]).buffer(max(size[0],size[2])/2))
             add(label,size,offset,color,'Grass','Ball',identity)
     assert len(records)==25
-    return dict(id='Map1RiverfrontPark',records=records,anchors=anchors,sourceOSM=source['osm'],classification='Mapped lawn; original young-tree arrangement and forms, not surveyed',sourceHashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
+    walks=unary_union([surface_polygon(r) for r in geometry if r['name']=='JoinedWalk' and surface_polygon(r).intersects(park)])
+    sites=[];x0,z0,x1,z1=park.bounds
+    for x in range(math.ceil(x0/4)*4,math.floor(x1/4)*4+1,4):
+        for z in range(math.ceil(z0/4)*4,math.floor(z1/4)*4+1,4):
+            p=Point(x,z);distance=walks.distance(p)
+            if not 2.5<distance<7:continue
+            q=nearest_points(p,walks)[1];fx,fz=(q.x-x)/distance,(q.y-z)/distance
+            rx,rz=-fz,fx;bx,bz=-fx,-fz
+            footprint=Polygon([(x+rx*a+bx*b,z+rz*a+bz*b) for a,b in [(-4,-2),(-4,2),(4,2),(4,-2)]])
+            if not lawn.covers(footprint) or any(footprint.distance(t)<2.4 for t in centers) or any(footprint.distance(a)<10 for a in reserve):continue
+            lamp=next((Point(x+rx*side*5.3,z+rz*side*5.3) for side in (-1,1) if lawn.covers(Point(x+rx*side*5.3,z+rz*side*5.3).buffer(.8))),None)
+            if lamp is not None:sites.append((p,footprint,[rx,0,bx,0,1,0,rz,0,bz],lamp))
+    chosen=[]
+    for index in range(4):
+        available=[v for v in sites if all(v[0].distance(old[0])>22 for old in chosen)]
+        assert available,'Insufficient clear seating bays'
+        site=min(available,key=lambda v:(v[0].x,v[0].y)) if not chosen else max(available,key=lambda v:(min(v[0].distance(old[0]) for old in chosen),-v[0].x,-v[0].y))
+        chosen.append(site)
+        p,footprint,m,lamp=site
+        support=[r for r in lawn_records if surface_polygon(r).covers(p)];assert support
+        floor=max(r['pos'][1]+sum(abs(r['matrix'][3+i])*r['size'][i]/2 for i in range(3)) for r in support)
+        def prop(label,size,offset,color,material,collide=False,**extra):
+            x,y,z=offset
+            records.append(dict(name='ParkSeat_'+str(index)+'_'+label,size=size,pos=[p.x+m[0]*x+m[2]*z,floor+y,p.y+m[6]*x+m[8]*z],matrix=m,color=color,material=material,shape='Block',collide=collide,**extra))
+        prop('PavingPad',[8,.18,4],[0,.11,0],[151,147,135],'Concrete',True)
+        prop('Seat',[6.5,.35,2],[0,1.35,0],[111,83,55],'WoodPlanks',True,seat=True)
+        prop('Back',[6.5,1.25,.18],[0,2.05,1.03],[111,83,55],'WoodPlanks',True)
+        for side in (-1,1):
+            prop('Leg'+str(side),[.2,1.1,1.7],[side*2.5,.75,0],[65,73,70],'Metal')
+            prop('Arm'+str(side),[.2,.2,2],[side*3.2,1.85,0],[65,73,70],'Metal')
+        for label,size,y,color,material,extra in [('Base',[1,.2,1],.1,[66,74,70],'Metal',{}),('Pole',[.3,2.8,.3],1.6,[132,143,135],'Metal',{}),('Lens',[.8,.4,.8],3.2,[249,231,190],'Neon',{'light':True})]:
+            records.append(dict(name='ParkLight_'+str(index)+'_'+label,size=size,pos=[lamp.x,floor+y,lamp.y],matrix=identity,color=color,material=material,shape='Block',collide=False,**extra))
+    seating=[dict(x=v[0].x,z=v[0].y,matrix=v[2],floor=next(r['pos'][1]-.11 for r in records if r['name']=='ParkSeat_'+str(i)+'_PavingPad'),lamp=[v[3].x,v[3].y]) for i,v in enumerate(chosen)]
+    assert len(records)==65
+    return dict(id='Map1RiverfrontPark',records=records,anchors=anchors,seatingSites=seating,sourceOSM=source['osm'],classification='Mapped lawn; original trees, seating and lighting, not surveyed',sourceHashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
 
 TAIL='''
 local Park={}
-function Park.build(root)
- local model,stats=require(script.Parent.CityBlockGenerator).build(root,plan,nil,80)
+function Park.finish(model)
  local byName={}for _,r in ipairs(plan.records) do byName[r.name]=r end
  for _,p in ipairs(model:GetDescendants()) do if p:IsA('BasePart') then
-  local r=assert(byName[p.Name]);p.Shape=Enum.PartType[r.shape];p.Anchored=true;p.CanTouch=false;p.CastShadow=false;p.CanQuery=r.collide==true
+  local r=assert(byName[p.Name])
+  if r.seat and not p:IsA('Seat') then
+   local seat=Instance.new('Seat');seat.Name=p.Name;seat.Size=p.Size;seat.CFrame=p.CFrame;seat.Color=p.Color;seat.Material=p.Material;seat.Parent=p.Parent;p:Destroy();p=seat
+  end
+  p.Shape=Enum.PartType[r.shape];p.Anchored=true;p.CanTouch=r.seat==true;p.CanCollide=r.collide==true;p.CastShadow=false;p.CanQuery=r.collide==true
+  if r.light and not p:FindFirstChild('ParkLight') then
+   local light=Instance.new('PointLight');light.Name='ParkLight';light.Brightness=.25;light.Range=12;light.Color=Color3.fromRGB(255,235,199);light.Shadows=false;light.Parent=p
+  end
  end end
+end
+function Park.build(root)
+ local model,stats=require(script.Parent.CityBlockGenerator).build(root,plan,nil,80)
+ Park.finish(model)
  model.ModelStreamingMode=Enum.ModelStreamingMode.Atomic
  model:SetAttribute('ReferenceStatus',plan.classification)
  return model,stats
