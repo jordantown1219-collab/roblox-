@@ -39,12 +39,15 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
 6 PARTIAL: offline repair PASS. Full82/82tests98.817s; strictbuild4/4tests5.495s. Sourceembedding covers39productionfiles exactlyonce/correctcontainers.
   OlderXMLsources synced; legacyserverInteractionRules preserved as ServerStorage.ArchivedInteractionRules_ServerCopy_RF09_5. Physicalgeometry unchanged41216nodes.
   WorkingcanonicalrbxlUNCHANGED; XMLstaticpreview still not reconciled withsavedworkingmap. Olderfailedcandidate retainedas history pending/Map1Task6.
-  All4size nativewalks/phone/private3v3 stillPENDING. See docs/Map1_Task6_OFFLINE_QA.md, Map1_Task6_REPAIR.json and Map1_Task6_CHECKLIST.md.
+  Parkconnection nativecenterlinePASS at100/65/40/22%,87waypointseach. DensewidthsweepFAILED12side samples at2corners; fixbeforefullrouteacceptance.
+  Othernative routes/phone/private3v3 stillPENDING. See docs/Map1_Task6_PARK_NOTES.md and Map1_Task6_PARK_WALKS.json.
   Latestnativeattempt INVALID:100%ramp starts inclosedWintergardendoor; clientopeningattempt ranbeforedoormodelstreamed. Stoppedafter2failures; no geometrydefectconfirmed.
   CleanupPASS:template/rigremoved,camerarestored,Playstopped. NextprefetchandWaitForChilddoor,normalpromptOpenverifiedBEFOREexistingwalkfixture. See docs/Map1_Task6_NATIVE_ATTEMPT.json.
   Latestretry:cameraFixedstate recoveredbyfreshPlay,userconfirmedfollow. Userreporteddooropensaftersteppingclear; sweepdiagnosticconfirmedavatarwasblockingitsmotion.
   LaterOpenpreconditionfailedthenrunnerwronglycontinuedwithouttemplate; stoppedafter2errors. No4sizewalkPASS. No door/source/geometrychanges.
   Playleftnormalforuser,notstopped; notemporaryrig/template. Nextindependentcheck:park-routefour-sizewalks,avoidingdoor/inputdependency. Doorrouteverificationstillpending. See docs/Map1_Task6_DOOR_RETRY.json.
+  Latestparkcheckcomplete:4/4walkcasesPASS,348waypoints,386.819s.9048floor+9048headroomrays;12widthfailures,0headroomfailures. CleanupPASS.
+  NEXT:preserveexistinggeometryandrepairtwo off-edgecornerpatches near(-605,.41,786) and(-1488,.41,1163),thenstrictsweep+bounded22%retest. Do notlowerexpectedfloors/weakenchecks.
 7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.
 ## Evidence and remaining work
 See docs/Map1_Task3_ACCEPTANCE.md and Map1_Task3_WALK_RESULTS.json.
