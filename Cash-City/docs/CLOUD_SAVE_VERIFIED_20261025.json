@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-25",
+  "cloudVerifiedAfterReopen": true,
+  "studioId": "ecd239d8-7611-4527-aa87-08ef41e0e821",
+  "universeId": 10772964773,
+  "sourceMatches": {
+    "RiverfrontAppearance": true,
+    "Arena": true,
+    "Map1RoadMarkings": true
+  },
+  "brightness": 2.299999952316284,
+  "placeId": 82361696555229,
+  "atmosphereDensity": 0.1599999964237213,
+  "scene": {
+    "crossingAndFurnitureParts": 37,
+    "signFaces": 8,
+    "enabledLights": 2,
+    "finishedRiverPieces": 77
+  },
+  "localCopy": {
+    "located": false,
+    "canonicalUnchangedSHA256": "EA30D895369A5302A93EEC4B8AC3A75504F27F6A3D12690014DC5C251C5F62CE",
+    "note": "User reports Download a Copy done; filename/path requested after standard-location search found no newer local file"
+  },
+  "correctCloudMenu": "File > Download a Copy",
+  "noNativeEditsThisRun": true
+}

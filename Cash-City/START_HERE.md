@@ -61,3 +61,5 @@ LATEST: RiverfrontAppearance applied/live;77waterpieces geometry/material/physic
 SAVE BLOCKED: requestedagentUI save failedtwice (clickgeometryunavailable;AltFdidnotopenmenu);stopped. UsermustFileSaveToFileAscanonicalproject .rbxl. Thenverifyhash/backupGitHub beforecontinuingMap1. LastlocalhashEA30;newestsourcebackedupd776ec8.
 
 CURRENT: userSAVED TO ROBLOX;latestcloudsaveNOTverified. Studiohome reopened(ecd239d8,name null);usermustopen downtownthink/place82361696555229. Verify37partcrossing/furniture+RiverfrontAppearance beforecontinuing. DO NOT overwritecloudwitholdlocalEA30. Sourcebackupretained;localbinaryexport/GitHubbackupstillpending.
+
+CLOUD SAVE VERIFIED: activeecd239d8,place82361696555229,universe10772964773. Latest37partcrossing/8labels/2lamps/77riverfinish+3sourcesmatchtestedlocalafterreopen. CloudFilemenu=Download a Copy (earlierSaveToFileAsinstructionsobsolete). Downloadlocationpendinguserfullpath;canonicalEA30unchanged. DoNOToverwritecloudwitholdlocal. Evidence docs/CLOUD_SAVE_VERIFIED_20261025.json.
