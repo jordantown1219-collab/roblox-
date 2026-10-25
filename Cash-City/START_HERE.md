@@ -1,5 +1,6 @@
 # Map 1 release preparation — START HERE
 Working place: CashCity_RiverWalk_Section2.rbxl. Never publish.
+Cross-session memory: docs/CASH_CITY_MEMORY_HANDOFF.md (snapshot; verify fresh GitHub/live state and latest user instructions).
 Visible Studio6beb19f8-2e46-4f3c-b2de-3c3387505131, CashCity_RiverWalk_Section2.rbxl, reopened after included allowance reset.
 ## Rules
 Map1 only: RenCen, RiverWalk, surrounding park. No other districts/helpers/paid credits.
