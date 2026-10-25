@@ -77,6 +77,20 @@ def generate(root=ROOT):
             records.append(dict(name='ParkLight_'+str(index)+'_'+label,size=size,pos=[lamp.x,floor+y,lamp.y],matrix=identity,color=color,material=material,shape='Block',collide=False,**extra))
     seating=[dict(x=v[0].x,z=v[0].y,matrix=v[2],floor=next(r['pos'][1]-.11 for r in records if r['name']=='ParkSeat_'+str(i)+'_PavingPad'),lamp=[v[3].x,v[3].y]) for i,v in enumerate(chosen)]
     assert len(records)==65
+    # Layered original young-tree silhouettes, entirely within the already reserved canopy envelope.
+    for index,a in enumerate(anchors):
+        x,z,floor=a['x'],a['z'],a['floor']
+        for j,(ox,oy,oz) in enumerate([(-5,12,-2),(4,13,4),(-2,19,3),(3,21,-2)]):
+            radius=3.8 if j<2 else 3.3
+            assert lawn.covers(Point(x+ox,z+oz).buffer(radius)),'Canopy outside exposed mapped lawn'
+            records.append(dict(name=f'ParkTree_{index}_LeafLayer{j}',size=[radius*2,5.5,radius*2],pos=[x+ox,floor+oy,z+oz],matrix=identity,color=([83,110,63] if (index+j)%2 else [57,87,49]),material='Grass',shape='Ball',collide=False))
+        for j,(ox,oy,oz) in enumerate([(-4,12,-2),(3.5,13,3),(2,17,-1.5)]):
+            start=(0,7,0);delta=[ox,oy-7,oz];length=math.sqrt(sum(v*v for v in delta));right=[v/length for v in delta]
+            back=[-right[2],0,right[0]];norm=math.sqrt(sum(v*v for v in back));back=[v/norm for v in back]
+            up=[back[1]*right[2]-back[2]*right[1],back[2]*right[0]-back[0]*right[2],back[0]*right[1]-back[1]*right[0]]
+            m=[right[0],up[0],back[0],right[1],up[1],back[1],right[2],up[2],back[2]]
+            records.append(dict(name=f'ParkTree_{index}_Branch{j}',size=[length,.48,.48],pos=[x+ox/2,floor+(7+oy)/2,z+oz/2],matrix=m,color=[96,79,60],material='Wood',shape='Cylinder',collide=False))
+    assert len(records)==100
     return dict(id='Map1RiverfrontPark',records=records,anchors=anchors,seatingSites=seating,sourceOSM=source['osm'],classification='Mapped lawn; original trees, seating and lighting, not surveyed',sourceHashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
 
 TAIL='''
@@ -95,7 +109,7 @@ function Park.finish(model)
  end end
 end
 function Park.build(root)
- local model,stats=require(script.Parent.CityBlockGenerator).build(root,plan,nil,80)
+ local model,stats=require(script.Parent.CityBlockGenerator).build(root,plan,nil,120)
  Park.finish(model)
  model.ModelStreamingMode=Enum.ModelStreamingMode.Atomic
  model:SetAttribute('ReferenceStatus',plan.classification)
