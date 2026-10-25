@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-25",
+  "scope": "Map1 waterfront daylight/river appearance",
+  "native": {
+    "applied": {
+      "customAtmospherePreserved": false,
+      "riverParts": 77,
+      "customRiverPartsPreserved": 0
+    },
+    "framed": true,
+    "geometryAndPhysicsPreserved": 77,
+    "originalLightingSnapshot": {
+      "ClockTime": 14,
+      "ShadowSoftness": 0.5,
+      "Ambient": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "OutdoorAmbient": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "ExposureCompensation": 0,
+      "Brightness": 3.1333863735198975,
+      "EnvironmentDiffuseScale": 0,
+      "EnvironmentSpecularScale": 0
+    },
+    "idempotent": true,
+    "ownedEffects": 2
+  },
+  "checks": {
+    "oldBloomAndColorGradingPreserved": true,
+    "freshArenaRequire": true,
+    "allLuaSourceSyntax": "PASS",
+    "streetFurniturePreserved": true
+  },
+  "appearance": {
+    "clockTime": 14,
+    "brightness": 2.3,
+    "ambientRGB": [
+      77,
+      84,
+      94
+    ],
+    "outdoorAmbientRGB": [
+      111,
+      119,
+      128
+    ],
+    "diffuse": 0.45,
+    "specular": 0.65,
+    "riverRGB": [
+      43,
+      80,
+      84
+    ],
+    "riverReflectance": 0.06,
+    "riverTransparency": 0.1,
+    "atmosphereDensity": 0.16
+  },
+  "limitations": [
+    "Original artistic palette and haze, not measured Detroit light/water conditions",
+    "No new FPS measurement or mobile/visual acceptance",
+    "No actual full-match regression or full offline-suite rerun",
+    "Local place save remains pending for crossings/furniture/appearance; older XML is stale"
+  ],
+  "rollback": {
+    "lighting": "ServerStorage.LightingBeforeRiverfrontAppearance_20261025 JSON plus original values in this file",
+    "river": "Each river part retains CashCityRiverPreviousColor/Transparency/Reflectance attributes; geometry/material/physics untouched",
+    "arena": "ServerStorage.ArenaBeforeRiverfrontAppearance_20261025 and work/agent_checkpoints/riverfront_appearance_20261025/Arena.lua",
+    "effects": "Only new CashCityRiverfrontAtmosphere and CashCityRiverfrontGrade are owned by this change"
+  },
+  "beforeCheckpoint": "536d456",
+  "localPlaceSHA256": "EA30D895369A5302A93EEC4B8AC3A75504F27F6A3D12690014DC5C251C5F62CE",
+  "save": "Use File > Save to File As > canonical project CashCity_RiverWalk_Section2.rbxl; cloud CtrlS is not local-save proof",
+  "published": false
+}
