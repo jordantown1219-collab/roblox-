@@ -49,3 +49,5 @@ CURRENT PRIORITY: map construction, no more door tests unless explicitly request
 Latest Map1 change:2low plantingbeds/10parts behind benches in farther40m RiverWalk section;79originalparts preserved;8offline tests and849floor+849headroom native checks PASS. Roof remainslive. BOTH roof+bed place SAVE PENDING; pressCtrlS thenverifyhash/backup. See docs/MAP1_RIVERWALK_PLANTING_BEDS.json. Continueconstruction, not door tests.
 
 LATEST: Roof+RiverWalkbeds saved/backedup a1af498; canonicalC0FA9161/708037bytes. NEW77tower framing accents nowvisible/framed in Edit;280existingliveaccents preserved;10focusedtestsPASS. Newframing SAVE PENDING untilCtrlS. Evidence docs/MAP1_TOWER_FRAMING_FINISH.md. Source/data backedup separately; olderXML remainsstale. Nextverifynewsave thencontinueMap1construction.
+
+LATEST: tower detail SAVE VERIFIED EA30D895/711811bytes;canonicalbackedup660aa79. Atwater/Beaubien marking task BLOCKED after2generatorclearancefailures;zero livechanges. Candidate quarantinedpending/Map1AtwaterCrossing;readREADME before anyretry. Nextreviewjunctiongeometry. No doorwork.
