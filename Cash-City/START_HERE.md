@@ -73,3 +73,9 @@ LATEST SAVED: parknow5trees+4nativebenches+4lowlights/65parts. New40parts,48plac
 LATEST SAVED: Franklin/Beaubien35newmarking/coverparts,315pavementchecks+freshPlayruntimePASS;Atwater37andpark65retained. Fixturesnotplacedbecausecornersunsafe. Canonical724469bytes/18:38:18EDT/SHA A18EC83D4EA1FF837E2DE670D4527C2385777C62585DFB5775527077766659F9;local847a66dfauthoritative/GitHubbackedup/cloudolder. Newjunctionselected/framedEdit. See docs/MAP1_FRANKLIN_JUNCTION.md. No publish.
 
 LATEST SAVED: podium30newtrim/nameplate/lightparts;381oldrecords+357oldliveparts preserved. Raw411under420budget. 11offlinechecks+freshPlay387parts/4nameplates/4lightsPASS. Portalfacesexcluded. Localcanonical728778bytes/18:54:17EDT/SHA8B29618824B8E96068A135FBD45723317AEC3CBCB4C48176A81A4F48FBCCE8B5+GitHubbackup;cloudolder. CameraframesriversidenameplateEdit. Evidence docs/MAP1_PODIUM_EXTERIOR.md;visual/FPSacceptancepending.
+
+
+## Latest 2026-10-25 - RiverWalk open railings
+PASS: 138 anchored noncolliding visual pieces (120 posts,18 tubes) along approximately260.24m of existing Map1 shoreline. Six original solid safety rails retained with identical geometry/physics and made transparent; recoverable original rendering attributes and ServerStorage clones retained. No doors changed. Deterministic generator comparison and all-source Lua syntax PASS; fresh Studio Play verified138pieces+6active original colliders.
+Saved local place735508bytes, SHA256421B8E64B49A8E1479B775D0BDA4533388B5A65562D04ADF8A273EC15C16CA0B. Before checkpoint GitHub4134d73. No publish. Visual user approval, new FPS, mobile and multiplayer acceptance UNVERIFIED. Existing Studio output reports FlayoDev admin Messages error and asset203785492 type mismatch; not resolved by this bounded map batch. Current live local Studio847a66df; cloud copy is older.
+Next: review RiverWalk/park visual continuity; preserve task scope and do not return to door testing.
