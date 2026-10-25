@@ -31,7 +31,7 @@ class WintergardenTests(unittest.TestCase):
     def test_deterministic_exact_source_guards_and_bounded_original_records(self):
         p=self.plan
         self.assertEqual(p,json.loads((ROOT/'data/wintergarden_plan.json').read_text()))
-        self.assertEqual(len(p['records']),183)
+        self.assertEqual(len(p['records']),194)
         self.assertLessEqual(len(p['records'])+8,220)
         self.assertEqual(len(p['replacements']),46)
         counts={}
@@ -89,6 +89,7 @@ class WintergardenTests(unittest.TestCase):
         decorative=[r for r in p['records'] if 'Decorative' in r['name']]
         self.assertTrue(any('PaleYellowRoofRib' in r['name'] for r in decorative))
         self.assertEqual(sum('SilverInlandSpine' in r['name'] for r in decorative),1)
+        self.assertEqual(sum('RoofGlazingBar' in r['name'] for r in decorative),7)
         self.assertEqual(p['metadata']['decorativePlanters'],2)
         for r in decorative:
             self.assertFalse(r['collide'])

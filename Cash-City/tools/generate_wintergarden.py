@@ -150,7 +150,7 @@ def generate(root=ROOT):
         add(name,[width,width,math.dist(a,b)],[(a[i]+b[i])/2 for i in range(3)],matrix,color,'Metal',False)
     # Original pale-yellow roof ribs below the glass surface; spacing is not surveyed.
     decorative_footprint=local_poly.buffer(-1)
-    for fraction in (.25,.5,.75):
+    for fraction in (.25,.5,.75,.875):
         v=vmin+(vmax-vmin)*fraction
         cut=decorative_footprint.intersection(LineString([(umin-1,v),(umax+1,v)]))
         if cut.geom_type!='LineString':continue
@@ -163,6 +163,13 @@ def generate(root=ROOT):
     if spine.geom_type=='LineString':
         a,b=spine.coords[0],spine.coords[-1]
         decorative_rod('Wintergarden_DecorativeSilverInlandSpine',world(a[0],a[1],roof_y(u)-.8),world(b[0],b[1],roof_y(u)-.8),[211,217,213],.4)
+    # Slender glazing bars follow the existing eight roof facets, below the glass.
+    # Reuse the clipped footprint and profile; never replace walls or entry assemblies.
+    for u in breaks[1:-1]:
+        cut=decorative_footprint.intersection(LineString([(u,vmin-1),(u,vmax+1)]))
+        if cut.geom_type!='LineString':continue
+        a,b=cut.coords[0],cut.coords[-1]
+        decorative_rod('Wintergarden_DecorativeRoofGlazingBar',world(a[0],a[1],roof_y(u)-.3),world(b[0],b[1],roof_y(u)-.3),[185,195,191],.24)
     # Two explicitly decorative planters, outside entrance and all standing-room probes.
     route=LineString([(p['pos'][0],p['pos'][2]) for p in samples]+[(door['pos'][0],door['pos'][2])])
     planter_count=0
