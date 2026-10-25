@@ -57,3 +57,5 @@ LATEST: Atwater crossing RESOLVED/BUILT23paintparts;207nativepavementchecks+7off
 LATEST: junction signs/lights BUILT14newparts;23paintpartspreserved. Nativefactory37parts/8two-sidedlabels/2lights+idempotencePASS,8placementraysPASS,Lua syntaxPASS. JunctionFurnitureselected/framed. Roadpaint+furniturelocalSAVE PENDING (canonicalEA30);useFileSaveToFileAs. Evidence docs/MAP1_ATWATER_STREETSCAPE.md. No newFPS/device/visualacceptanceclaim.
 
 LATEST: RiverfrontAppearance applied/live;77waterpieces geometry/material/physics unchanged,daylight/reflectivewater/haze nowframed. Nativeidempotence/freshArena/source syntaxPASS;FPS+visual/deviceacceptancePENDING. Sourcebackedup. Crossings+furniture+appearance LOCAL SAVE PENDING;canonicalstillEA30;FileSaveToFileAs required. Evidence docs/MAP1_WATERFRONT_APPEARANCE.json.
+
+SAVE BLOCKED: requestedagentUI save failedtwice (clickgeometryunavailable;AltFdidnotopenmenu);stopped. UsermustFileSaveToFileAscanonicalproject .rbxl. Thenverifyhash/backupGitHub beforecontinuingMap1. LastlocalhashEA30;newestsourcebackedupd776ec8.
