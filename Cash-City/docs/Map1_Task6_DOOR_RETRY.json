@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-24",
+  "status": "MANUAL_CAMERA_RECOVERED_AUTOMATED_WALK_NOT_ACCEPTED",
+  "remoteBefore": "62a28e33d361ae1e1c3706dd44721477f341dc92",
+  "streamingPrecondition": "RequestStreamAroundAsync and bounded WaitForChild loaded door/control/leaf successfully",
+  "automatedInput": "Two E holds left door closed; stopped this input flow. Server active/range/LOS/health guards were valid.",
+  "cameraIncident": {
+    "observedMode": "Fixed",
+    "initialCustomReset": "User reported still stuck",
+    "recovery": "Restarted Play only; user confirmed camera follows",
+    "gameSourceCameraOverride": "No CameraType/CameraSubject/BindToRenderStep matches found in current handwritten source",
+    "exactCause": "Unverified temporary testing/tool camera state; no production camera code changed"
+  },
+  "doorManualCheck": {
+    "firstUserReport": "Prompt visible but stays closed",
+    "serverLastFailure": "Motion blocked - step clear",
+    "sweepDiagnostic": "Hits were the actual player's HumanoidRootPart/LowerTorso/UpperTorso in door swing",
+    "userAfterSteppingClear": "Yes, it opens",
+    "laterServerSnapshot": "Closed; no claim of persistent Open acceptance"
+  },
+  "runnerFailure": "Door Open assertion failed before template creation; caller incorrectly continued to fixture, which failed because no template existed. Stop after two errors; no actual four-size route run.",
+  "cleanup": {
+    "temporaryRig": false,
+    "temporaryTemplate": false,
+    "playLeftRunningForUser": true,
+    "cameraRecoveryUserConfirmed": true
+  },
+  "canonicalSHA256": "AE6AA260681DEAB439CF809D4FE6F3FA44FC0F072842355B70E8795418625E68",
+  "doorCodeOrGeometryChanges": false,
+  "offlineTests": "Previous82/82 remains valid; no source changed",
+  "nextIndependentCheck": "Use existing walking fixture for park route at all4sizes; avoid blocking on door input. Fail fast on any command or failed precondition before dependent calls.",
+  "doorRoutePhoneAndPrivate3v3": "PENDING"
+}

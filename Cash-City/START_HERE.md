@@ -42,6 +42,9 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   All4size nativewalks/phone/private3v3 stillPENDING. See docs/Map1_Task6_OFFLINE_QA.md, Map1_Task6_REPAIR.json and Map1_Task6_CHECKLIST.md.
   Latestnativeattempt INVALID:100%ramp starts inclosedWintergardendoor; clientopeningattempt ranbeforedoormodelstreamed. Stoppedafter2failures; no geometrydefectconfirmed.
   CleanupPASS:template/rigremoved,camerarestored,Playstopped. NextprefetchandWaitForChilddoor,normalpromptOpenverifiedBEFOREexistingwalkfixture. See docs/Map1_Task6_NATIVE_ATTEMPT.json.
+  Latestretry:cameraFixedstate recoveredbyfreshPlay,userconfirmedfollow. Userreporteddooropensaftersteppingclear; sweepdiagnosticconfirmedavatarwasblockingitsmotion.
+  LaterOpenpreconditionfailedthenrunnerwronglycontinuedwithouttemplate; stoppedafter2errors. No4sizewalkPASS. No door/source/geometrychanges.
+  Playleftnormalforuser,notstopped; notemporaryrig/template. Nextindependentcheck:park-routefour-sizewalks,avoidingdoor/inputdependency. Doorrouteverificationstillpending. See docs/Map1_Task6_DOOR_RETRY.json.
 7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.
 ## Evidence and remaining work
 See docs/Map1_Task3_ACCEPTANCE.md and Map1_Task3_WALK_RESULTS.json.
