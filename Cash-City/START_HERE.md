@@ -1,62 +1,42 @@
-# Map 1 release preparation — START HERE
-Working place: CashCity_RiverWalk_Section2.rbxl. Never publish.
-Cross-session memory: docs/CASH_CITY_MEMORY_HANDOFF.md (snapshot; verify fresh GitHub/live state and latest user instructions).
-Visible Studio6beb19f8-2e46-4f3c-b2de-3c3387505131, CashCity_RiverWalk_Section2.rbxl, reopened after included allowance reset.
-## Rules
-Map1 only: RenCen, RiverWalk, surrounding park. No other districts/helpers/paid credits.
-One numbered task per run; save/checkpoint GitHub before and after; stop for "next".
-Latest user override: use remaining INCLUDED five-hour allowance this continuation; no paid credits. Preserve save buffer. UI failure twice: stop.
-Map1 roads/edges/necessary full rebuild approved; preserve originals.
-## Status
-1 PASS: inset stair-top + source-derived approach;6 offline +5064 native checks.
-2 MECHANICAL PASS; visual screens unverified. New boundary adjusted duringTask3 to retain actual park/complex footprints.
-  Previous reset tests passed at old extents; containment unit checks and573 current-extent barrier rays passed. Recheck current-extent player escape cases duringTask6.
-3 PASS: 68-part park path joins completed160m RiverWalk to existing Hart Plaza path over428.786m.
-  Fixed boundary cropping: limitsX[-1850,750],Z[-650,1250];1098 previously screened preview parts restored.
-  12 focused offline tests;87 native floor samples;22% avatar completed ALL87 waypoints,health100/supportPASS.
-  573 updated barrier rays:0 misses. Park-facing desktop sample59.99FPS,p9518.48ms; not mobile/multiplayer/improvement proof.
-4 PARTIAL: actual solo Practice -> Match -> shrink gates -> extraction -> Results -> Lobby PASS.
-  NormalReady(3) with1player stayedLobby. Real multiplayer stopped at2clients/446MBfreeRAM;6player3v3 BLOCKED.
-  LiveEdit/source has verified CASH CITY/Extraction/Detroit header metadata;7team-rule tests+panel regressionPASS.
-  SAVE VERIFIED: user manually saved2026-10-24 17:20:52;696633bytes.
-  SHA256 AE6AA260681DEAB439CF809D4FE6F3FA44FC0F072842355B70E8795418625E68.
-  Actual disk-reload now PASS: all3production sources equal tested version; boundary/park modules and preview present; noarmedQAfixtures.
-  Canonical savedplace plus immutable manual-save checkpoint backed up; save blocker cleared.
-  Playstopped,observerremoved,noarmedQAfixtures. See docs/Map1_Task4_ACCEPTANCE.md and bothTask4JSONresults.
-  User approved deferring real3v3 to a later private six-player playtest and advancingTask5. No publication authorized. Do not relaunch6localclients under unchangedRAMconditions.
-  Latest recheck2026-10-24 18:15:4.4GBfree, essentially unchanged;0newclients launched.
-  Waitingforuser tofreeRAM/choosehowtoproceed. Resource evidence:docs/Map1_Task4_RESOURCE_RECHECK.json.
-  User chose stayTask4/freememory. Latestready:7183MBfree before reopening,5140-5390MBafter;6clienttest notlaunched.
-  Savedplace reloaded/connected;3v3stillBLOCKED. NewStudioIDabove supersedes92bb. See docs/Map1_Task4_REOPEN_CHECK.json.
-  Output error traced to preserved Workspace.FlayoDev Admin Messages, missingStarterGui.Messages; presetadminallowlist requiresreview beforeactivation.
-5 PARTIAL: StreamingEnabled true; fresh foreground desktop60.045FPS,p9518.343ms,10.009s/601frames,viewport1223x710,Automaticquality.
-  Engine memory2904->2799MB;6128loadedparts/44unanchored. Notmobile/multiplayer/gainproof. No rendering/codechanges justified by this sample.
-  Other streaming controls nonscriptable/unreadable here; manualProperties review pending. Low-endmobileFPS UNVERIFIED.
-  Playstopped,camera/renderlistener restored/removed. Evidence docs/Map1_Task5_DESKTOP.json and Map1_Task5_NOTES.md.
-  UIreview blocked: click failed coordinategeometry, Tabhadnoeffect; stoppedthisUIflow at2failedinputs.
-  Properties filterset successfully toStreaming; Workspace selected. Nativeinspect returnedemptyproperties.
-  Read docs/Map1_Task5_MANUAL_CHECKLIST.md. SettingsvaluesandactualphoneFPSrequirehumanverification; no settingschanged.
-6 PARTIAL: offline repair PASS. Full82/82tests98.817s; strictbuild4/4tests5.495s. Sourceembedding covers39productionfiles exactlyonce/correctcontainers.
-  OlderXMLsources synced; legacyserverInteractionRules preserved as ServerStorage.ArchivedInteractionRules_ServerCopy_RF09_5. Physicalgeometry unchanged41216nodes.
-  WorkingcanonicalrbxlUNCHANGED; XMLstaticpreview still not reconciled withsavedworkingmap. Olderfailedcandidate retainedas history pending/Map1Task6.
-  Parkcornerrepair TESTSPASS: preserved68records+4infillwedges=72. Editor+freshRuntime9048floor/width+9048headroom checks each0fail;22%retest87/87PASS;83offlinePASS.
-  SAVE VERIFIED: repairedcanonical697054bytes,22:54:27,SHA256 ACB7CAFF81360E07A33B0176FD28DA287C13D91687D105446EF1CAAC7945340D; GitHubbinary/checkpointbackedup. No independentdiskreloadthissave.
-  Othernative routes/phone/private3v3 stillPENDING. See docs/Map1_Task6_PARK_NOTES.md and Map1_Task6_PARK_WALKS.json.
-  Latestnativeattempt INVALID:100%ramp starts inclosedWintergardendoor; clientopeningattempt ranbeforedoormodelstreamed. Stoppedafter2failures; no geometrydefectconfirmed.
-  CleanupPASS:template/rigremoved,camerarestored,Playstopped. NextprefetchandWaitForChilddoor,normalpromptOpenverifiedBEFOREexistingwalkfixture. See docs/Map1_Task6_NATIVE_ATTEMPT.json.
-  Latestretry:cameraFixedstate recoveredbyfreshPlay,userconfirmedfollow. Userreporteddooropensaftersteppingclear; sweepdiagnosticconfirmedavatarwasblockingitsmotion.
-  LaterOpenpreconditionfailedthenrunnerwronglycontinuedwithouttemplate; stoppedafter2errors. No4sizewalkPASS. No door/source/geometrychanges.
-  Playleftnormalforuser,notstopped; notemporaryrig/template. Nextindependentcheck:park-routefour-sizewalks,avoidingdoor/inputdependency. Doorrouteverificationstillpending. See docs/Map1_Task6_DOOR_RETRY.json.
-  Latestparkcheckcomplete:4/4walkcasesPASS,348waypoints,386.819s.9048floor+9048headroomrays;12widthfailures,0headroomfailures. CleanupPASS.
-  Latestrepair showslargercornerineditornear(-1488,.41,1163),2newpiecesselected; noPlaycameraoverride. Playstopped/fixturesremoved. NextverifyuserSaveandbackups,thenothernative routes.
-7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.
-## Evidence and remaining work
-See docs/Map1_Task3_ACCEPTANCE.md and Map1_Task3_WALK_RESULTS.json.
-Task2 visual concealment approval still pending; no claim of release readiness.
-Full-build preview/source embedding for newly added modules must be reconciled beforeTask6 fullsuite; old .rbxlx is NOT current working place.
-PNG request was canceled by user after renderer failed twice; no PNG produced. Do not resume renderer unless asked.
-## Where to look
-Camera atpark join:target-1480/1/1120,eye-1415/36/1195;selectionclear.
-## Postlaunch only
-Newdistricts,votingpolish,extra interiors,vehicles,console tuning.
+# Cash City Map1 — current resume guide
+Read HANDOFF.md/latest DEVELOPMENT_STATUS.md/docs/LESSONS_LEARNED.md. Verify fresh GitHub before edits.
+Working place: CashCity_RiverWalk_Section2.rbxl,697054bytes.
+SHA256 ACB7CAFF81360E07A33B0176FD28DA287C13D91687D105446EF1CAAC7945340D.
+Last working Studio6beb19f8-2e46-4f3c-b2de-3c3387505131; rediscover IDs each run. Do not touch old hidden983d9191.
+Cross-session snapshot:docs/CASH_CITY_MEMORY_HANDOFF.md; current guide/status/user instructions supersede stale snapshot facts.
 
+## Rules
+Map1 only: RenCen/Wintergarden/RiverWalk/park and needed roads/edges. No other districts.
+One numbered task per run, checkpoint/GitHub before and after, then stop for next.
+No helpers unless user asks. No paid credits. Check live usage; preserve save buffer.
+Never publish, including privately, without separate explicit approval. Never close/kill Studio.
+Stop failed flow after2command/test/UI failures; report evidence. No new test/capture harnesses.
+Reuse existing fixtures; no giant XML/data/generated-module dumps or unnecessary full rebuild.
+Preserve manual work. Fix generated data through generator. Do not weaken checks to hide failure.
+Camera: do not override Play camera or use unreliable automated E input. Earlier Fixed camera recovered by freshPlay.
+If showing work, user-approved Edit framing only. Door interaction needs clear swing path, streamed model, normal input and verifiedOpen; fail fast if precondition fails.
+Manual local saves must be verified by timestamp/hash then backed up. Autosave is not proof.
+Engram is parked at user's request2026-10-25; do not keep inspecting it unless asked.
+
+## Current status
+1 PASS: source-derived approach/inset stair sample; completed geometry preserved.
+2 Mechanical containment PASS; visual road-screen/sightline approval stillPENDING.
+  BoundsX[-1850,750],Z[-650,1250]; current-expanded-bound player escape/fall/roof cases still need native checks.
+3 Park connection:68originalrecords preserved+4cornerinfill=72;87routepoints.
+  All4size baseline walks passed348waypoints. Corner repair then22%87/87+Edit/runtime9048floor/width+9048headroom each0failures.
+4 Solo flow PASS; real6player3v3 DEFERRED to later approved private playtest. Do not launch6localclients again on unchangedRAM.
+5 PARTIAL: StreamingEnabled true. Foreground desktop60.045FPS,p9518.343ms; NOT phone/multiplayer/improvement evidence.
+  Other streaming settings/manualProperties review and actualphoneFPS remainPENDING; see Map1_Task5_MANUAL_CHECKLIST.md.
+6 PARTIAL: offline83/83PASS. XML sources39exact/unique/correctcontainers; legacy serverInteractionRules archived intact.
+  NEW PASS2026-10-25: original80m+two40m RiverWalk at100/65/40/22%,33waypointseach=132;3393floor/width+3393headroom checks0failures.
+  Evidence docs/Map1_Task6_RIVERWALK_160M.json. No map/player/camera changes; temporary objects removed,Playstopped.
+7 PENDING: tested rollback/release/private-publish instructions; no release-ready claim.
+
+## Next independent native checks
+- Expanded-boundary player return/escape cases under actual gameplay, or remaining interior/access routes.
+- Wintergarden/RenCen interiors, access ramp/stairs still need complete all4size route acceptance.
+- Never repeat failed door setup blindly; no forcedOpen attributes or collision disabling to manufacture a pass.
+- Real phone controls/FPS and six-player private match testing remain required before public release.
+- Tall road screens still need human visual approval.
+Root SmallSignals_DetroitRiverfront_v0_14.rbxlx is source-consistent but its static preview is NOT the canonical saved map; do not replace the working .rbxl with it.
+Postlaunch only: extra districts/maps/modes, voting polish, extra interiors, full vehicles, console polish.
