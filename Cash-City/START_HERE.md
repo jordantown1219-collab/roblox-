@@ -40,6 +40,8 @@ Map1 roads/edges/necessary full rebuild approved; preserve originals.
   OlderXMLsources synced; legacyserverInteractionRules preserved as ServerStorage.ArchivedInteractionRules_ServerCopy_RF09_5. Physicalgeometry unchanged41216nodes.
   WorkingcanonicalrbxlUNCHANGED; XMLstaticpreview still not reconciled withsavedworkingmap. Olderfailedcandidate retainedas history pending/Map1Task6.
   All4size nativewalks/phone/private3v3 stillPENDING. See docs/Map1_Task6_OFFLINE_QA.md, Map1_Task6_REPAIR.json and Map1_Task6_CHECKLIST.md.
+  Latestnativeattempt INVALID:100%ramp starts inclosedWintergardendoor; clientopeningattempt ranbeforedoormodelstreamed. Stoppedafter2failures; no geometrydefectconfirmed.
+  CleanupPASS:template/rigremoved,camerarestored,Playstopped. NextprefetchandWaitForChilddoor,normalpromptOpenverifiedBEFOREexistingwalkfixture. See docs/Map1_Task6_NATIVE_ATTEMPT.json.
 7 PENDING: tested rollback/release/private-test publish instructions; NEVER publish automatically.
 ## Evidence and remaining work
 See docs/Map1_Task3_ACCEPTANCE.md and Map1_Task3_WALK_RESULTS.json.

@@ -1,0 +1,40 @@
+{
+  "status": "INVALID_PRECONDITION_NOT_MAP_FAILURE",
+  "result": {
+    "scale": 1,
+    "passed": false,
+    "error": "AssistantCommand:31: Route failed at 2\nAssistantCommand:31\nAssistantCommand:12\n",
+    "waypoints": {
+      "1": {
+        "y": 4.286841869354248,
+        "index": 1,
+        "position": "267.4472961425781, 4.286841869354248, 290.6795349121094",
+        "speed": 16,
+        "floor": 0.35,
+        "health": 100,
+        "reached": true
+      },
+      "2": {
+        "y": 4.287722587585449,
+        "index": 2,
+        "position": "268.3578796386719, 4.287722587585449, 290.53192138671875",
+        "speed": 16,
+        "floor": 0.35,
+        "health": 100,
+        "reached": false
+      }
+    }
+  },
+  "obstruction": "Closed Wintergarden river entrance door at route start",
+  "secondFailure": "Client door model nil before streaming completed; attempt to index nil with Moving",
+  "testedSizes": [
+    1
+  ],
+  "untestedSizes": [
+    0.65,
+    0.4,
+    0.22
+  ],
+  "cleanup": "Temporary template/rig removed, camera restored, Play stopped",
+  "next": "RequestStreamAroundAsync and WaitForChild production door, verify open by normal prompt before rig walk"
+}
