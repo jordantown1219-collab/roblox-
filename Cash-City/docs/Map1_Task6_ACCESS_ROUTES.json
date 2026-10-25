@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-25",
+  "status": "FLOOR_HEADROOM_PASS_WALK_PENDING",
+  "fixture": "tests/STUDIO_RIVER_ACCESS_FLOORS.lua (unchanged)",
+  "runtimeRoot": "Workspace.SmallSignalsArena.DetroitCityRoot",
+  "routes": {"rampWaypoints": 35, "stairsWaypoints": 37},
+  "floorWidthChecks": 2532,
+  "headroomChecks": 2532,
+  "failures": 0,
+  "door": "Wintergarden river entrance",
+  "doorState": "Closed",
+  "walkingAcceptance": "Pending normal door interaction and native walking tests; no all-size PASS claim",
+  "sourceOrGeometryChanged": false,
+  "cameraChanged": false,
+  "playerMovedByTest": false,
+  "offlineSuite": "Prior83/83; unchanged source, not rerun"
+}

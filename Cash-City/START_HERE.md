@@ -41,3 +41,5 @@ Engram is parked at user's request2026-10-25; do not keep inspecting it unless a
 Root SmallSignals_DetroitRiverfront_v0_14.rbxlx is source-consistent but its static preview is NOT the canonical saved map; do not replace the working .rbxl with it.
 Postlaunch only: extra districts/maps/modes, voting polish, extra interiors, full vehicles, console polish.
 
+
+Latest access QA:2532floor/width+2532headroom checks PASS; walks awaiting normal Wintergarden entrance opening. Play left running, player/camera unchanged; no temporary rigs. See docs/Map1_Task6_ACCESS_ROUTES.json.
