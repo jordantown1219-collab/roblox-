@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-25",
+  "scope": "Two low beds behind existing benches in the farther40m RiverWalk section",
+  "addedParts": 10,
+  "preservedPlanRecords": 79,
+  "totalPlanRecords": 89,
+  "changes": {
+    "bases": 2,
+    "soilInserts": 2,
+    "shrubs": 6
+  },
+  "native": {
+    "checks": 849,
+    "headroomChecks": 849,
+    "failures": [],
+    "passed": true,
+    "preservedOriginalParts": 79
+  },
+  "offline": "Existing test_rencen_walk.py8/8PASS in19.954s",
+  "location": "Workspace.DetroitCityPreview.RenCenRiverWalkExtension2.LowPlantingBeds",
+  "cameraCenter": [
+    -44.01075,
+    0.96,
+    561.00446
+  ],
+  "reference": "Original landscaping layout within source-validated existing bays; not a surveyed planting plan",
+  "roofPreserved": true,
+  "placeSave": "PENDING manual Studio save; saved binary remains ACB7CAFF before both roof and beds",
+  "limitations": [
+    "No new measured FPS result",
+    "No new actual walking, multiplayer or device acceptance",
+    "Older XML remains stale; never replace live map with it"
+  ],
+  "backup": "ServerStorage.Map1BeforeRiverWalkBeds_20261025 and work/agent_checkpoints/riverwalk_beds_20261025; GitHub beforecheckpoint b8d7893"
+}

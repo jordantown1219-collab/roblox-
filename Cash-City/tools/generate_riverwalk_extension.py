@@ -73,6 +73,17 @@ def generate(root=ROOT,section=1):
         # Bay rear railing leaves the full mapped walking strip unobstructed.
         for z in (-2.8,0,2.8):prop('Extension_BayRailPost',sign*5.15,z,2.15,[.16,3.48,.16],'Metal',[79,87,86])
         for y in (1.4,3.8):prop('Extension_BayRail',sign*5.15,0,y,[.12,.12,5.6*scale],'Metal',[79,87,86])
+        if section==2:
+            # Low planted bed behind the seating, inside the reviewed bay.
+            # Preserve the route, benches and existing corner planters exactly.
+            cx=sign*4.8
+            bed=Polygon([(p.x+r[0]*(cx+x)+f[0]*z,p.y+r[2]*(cx+x)+f[2]*z)
+                         for x,z in [(-.27,-1.25),(-.27,1.25),(.27,1.25),(.27,-1.25)]])
+            assert land.covers(bed) and not bed.intersects(forbidden) and not bed.intersects(corridor)
+            prop('Extension_RearPlantingBed',cx,0,.96,[.54*scale,1.1,2.5*scale],'Concrete',[132,130,118])
+            prop('Extension_PlantingSoil',cx,0,1.54,[.46*scale,.08,2.42*scale],'Ground',[67,57,43],decor=True)
+            for z,color in [(-.8,[71,94,59]),(0,[82,105,66]),(.8,[64,87,53])]:
+                prop('Extension_LowLandscapeShrub',cx,z,2.12,[.5*scale,1.16,.78*scale],'Grass',color,foliage=True)
     # Sparse dark expansion joints, above the floor and noncollidable.
     for distance in range(2,40,2):
         p,f,r,m=frame(distance)
