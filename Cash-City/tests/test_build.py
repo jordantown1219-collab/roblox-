@@ -32,7 +32,7 @@ class BuildAcceptance(unittest.TestCase):
   mapping.update(RenaissanceLobby='RenaissanceLobby.lua',RenaissanceLobbyData='RenaissanceLobbyData.lua')
   mapping.update(ArrivalLounge='ArrivalLounge.lua',ArrivalLoungeData='ArrivalLoungeData.lua')
   mapping.update(RiverWalkExtension='RiverWalkExtension.lua',RiverWalkExtension2='RiverWalkExtension2.lua',Map1Boundary='Map1Boundary.lua',ParkConnection='ParkConnection.lua')
-  mapping.update(Map1RoadMarkings='Map1RoadMarkings.lua',RiverfrontAppearance='RiverfrontAppearance.lua')
+  mapping.update(Map1RoadMarkings='Map1RoadMarkings.lua',RiverfrontAppearance='RiverfrontAppearance.lua',RiverfrontPark='RiverfrontPark.lua')
   found=set();refs=[];counts={name:0 for name in mapping}
   parents={child:parent for parent in root.iter() for child in parent}
   client_names={'SmallSignalsClient','SmallSignalsHUD','SmallSignalsSettings','RiverfrontClient','VehicleClient'}

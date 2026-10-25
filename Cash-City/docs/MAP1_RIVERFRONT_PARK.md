@@ -1,0 +1,11 @@
+# Mapped riverfront lawn planting - 2026-10-25
+
+Added five original young shade trees inside mapped park107609230 beside the Renaissance Center.25parts total:5trunks,5mulch rings,15rounded crown forms. Stock wood/grass materials and varied muted greens; no imported assets, real branding or copied art. Arrangement/forms are original estimates, not surveyed tree locations or final photorealistic-art acceptance.
+
+Generator uses the intersection of source park and rendered JoinedPark lawn, then subtracts rendered road/walk polygons with a .25stud gap. Canopy centers remain10studs inside exposed lawn; trees separated by>28studs and gameplay source markers by>16studs. Initial eight-tree proposal failed native support checks because some mapped grass was under higher JoinedWalk paving. No trees were placed in that failed layout. Excluding the actual paving left five appropriately spaced sites; strict containment retained.
+
+Native revised layout:50ground/canopy-perimeter/overhead checks PASS before placement. Build25parts/5collidable trunks/15noncolliding query-disabled crowns PASS. Allparts anchored/no touch/no shadows; original lawn/path/road/landmark geometry unchanged. Existing Atwater37parts/8signfaces/2lamps verified intact. Fresh Arena require PASS; existing all-source Lua syntax1test PASS0.118s; generator deterministic saved-plan comparison PASS. No full-route walk, full-suite, multiplayer/device, FPS or visual-acceptance claim.
+
+New files: tools/generate_riverfront_park.py,data/riverfront_park_plan.json,src/RiverfrontPark.lua. OneArena buildhook; build/Rojo/embedding mappings updated. New selection Workspace.DetroitCityPreview.Map1RiverfrontPark, camera framed grove. Active local Studio847a66df-2e33-4cce-b51f-33f1d2e3f6ac/window1442798. Cloudcopy remains previous version without this grove; use newer local/GitHub checkpoint.
+
+Before binary10e980d / work/agent_checkpoints/riverfront_park_20261025, Arena cloneServerStorage.ArenaBeforeParkTrees_20261025. Automated CtrlS in exact localwindow succeeded after allowing save I/O to finish. Canonical719684bytes,modified2026-10-25 18:04:35America/New_York,SHA2567B412EC319A07A61681807700D63BB633E2CA3216A39213325C8A5FFE2EB4600. No separate post-save disk reload. Newbinary+immutableaftercheckpoint backedupGitHub; olderXML remains stale. No helpers/paid-credit fallback/publication.
