@@ -260,6 +260,10 @@
       "ResidentialStairWayfinding": {
         "$ignoreUnknownInstances": true,
         "$path": "src/ResidentialStairWayfinding.lua"
+      },
+      "ResidentialRealismPilot": {
+        "$path": "src/ResidentialRealismPilot.lua",
+        "$ignoreUnknownInstances": true
       }
     },
     "StarterPlayer": {
