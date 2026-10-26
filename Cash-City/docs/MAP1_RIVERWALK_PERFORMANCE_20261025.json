@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-25",
+  "sample": "CashCity-client-10s-v1",
+  "scope": "One stationary normal-camera foreground Studio desktop view on original80m RiverWalk after92part furnishing integration",
+  "elapsedSeconds": 10.015325500047766,
+  "renderCallbacks": 601,
+  "averageFPS": 60.0080346861551,
+  "medianFrameMs": 16.809500055387616,
+  "p95FrameMs": 18.527699983678758,
+  "worstFrameMs": 20.964300027117133,
+  "memoryStartMb": 2403.359375,
+  "memoryEndMb": 2403.64453125,
+  "partsStart": {
+    "loaded": 8952,
+    "unanchored": 44
+  },
+  "partsEnd": {
+    "loaded": 8952,
+    "unanchored": 44
+  },
+  "viewport": {
+    "width": 1223,
+    "height": 710
+  },
+  "cameraPositionStart": {
+    "x": 257.68701171875,
+    "y": 9.085735321044922,
+    "z": 483.2740783691406
+  },
+  "cameraType": "Custom",
+  "streamingEnabled": true,
+  "furnishingPartsLoaded": 92,
+  "cleanup": "Listener disconnected by existing fixture; Play stopped; no persistent profiling objects or source changes",
+  "limitations": [
+    "Not a same-view before/after comparison; no performance improvement claimed",
+    "Not mobile/tablet/console/multiplayer/full-match/moving-route acceptance",
+    "Memory is reported Roblox client total; not an attributed map-only cost"
+  ],
+  "placeSaved": false,
+  "githubPushed": false
+}

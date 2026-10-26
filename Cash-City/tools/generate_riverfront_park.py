@@ -91,7 +91,34 @@ def generate(root=ROOT):
             m=[right[0],up[0],back[0],right[1],up[1],back[1],right[2],up[2],back[2]]
             records.append(dict(name=f'ParkTree_{index}_Branch{j}',size=[length,.48,.48],pos=[x+ox/2,floor+(7+oy)/2,z+oz/2],matrix=m,color=[96,79,60],material='Wood',shape='Cylinder',collide=False))
     assert len(records)==100
-    return dict(id='Map1RiverfrontPark',records=records,anchors=anchors,seatingSites=seating,sourceOSM=source['osm'],classification='Mapped lawn; original trees, seating and lighting, not surveyed',sourceHashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
+    # Short source-derived sloping links: no step between the park pad and mapped path.
+    access=[]
+    for index,site in enumerate(seating):
+        p=Point(site['x'],site['z']);q=nearest_points(p,walks)[1];distance=p.distance(q)
+        fx,fz=(q.x-p.x)/distance,(q.y-p.y)/distance
+        rx,rz=-fz,fx
+        start=[p.x+fx*2,site['floor']+.20,p.y+fz*2]
+        supports=[r for r in geometry if r['name']=='JoinedWalk' and surface_polygon(r).buffer(.001).covers(q)]
+        assert supports,'Path landing support missing'
+        top=max(r['pos'][1]+sum(abs(r['matrix'][3+i])*r['size'][i]/2 for i in range(3)) for r in supports)
+        end=[q.x,top,q.y];gap=distance-2;rise=top-start[1]
+        assert gap>.3 and abs(rise)/gap<.2,'Approach grade requires review'
+        footprint=Polygon([(start[0]+rx*w,start[2]+rz*w) for w in (-1.5,1.5)]+[(end[0]+rx*w,end[2]+rz*w) for w in (1.5,-1.5)])
+        land=affinity.scale(shape(geography['land']),xfact=scale,yfact=scale,origin=(0,0))
+        assert land.covers(footprint),'Approach must remain entirely on source land'
+        roads=unary_union([surface_polygon(r) for r in geometry if r['name']=='JoinedRoad'])
+        assert not footprint.intersects(roads),'Approach must stay off roads'
+        assert footprint.intersection(paved).area<.001,'No coplanar paving overlay'
+        length=math.hypot(gap,rise);back=[fx*gap/length,rise/length,fz*gap/length]
+        up=[-fx*rise/length,gap/length,-fz*rise/length]
+        # right x up = back; local +Z runs from pad toward path.
+        right=[fz,0,-fx]
+        matrix=[right[0],up[0],back[0],right[1],up[1],back[1],right[2],up[2],back[2]]
+        pos=[(start[i]+end[i])/2-up[i]*.06 for i in range(3)]
+        records.append(dict(name=f'ParkAccess_{index}_SlopedLink',size=[3,.12,length],pos=pos,matrix=matrix,color=[151,147,135],material='Concrete',shape='Block',collide=True))
+        access.append(dict(start=start,end=end,width=3,grade=rise/gap,index=index))
+    assert len(records)==104
+    return dict(id='Map1RiverfrontPark',records=records,anchors=anchors,seatingSites=seating,accessRoutes=access,sourceOSM=source['osm'],classification='Mapped lawn; original trees, seating and lighting, not surveyed',sourceHashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
 
 TAIL='''
 local Park={}

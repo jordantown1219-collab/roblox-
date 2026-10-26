@@ -73,7 +73,7 @@ def generate(root=ROOT,section=1):
         # Bay rear railing leaves the full mapped walking strip unobstructed.
         for z in (-2.8,0,2.8):prop('Extension_BayRailPost',sign*5.15,z,2.15,[.16,3.48,.16],'Metal',[79,87,86])
         for y in (1.4,3.8):prop('Extension_BayRail',sign*5.15,0,y,[.12,.12,5.6*scale],'Metal',[79,87,86])
-        if section==2:
+        if section in (1,2):
             # Low planted bed behind the seating, inside the reviewed bay.
             # Preserve the route, benches and existing corner planters exactly.
             cx=sign*4.8

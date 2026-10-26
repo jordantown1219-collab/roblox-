@@ -1,0 +1,8 @@
+# Original80m promenade furnishings evidence
+
+
+## Latest 2026-10-25 - Original80m promenade furnishing pockets / LIVE UNSAVED
+User no-save instruction retained:NO place save or GitHub push. Lastsavedbaseline7d42b4d; newer unsaved nearbeds/parkapproaches/Franklinpaint remain authoritative inlocalStudio847a66df. Do not replace scene witholderbinary.
+Added64staticparts in8original planting/light pockets along existing80mpromenade:8concreteplanters/soil/trunks,16foliagemasses,8lightbases/columns/heads;8restrained PointLights brightness.2/range12/shadowsfalse. Original81pavingparts preservedexactly. Source land/road/building/standingcollider/gameplayclearance guards; protectedRiverAccess/parkconnection exclusion. Initialread-onlyplacement checkcaught one pocket onpavedconnector; revisedsourceexclusion movedit toclearside beforeanysceneconstruction. Originallayout inspiredby savedreference brief,not surveyedpositions.
+PASS deterministicgeneration/allLua syntax1test;native144groundsupportchecks/81pavingpreservationchecks. FreshPlay64parts/8lights,99floor+99smallavatarheadroomraysPASS. First runtimeassertion failed due exact.2floatcomparison (actual.20000000298023225); tolerancecorrected afterread-onlydiagnosis; retryPASS. Actualavatarwalking/FPS/device/multiplayer/visualapproval UNVERIFIED; previouspark22percentfixture remainsblockedmissingtemplate.
+Added tools/generate_riverwalk_furnishings.py,data/riverwalk_furnishings_plan.json,src/RiverWalkFurnishings.lua. Arena/build/Rojo/testembeddingmapping updated; existing CityBlockGenerator reused. OldXMLnotregenerated/fullsuiteunverified. Playstopped,newfurnishingsselected,camera besidecentral80m pocket. No doors/helpers/paidfallback/publish.

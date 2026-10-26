@@ -1,0 +1,14 @@
+# Reception finish evidence
+
+
+## Latest 2026-10-25 - Automatic interior continuation / inlays and reception PASS, LIVE UNSAVED
+User reserve changed to1percentincluded allowance; no paidcredits. Automaticadvanceafterpassedchecks remainsauthorized. Nosave/nopushstillactive.
+EmptyLineStringintersectionguardfixed inexistinginteriorgenerator.11repairedfloorinlayparts added;68priorfinishrecords/nativeparts preserved. Deterministic+syntaxPASS;33nativefloorsupportchecks/freshPlay79finishparts/11newinlaysPASS.
+Next receptionbatch50parts:13woodpanels,15walltrim,12ceilinglightparts/6downlights,6counterdetails,4floorborderparts.64priorlobbyparts preservedexactly. Existinglobby5tests+syntax1=6PASS7.562s;determinismPASS.12floor/6ceilingsupportchecksPASS;freshPlay50parts/6downlightsPASS. No doors/navigation geometrychanged.
+Added tools/generate_lobby_interior_finish.py,data/lobby_interior_finish_plan.json,src/LobbyInteriorFinish.lua;Arena/build/Rojo/testembeddingmappingsupdated. Next:existing22percentNPCwalkingfixture onreceptioncenterroute; no realplayer manipulation. No route/device/multiplayer/FPS/visualacceptanceclaimyet. Towers/apartmentsremainplanned. Lastusage91percentused;requerybeforelargernexttask. Placeunsaved/GitHub7d42b4dolderthanlive.
+
+
+## Latest 2026-10-25 - Public reception walking/circular finish PASS, LIVE UNSAVED
+Existing STUDIO_RENCEN_LOBBY_WALK.lua reusedwithreceptioncenterroute at22percent:4/4actualHumanoidwaypointsPASS,health100,speed16. Preparedtemporaryexistingfixturetemplatefromclonedscriptlessavatar;originalCharacterArchivable restored;temporarytemplateandprobe removed. No realplayer movement/doorwork.
+Added57staticnoncollidingcirculationdetails:48stone-ringsegments+3wayfindingstands(9parts),6readablefaces(RECEPTION/WINTERGARDEN/CITYENTRANCE). Prior50receptionfinishparts preservedexactly;sourcegeneratorfirst50recordsidentical.153nativefloorsupportchecksPASS;determinism/syntaxPASS;freshPlay107totalfinishparts/6signfaces/6ceilinglightsPASS.
+Mainpublicinteriorfinishespartial:publicroutevalidatedonlyreception,notentirecomplex. Towers/apartments/elevatorsremainunbuilt; nextsource-shellinspection underway. NoFPS/device/multiplayer/visualacceptanceclaim. Userreserve1percentincluded;lastusage94percentused;no paidcredits. Nosave/nopushretained;olderbaseline7d42b4d.

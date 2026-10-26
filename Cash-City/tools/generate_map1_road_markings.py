@@ -100,9 +100,23 @@ def generate(root=ROOT,junction_kind='atwater'):
             for side in (-1,1):
                 records.append(dict(name=prefix+'Cover_'+tag+'_Slot'+str(side),size=[.38*scale,.008,.025*scale],pos=[x+fx*side*.1*scale,top+.079,z+fz*side*.1*scale],matrix=[rx,0,fx,0,1,0,rz,0,fz],color=[38,44,43],material='Metal',collide=False,roadTop=top,sourceOSM=f['osm']))
             polygons.append(footprint)
+        if junction_kind=='franklin':
+            # Source-contained short approach bands; artistic two-way traffic assumption.
+            for distance in (22,34,46):
+                if distance+6>line.length-2:continue
+                center=line.interpolate(distance)
+                if any(other['osm'] not in used and other['name']!=f['name'] and LineString(other['geometry']['coordinates']).distance(center)<other['width']/2+6.5 for other in roads):continue
+                band_width=usable_width(distance,11.8)
+                if band_width is None:continue
+                candidates=[('CenterL',-.15,.09,[220,179,60]),('CenterR',.15,.09,[220,179,60]),('EdgeL',-band_width/2+.12,.10,[223,221,209]),('EdgeR',band_width/2-.12,.10,[223,221,209])]
+                for label,lateral,paint_width,color in candidates:
+                    polygon=placement(distance,lateral,paint_width,11.8)[-1]
+                    if not road_union.buffer(1e-6).covers(polygon) or any(polygon.intersection(old).area>=1e-7 for old in polygons):continue
+                    add(prefix+'Lane_'+tag+'_'+str(distance)+'_'+label,distance,lateral,paint_width,11.8)
+                    records[-1]['color']=color
         arms.append(dict(osm=f['osm'],name=f['name'],crosswalkStripes=count,widthMeters=f['width'],paintableWidthMeters=width,crossingDistanceMeters=crossing))
     if junction_kind=='franklin':
-        assert len(records)<=48
+        assert len(records)<=140
         return dict(id='Map1FranklinCrossing',records=records,arms=arms,junctionStuds=[junction.x*scale,junction.y*scale],classification='Mapped junction; original markings and service covers; traffic directions/fixture positions not surveyed',sourceHashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
     assert len(records)<=32
     # Small, original streetscape set on source sidewalk corners, off the roadway.
