@@ -23,3 +23,5 @@ This checkpoint supersedes the older unsaved-state entries preserved in the hand
 5. Preserve completed floors; do not repeat the 39-floor copy operation.
 
 The verified Git commit and Obsidian archive receipt are recorded after upload. The project archive excludes scratch work, runtime caches, lock files and credentials.
+
+Verified GitHub game checkpoint: 3818b2bed4a75081ed7c43b3db60bc351ec8d985. The full project ZIP and place copies in the Obsidian Cash City Backups folder passed hash/CRC verification. See docs/obsidian/BACKUP_RECEIPT.md for the receipt; later documentation-only commits may follow.
