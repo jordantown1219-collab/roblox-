@@ -21,3 +21,11 @@ Latest2026-10-24: Model:ScaleTo also scales Humanoid.WalkSpeed (16->3.52at22%). 
 2026-10-25cloudsave: currentStudioFilemenu shows Download a Copy forlocalexport;do notkeepinstructingSaveToFileAswhenabsent. Userphotoverifiedmenu. Cloud save andlocaldownloadareseparate;freshreopen+source/geometrymarkersverifycloudpersistence,localfilehashverifieslocalcopy. Currentcloudplace82361696555229/universe10772964773;protectnewercloudworkfromoldEA30localbaseline.
 
 2026-10-25park: rawJoinedParkmaylieunderhigherJoinedWalk. Subtractrenderedpavedpolygons beforeplanting;nativegroundraysmusthitexposedgrass. Exactlocal-windowCtrlS canfinishafterthefirstimmediatefilestatread;allowboundedI/O waitbeforeassumingfailureorissuinganotherSave.
+
+2026-10-26 EDIT REQUIRE CACHE: Fresh-clone ALL edited builder dependencies, not just batch entrypoint. A cached pre-parameter Floor ignored level3 and replaced Level01 generated model before cached corridor guardfailed. Restored from current source/reapplied6openings, quarantinedobsolete96partdraft. FreshPlay is reliable for current-source startup; EditModuleScript.Source changes do not invalidate require caches. Never retry a dependent mutation without inspecting partial state.
+
+2026-10-26: When remappingfreshModuleScriptdependencies, match full tokens (e.g.ResidentialFloorBatch).build), notprefixes thatalsoalterResidentialFloorBatch09Data. Requirefailureiscached; usefreshinstanceafterfix. UnsupportedStreamingMinRadiuspropertywasnotusedormodified.
+
+2026-10-26 outdoorprofile: WaitingforfinalmapmodeldoesnotguaranteeplayerCharacterhasspawned. GatedependentClientsetupbyServerisError; aServerassertwasfollowedbynilCharacterClienterror. Stopaftertwofailures; nextresume boundedwaitCharacter/root/alive+WorldLoadingspawncompletion, never blindteleport/camera retries.
+
+2026-10-26 outdoorperformance: verifyuniqueStudioforegroundbeforeinterpretingFPS. Initial15FPS(RenderCPU9ms/GPU17ms vsFrame66ms)became60afterfocus, butcameradriftconfoundssolecause. Reportforegroundsamplesandcamera/viewport, donotdeletegeometrybasedonbackground/idle sample. Characterready andRiverfrontLoadingfalse mustgateallmovement/camerasetup.

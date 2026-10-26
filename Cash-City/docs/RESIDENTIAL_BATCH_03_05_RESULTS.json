@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-26",
+  "batch": "Residential Levels03-05",
+  "before": {
+    "averageFPS": 60.01979734538208,
+    "p95FrameMs": 18.084699986502528,
+    "memoryEndMb": 2450.83984375,
+    "partsLoaded": 7492,
+    "unanchored": 22,
+    "camera": {
+      "x": 4.989574909210205,
+      "y": 100.67578887939453,
+      "z": 245.3642578125
+    },
+    "viewport": {
+      "width": 1223,
+      "height": 710
+    }
+  },
+  "after": {
+    "medianFrameMs": 16.856900067068636,
+    "observedIntervals": 599,
+    "renderCallbacks": 600,
+    "streamingEnabled": true,
+    "memoryStartMb": 2469.01171875,
+    "partsEnd": {
+      "loaded": 9868,
+      "unanchored": 22
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 18.18510005250573,
+    "worstFrameMs": 19.69330001156777,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 9868,
+      "unanchored": 22
+    },
+    "elapsedSeconds": 10.00610230001621,
+    "cameraPositionStart": {
+      "y": 100.67578887939453,
+      "x": 4.989574909210205,
+      "z": 245.3642578125
+    },
+    "averageFPS": 59.96340852911608,
+    "memoryEndMb": 2468.6484375
+  },
+  "walk": {
+    "scale": 0.22,
+    "passed": true,
+    "waypoints": {
+      "1": {
+        "y": 92.86690521240234,
+        "index": 1,
+        "position": "-45.01042556762695, 92.86690521240234, 209.29019165039062",
+        "speed": 16,
+        "floor": 92,
+        "health": 100,
+        "reached": true
+      },
+      "2": {
+        "y": 92.86690521240234,
+        "index": 2,
+        "position": "-54.965877532958984, 92.86690521240234, 209.29019165039062",
+        "speed": 16,
+        "floor": 92,
+        "health": 100,
+        "reached": true
+      },
+      "3": {
+        "y": 98.86598205566406,
+        "index": 3,
+        "position": "-55.50699996948242, 98.86598205566406, 224.84848022460938",
+        "speed": 16,
+        "floor": 98,
+        "health": 100,
+        "reached": true
+      },
+      "4": {
+        "y": 98.86690521240234,
+        "index": 4,
+        "position": "-51.079132080078125, 98.86690521240234, 225.23834228515625",
+        "speed": 16,
+        "floor": 98,
+        "health": 100,
+        "reached": true
+      },
+      "5": {
+        "y": 104.82844543457031,
+        "index": 5,
+        "position": "-49.57197570800781, 104.82844543457031, 210.8007049560547",
+        "speed": 16,
+        "floor": 104,
+        "health": 100,
+        "reached": true
+      },
+      "6": {
+        "y": 104.86690521240234,
+        "index": 6,
+        "position": "-54.03546905517578, 104.86690521240234, 209.45169067382812",
+        "speed": 16,
+        "floor": 104,
+        "health": 100,
+        "reached": true
+      },
+      "7": {
+        "y": 110.85043334960938,
+        "index": 7,
+        "position": "-55.466697692871094, 110.85043334960938, 224.11557006835938",
+        "speed": 16,
+        "floor": 110,
+        "health": 100,
+        "reached": true
+      },
+      "8": {
+        "y": 110.86690521240234,
+        "index": 8,
+        "position": "-50.7036018371582, 110.86690521240234, 225.22474670410156",
+        "speed": 16,
+        "floor": 110,
+        "health": 100,
+        "reached": true
+      },
+      "9": {
+        "y": 116.83938598632812,
+        "index": 9,
+        "position": "-49.53731155395508, 116.83938598632812, 210.7511444091797",
+        "speed": 16,
+        "floor": 116,
+        "health": 100,
+        "reached": true
+      },
+      "10": {
+        "y": 116.86690521240234,
+        "index": 10,
+        "position": "-54.02838897705078, 116.86690521240234, 209.4420623779297",
+        "speed": 16,
+        "floor": 116,
+        "health": 100,
+        "reached": true
+      },
+      "11": {
+        "y": 122.86579895019531,
+        "index": 11,
+        "position": "-55.495662689208984, 122.86579895019531, 224.83087158203125",
+        "speed": 16,
+        "floor": 122,
+        "health": 100,
+        "reached": true
+      },
+      "12": {
+        "y": 122.86690521240234,
+        "index": 12,
+        "position": "-51.025089263916016, 122.86690521240234, 225.1977996826172",
+        "speed": 16,
+        "floor": 122,
+        "health": 100,
+        "reached": true
+      },
+      "13": {
+        "y": 128.85910034179688,
+        "index": 13,
+        "position": "-49.53884506225586, 128.85910034179688, 210.1099853515625",
+        "speed": 16,
+        "floor": 128,
+        "health": 100,
+        "reached": true
+      },
+      "14": {
+        "y": 128.8668975830078,
+        "index": 14,
+        "position": "-45.469425201416016, 128.8668975830078, 209.3123779296875",
+        "speed": 16,
+        "floor": 128,
+        "health": 100,
+        "reached": true
+      },
+      "15": {
+        "y": 128.8668975830078,
+        "index": 15,
+        "position": "-45.013999938964844, 128.8668975830078, 232.91990661621094",
+        "speed": 16,
+        "floor": 128,
+        "health": 100,
+        "reached": true
+      },
+      "16": {
+        "y": 128.8668975830078,
+        "index": 16,
+        "position": "4.750442028045654, 128.8668975830078, 233.2894744873047",
+        "speed": 16,
+        "floor": 128,
+        "health": 100,
+        "reached": true
+      }
+    }
+  },
+  "limitations": [
+    "Single stationary Studio desktop 10-second samples, not mobile or multiplayer",
+    "No performance improvement claimed",
+    "Level01 Edit preview was restored after stale cached builder replaced it; six openings reapplied"
+  ]
+}

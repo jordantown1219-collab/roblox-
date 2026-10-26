@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-26",
+  "batch": "Residential Levels06-08",
+  "warmupExcluded": {
+    "medianFrameMs": 16.840999945998192,
+    "observedIntervals": 559,
+    "renderCallbacks": 560,
+    "streamingEnabled": true,
+    "memoryStartMb": 2437.26953125,
+    "partsEnd": {
+      "loaded": 9868,
+      "unanchored": 22
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 18.276599934324622,
+    "worstFrameMs": 158.48410001490265,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 3714,
+      "unanchored": 22
+    },
+    "elapsedSeconds": 10.009130800026469,
+    "cameraPositionStart": {
+      "y": 136.62318420410156,
+      "x": 4.989574909210205,
+      "z": 245.3642578125
+    },
+    "averageFPS": 55.94891416530585,
+    "memoryEndMb": 2458.671875
+  },
+  "before": {
+    "medianFrameMs": 16.865599900484085,
+    "observedIntervals": 598,
+    "renderCallbacks": 599,
+    "streamingEnabled": true,
+    "memoryStartMb": 2457.53515625,
+    "partsEnd": {
+      "loaded": 9868,
+      "unanchored": 22
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 18.38799996767193,
+    "worstFrameMs": 42.11899999063462,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 9868,
+      "unanchored": 22
+    },
+    "elapsedSeconds": 10.006606500013731,
+    "cameraPositionStart": {
+      "y": 136.67581176757812,
+      "x": 4.989574909210205,
+      "z": 245.3642578125
+    },
+    "averageFPS": 59.860453191516825,
+    "memoryEndMb": 2435.97265625
+  },
+  "after": {
+    "medianFrameMs": 16.83249999769032,
+    "observedIntervals": 598,
+    "renderCallbacks": 599,
+    "streamingEnabled": true,
+    "memoryStartMb": 2560.87109375,
+    "partsEnd": {
+      "loaded": 12244,
+      "unanchored": 22
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 18.572599976323545,
+    "worstFrameMs": 37.15240000747144,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 12244,
+      "unanchored": 22
+    },
+    "elapsedSeconds": 10.004484900040552,
+    "cameraPositionStart": {
+      "y": 136.67581176757812,
+      "x": 4.989574909210205,
+      "z": 245.3642578125
+    },
+    "averageFPS": 59.87314749183859,
+    "memoryEndMb": 2560.82421875
+  },
+  "walk": {
+    "scale": 0.22,
+    "passed": true,
+    "waypoints": {
+      "1": {
+        "y": 128.8668975830078,
+        "index": 1,
+        "position": "-45.01042556762695, 128.8668975830078, 209.29019165039062",
+        "speed": 16,
+        "floor": 128,
+        "health": 100,
+        "reached": true
+      },
+      "2": {
+        "y": 128.8668975830078,
+        "index": 2,
+        "position": "-54.931339263916016, 128.8668975830078, 209.29014587402344",
+        "speed": 16,
+        "floor": 128,
+        "health": 100,
+        "reached": true
+      },
+      "3": {
+        "y": 134.84613037109375,
+        "index": 3,
+        "position": "-55.51166915893555, 134.84613037109375, 223.99349975585938",
+        "speed": 16,
+        "floor": 134,
+        "health": 100,
+        "reached": true
+      },
+      "4": {
+        "y": 134.8668975830078,
+        "index": 4,
+        "position": "-50.73077392578125, 134.8668975830078, 225.19979858398438",
+        "speed": 16,
+        "floor": 134,
+        "health": 100,
+        "reached": true
+      },
+      "5": {
+        "y": 140.86627197265625,
+        "index": 5,
+        "position": "-49.51676940917969, 140.86627197265625, 209.6062774658203",
+        "speed": 16,
+        "floor": 140,
+        "health": 100,
+        "reached": true
+      },
+      "6": {
+        "y": 140.8668975830078,
+        "index": 6,
+        "position": "-54.44273376464844, 140.8668975830078, 209.33517456054688",
+        "speed": 16,
+        "floor": 140,
+        "health": 100,
+        "reached": true
+      },
+      "7": {
+        "y": 146.85922241210938,
+        "index": 7,
+        "position": "-55.500423431396484, 146.85922241210938, 224.43130493164062",
+        "speed": 16,
+        "floor": 146,
+        "health": 100,
+        "reached": true
+      },
+      "8": {
+        "y": 146.8668975830078,
+        "index": 8,
+        "position": "-51.013755798339844, 146.8668975830078, 225.2979278564453",
+        "speed": 16,
+        "floor": 146,
+        "health": 100,
+        "reached": true
+      },
+      "9": {
+        "y": 152.83236694335938,
+        "index": 9,
+        "position": "-49.56375503540039, 152.83236694335938, 210.7466583251953",
+        "speed": 16,
+        "floor": 152,
+        "health": 100,
+        "reached": true
+      },
+      "10": {
+        "y": 152.8668975830078,
+        "index": 10,
+        "position": "-54.03146743774414, 152.8668975830078, 209.43829345703125",
+        "speed": 16,
+        "floor": 152,
+        "health": 100,
+        "reached": true
+      },
+      "11": {
+        "y": 158.8653106689453,
+        "index": 11,
+        "position": "-55.497314453125, 158.8653106689453, 224.83901977539062",
+        "speed": 16,
+        "floor": 158,
+        "health": 100,
+        "reached": true
+      },
+      "12": {
+        "y": 158.8668975830078,
+        "index": 12,
+        "position": "-50.58422088623047, 158.8668975830078, 225.24505615234375",
+        "speed": 16,
+        "floor": 158,
+        "health": 100,
+        "reached": true
+      },
+      "13": {
+        "y": 164.84347534179688,
+        "index": 13,
+        "position": "-49.530006408691406, 164.84347534179688, 210.67282104492188",
+        "speed": 16,
+        "floor": 164,
+        "health": 100,
+        "reached": true
+      },
+      "14": {
+        "y": 164.8668975830078,
+        "index": 14,
+        "position": "-46.55023193359375, 164.8668975830078, 209.49331665039062",
+        "speed": 16,
+        "floor": 164,
+        "health": 100,
+        "reached": true
+      },
+      "15": {
+        "y": 164.8668975830078,
+        "index": 15,
+        "position": "-45.04721450805664, 164.8668975830078, 231.9687042236328",
+        "speed": 16,
+        "floor": 164,
+        "health": 100,
+        "reached": true
+      },
+      "16": {
+        "y": 164.8668975830078,
+        "index": 16,
+        "position": "3.495549440383911, 164.8668975830078, 233.27505493164062",
+        "speed": 16,
+        "floor": 164,
+        "health": 100,
+        "reached": true
+      }
+    }
+  },
+  "startup": {
+    "prompts": 128,
+    "floors": 8,
+    "freshStartup": true,
+    "doors": 96,
+    "windows": 32
+  },
+  "limitations": [
+    "Warmup sample excluded from comparison because loaded part count changed",
+    "Stationary desktop Studio samples only",
+    "Memory delta includes build/test period and is not isolated geometry cost",
+    "No mobile/multiplayer/interaction activation acceptance"
+  ]
+}

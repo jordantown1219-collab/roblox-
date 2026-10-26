@@ -1,0 +1,233 @@
+{
+  "date": "2026-10-26",
+  "batch": "Residential Levels09-11",
+  "systemFreeMemoryGbBefore": 2.87,
+  "before": {
+    "medianFrameMs": 16.82080002501607,
+    "observedIntervals": 600,
+    "renderCallbacks": 601,
+    "streamingEnabled": true,
+    "memoryStartMb": 2531.609375,
+    "partsEnd": {
+      "loaded": 12244,
+      "unanchored": 22
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 18.227900029160082,
+    "worstFrameMs": 24.744399939663708,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 12244,
+      "unanchored": 22
+    },
+    "elapsedSeconds": 10.005829200032167,
+    "cameraPositionStart": {
+      "y": 172.67581176757812,
+      "x": 4.989574909210205,
+      "z": 245.3642578125
+    },
+    "averageFPS": 60.06498691763276,
+    "memoryEndMb": 2531.5546875
+  },
+  "after": {
+    "medianFrameMs": 16.776299919001758,
+    "observedIntervals": 600,
+    "renderCallbacks": 601,
+    "streamingEnabled": true,
+    "memoryStartMb": 2653.08984375,
+    "partsEnd": {
+      "loaded": 14620,
+      "unanchored": 22
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 18.172299955040216,
+    "worstFrameMs": 31.991299940273166,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 14620,
+      "unanchored": 22
+    },
+    "elapsedSeconds": 10.014660999993794,
+    "cameraPositionStart": {
+      "y": 172.67581176757812,
+      "x": 4.989574909210205,
+      "z": 245.3642578125
+    },
+    "averageFPS": 60.012016382818395,
+    "memoryEndMb": 2653.1328125
+  },
+  "walk": {
+    "scale": 0.22,
+    "passed": true,
+    "waypoints": {
+      "1": {
+        "y": 164.8668975830078,
+        "index": 1,
+        "position": "-45.01042556762695, 164.8668975830078, 209.29019165039062",
+        "speed": 16,
+        "floor": 164,
+        "health": 100,
+        "reached": true
+      },
+      "2": {
+        "y": 164.8668975830078,
+        "index": 2,
+        "position": "-55.02231216430664, 164.8668975830078, 209.29017639160156",
+        "speed": 16,
+        "floor": 164,
+        "health": 100,
+        "reached": true
+      },
+      "3": {
+        "y": 170.8651123046875,
+        "index": 3,
+        "position": "-55.510555267333984, 170.8651123046875, 224.77542114257812",
+        "speed": 16,
+        "floor": 170,
+        "health": 100,
+        "reached": true
+      },
+      "4": {
+        "y": 170.8668975830078,
+        "index": 4,
+        "position": "-50.863338470458984, 170.8668975830078, 225.26809692382812",
+        "speed": 16,
+        "floor": 170,
+        "health": 100,
+        "reached": true
+      },
+      "5": {
+        "y": 176.83721923828125,
+        "index": 5,
+        "position": "-49.5461540222168, 176.83721923828125, 210.69752502441406",
+        "speed": 16,
+        "floor": 176,
+        "health": 100,
+        "reached": true
+      },
+      "6": {
+        "y": 176.8668975830078,
+        "index": 6,
+        "position": "-54.028568267822266, 176.8668975830078, 209.42669677734375",
+        "speed": 16,
+        "floor": 176,
+        "health": 100,
+        "reached": true
+      },
+      "7": {
+        "y": 182.86631774902344,
+        "index": 7,
+        "position": "-55.498809814453125, 182.86631774902344, 224.8954315185547",
+        "speed": 16,
+        "floor": 182,
+        "health": 100,
+        "reached": true
+      },
+      "8": {
+        "y": 182.8668975830078,
+        "index": 8,
+        "position": "-51.043575286865234, 182.8668975830078, 225.21400451660156",
+        "speed": 16,
+        "floor": 182,
+        "health": 100,
+        "reached": true
+      },
+      "9": {
+        "y": 188.86505126953125,
+        "index": 9,
+        "position": "-49.525814056396484, 188.86505126953125, 209.76202392578125",
+        "speed": 16,
+        "floor": 188,
+        "health": 100,
+        "reached": true
+      },
+      "10": {
+        "y": 188.8668975830078,
+        "index": 10,
+        "position": "-53.95869827270508, 188.8668975830078, 209.3507080078125",
+        "speed": 16,
+        "floor": 188,
+        "health": 100,
+        "reached": true
+      },
+      "11": {
+        "y": 194.8622283935547,
+        "index": 11,
+        "position": "-55.48849868774414, 194.8622283935547, 224.6106414794922",
+        "speed": 16,
+        "floor": 194,
+        "health": 100,
+        "reached": true
+      },
+      "12": {
+        "y": 194.8668975830078,
+        "index": 12,
+        "position": "-50.92637634277344, 194.8668975830078, 225.27749633789062",
+        "speed": 16,
+        "floor": 194,
+        "health": 100,
+        "reached": true
+      },
+      "13": {
+        "y": 200.84539794921875,
+        "index": 13,
+        "position": "-49.5514030456543, 200.84539794921875, 210.59678649902344",
+        "speed": 16,
+        "floor": 200,
+        "health": 100,
+        "reached": true
+      },
+      "14": {
+        "y": 200.8668975830078,
+        "index": 14,
+        "position": "-46.58306884765625, 200.8668975830078, 209.45721435546875",
+        "speed": 16,
+        "floor": 200,
+        "health": 100,
+        "reached": true
+      },
+      "15": {
+        "y": 200.8668975830078,
+        "index": 15,
+        "position": "-45.04962921142578, 200.8668975830078, 231.96495056152344",
+        "speed": 16,
+        "floor": 200,
+        "health": 100,
+        "reached": true
+      },
+      "16": {
+        "y": 200.8668975830078,
+        "index": 16,
+        "position": "4.0285964012146, 200.8668975830078, 233.2803497314453",
+        "speed": 16,
+        "floor": 200,
+        "health": 100,
+        "reached": true
+      }
+    }
+  },
+  "startup": {
+    "prompts": 176,
+    "floors": 11,
+    "freshStartup": true,
+    "doors": 132,
+    "windows": 44
+  },
+  "limitations": [
+    "Stationary desktop Studio only",
+    "Memory delta includes build/test period",
+    "Device/multiplayer/activation/long-session checks pending"
+  ]
+}

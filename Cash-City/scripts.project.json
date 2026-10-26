@@ -33,6 +33,78 @@
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "$ignoreUnknownInstances": true,
+      "ResidentialStairsData": {
+        "$path": "src/ResidentialStairsData.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "ResidentialAccessData": {
+        "$path": "src/ResidentialAccessData.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "ResidentialAccess": {
+        "$path": "src/ResidentialAccess.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "ResidentialLift": {
+        "$path": "src/ResidentialLift.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "ResidentialFloorA01": {
+        "$path": "src/ResidentialFloorA01.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "LobbyInteriorFinish": {
+        "$path": "src/LobbyInteriorFinish.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "WintergardenFloorRepair": {
+        "$path": "src/WintergardenFloorRepair.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "WintergardenInteriorFinish": {
+        "$path": "src/WintergardenInteriorFinish.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RiverWalkFurnishings": {
+        "$path": "src/RiverWalkFurnishings.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RiverfrontRailings": {
+        "$path": "src/RiverfrontRailings.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RiverfrontPark": {
+        "$path": "src/RiverfrontPark.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RiverfrontAppearance": {
+        "$path": "src/RiverfrontAppearance.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "Map1FranklinDetails": {
+        "$path": "src/Map1FranklinDetails.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "Map1RoadMarkings": {
+        "$path": "src/Map1RoadMarkings.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "ParkConnection": {
+        "$path": "src/ParkConnection.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "Map1Boundary": {
+        "$path": "src/Map1Boundary.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RiverWalkExtension2": {
+        "$path": "src/RiverWalkExtension2.lua",
+        "$ignoreUnknownInstances": true
+      },
+      "RiverWalkExtension": {
+        "$path": "src/RiverWalkExtension.lua",
+        "$ignoreUnknownInstances": true
+      },
       "RiverAccess": {
         "$path": "src/RiverAccess.lua",
         "$ignoreUnknownInstances": true
@@ -145,21 +217,49 @@
         "$path": "src/SmallSignalsServer.server.lua",
         "$ignoreUnknownInstances": true
       },
-      "RiverWalkExtension": {
-        "$path": "src/RiverWalkExtension.lua",
+      "ResidentialStairFinish": {
+        "$ignoreUnknownInstances": true,
+        "$path": "src/ResidentialStairFinish.lua"
+      },
+      "ResidentialCorridorFinish": {
+        "$ignoreUnknownInstances": true,
+        "$path": "src/ResidentialCorridorFinish.lua"
+      },
+      "ResidentialApartmentFinish": {
+        "$ignoreUnknownInstances": true,
+        "$path": "src/ResidentialApartmentFinish.lua"
+      },
+      "ResidentialLivingFinish": {
+        "$ignoreUnknownInstances": true,
+        "$path": "src/ResidentialLivingFinish.lua"
+      },
+      "ResidentialUpperStairsData": {
+        "$ignoreUnknownInstances": true,
+        "$path": "src/ResidentialUpperStairsData.lua"
+      },
+      "ResidentialFloorBatch": {
+        "$path": "src/ResidentialFloorBatch.lua",
         "$ignoreUnknownInstances": true
       },
-      "RiverWalkExtension2": {
-        "$path": "src/RiverWalkExtension2.lua",
+      "ResidentialFloorBatchData": {
+        "$path": "src/ResidentialFloorBatchData.lua",
         "$ignoreUnknownInstances": true
       },
-      "Map1Boundary": {
-        "$path": "src/Map1Boundary.lua",
+      "ResidentialFloorBatch06Data": {
+        "$ignoreUnknownInstances": true,
+        "$path": "src/ResidentialFloorBatch06Data.lua"
+      },
+      "ResidentialFloorBatch09Data": {
+        "$path": "src/ResidentialFloorBatch09Data.lua",
         "$ignoreUnknownInstances": true
       },
-      "ParkConnection": {
-        "$path": "src/ParkConnection.lua",
-        "$ignoreUnknownInstances": true
+      "ResidentialRemainingFloors": {
+        "$ignoreUnknownInstances": true,
+        "$path": "src/ResidentialRemainingFloors.lua"
+      },
+      "ResidentialStairWayfinding": {
+        "$ignoreUnknownInstances": true,
+        "$path": "src/ResidentialStairWayfinding.lua"
       }
     },
     "StarterPlayer": {

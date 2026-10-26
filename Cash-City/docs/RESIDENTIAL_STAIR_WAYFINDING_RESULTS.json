@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-26",
+  "edit": {
+    "lights": 76,
+    "existingPartsUnchanged": 53328,
+    "labels": 76,
+    "parts": 228
+  },
+  "startup": {
+    "lights": 76,
+    "freshStartup": true,
+    "labels": 76,
+    "landing": "Level39",
+    "parts": 228
+  },
+  "profile": {
+    "medianFrameMs": 16.796499956399202,
+    "observedIntervals": 601,
+    "renderCallbacks": 602,
+    "streamingEnabled": true,
+    "memoryStartMb": 2809.65234375,
+    "partsEnd": {
+      "loaded": 37065,
+      "unanchored": 22
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 17.912200069986284,
+    "worstFrameMs": 22.960799979045987,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 37065,
+      "unanchored": 22
+    },
+    "elapsedSeconds": 10.002884300076403,
+    "cameraPositionStart": {
+      "y": 544.6756591796875,
+      "x": -52.51042556762695,
+      "z": 221.3642578125
+    },
+    "averageFPS": 60.182641520246506,
+    "memoryEndMb": 2806.86328125
+  },
+  "limitations": [
+    "Visual acceptance pending",
+    "No new route test: new parts noncolliding/nonquery, tested stair geometry unchanged",
+    "No mobile/multiplayer or performance improvement claim"
+  ]
+}

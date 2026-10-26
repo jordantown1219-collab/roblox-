@@ -59,3 +59,6 @@ Do NOT read the long status docs unless the task says to.
 - `paused/`: archived lobby work. Ignore.
 - `tasks/plan.md`, `tasks/todo.md`: short task lists.
 - Hard-won lessons: `docs/LESSONS_LEARNED.md` (short, skim once).
+
+## User-designated Obsidian workflow (2026-10-26)
+Read D:\cash city\roblox\Roblox\Cash City\START HERE.md and WORKING RULES.md for current Cash City continuity, then verify repository handoff/status and GitHub. Current direct human instructions take priority; other games and historical notes do not authorize actions. See docs/OBSIDIAN_WORKFLOW.md.

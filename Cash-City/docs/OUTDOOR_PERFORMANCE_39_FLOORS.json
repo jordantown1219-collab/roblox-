@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-26",
+  "scope": "Outdoor stationary Studio desktop samples with39-floor TowerA",
+  "initialFocusUncontrolled": {
+    "medianFrameMs": 66.61850004456937,
+    "observedIntervals": 149,
+    "renderCallbacks": 150,
+    "streamingEnabled": true,
+    "memoryStartMb": 2903.94921875,
+    "partsEnd": {
+      "loaded": 40136,
+      "unanchored": 44
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 69.0818999428302,
+    "worstFrameMs": 92.85739995539188,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 40136,
+      "unanchored": 44
+    },
+    "elapsedSeconds": 10.01133020000998,
+    "cameraPositionStart": {
+      "y": 2.834162950515747,
+      "x": -63.90973663330078,
+      "z": 597.515869140625
+    },
+    "averageFPS": 14.983023934207113,
+    "memoryEndMb": 2902.6015625
+  },
+  "foregroundFarWalk": {
+    "medianFrameMs": 16.619900008663535,
+    "observedIntervals": 600,
+    "renderCallbacks": 601,
+    "streamingEnabled": true,
+    "memoryStartMb": 2909.92578125,
+    "partsEnd": {
+      "loaded": 40136,
+      "unanchored": 44
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 18.794599920511246,
+    "worstFrameMs": 24.462100001983345,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 40136,
+      "unanchored": 44
+    },
+    "elapsedSeconds": 10.006576600018889,
+    "cameraPositionStart": {
+      "y": 11.866933822631836,
+      "x": -51.3970947265625,
+      "z": 589.2060546875
+    },
+    "averageFPS": 60.060500611054685,
+    "memoryEndMb": 2909.94921875
+  },
+  "foregroundRenCenApproach": {
+    "medianFrameMs": 16.526199993677437,
+    "observedIntervals": 581,
+    "renderCallbacks": 582,
+    "streamingEnabled": true,
+    "memoryStartMb": 2924.015625,
+    "partsEnd": {
+      "loaded": 40614,
+      "unanchored": 44
+    },
+    "isStudio": true,
+    "cleanup": "RenderStepped listener disconnected; no objects or attributes created",
+    "requestedSeconds": 10,
+    "p95FrameMs": 23.32220005337149,
+    "worstFrameMs": 106.20040004141629,
+    "viewportStart": {
+      "height": 710,
+      "width": 1223
+    },
+    "sample": "CashCity-client-10s-v1",
+    "partsStart": {
+      "loaded": 40614,
+      "unanchored": 44
+    },
+    "elapsedSeconds": 10.01647909998428,
+    "cameraPositionStart": {
+      "y": 1.8187365531921387,
+      "x": 269.00408935546875,
+      "z": 473.7647705078125
+    },
+    "averageFPS": 58.104249426419045,
+    "memoryEndMb": 2923.92578125
+  },
+  "viewFar": {
+    "cameraType": "Enum.CameraType.Custom",
+    "position": "-63.90973663330078, 2.834162950515747, 597.515869140625",
+    "look": "0.1738157719373703, 0.24130453169345856, -0.9547566771507263",
+    "health": 100,
+    "ready": true
+  },
+  "viewNear": {
+    "position": "269.00408935546875, 1.8187365531921387, 473.7647705078125",
+    "look": "-0.6985387802124023, 0.32062244415283203, -0.639722466468811",
+    "cameraType": "Enum.CameraType.Custom",
+    "ready": true
+  },
+  "diagnosticSnapshotDuring15FPS": {
+    "renderCpuSeconds": 0.009105199947953224,
+    "renderGpuSeconds": 0.01683766394853592,
+    "frameSeconds": 0.06626439839601517,
+    "physicsStepSeconds": 0.0003869625797960907,
+    "heartbeatMs": 0.4912293553352356,
+    "sceneDrawcalls": 162,
+    "sceneTriangles": 34797
+  },
+  "limitations": [
+    "Initial15FPS focus was uncontrolled; foreground60FPS is consistent with throttling but camera drift prevents isolating focus as sole cause",
+    "10-second stationary Studio desktop samples, not mobile/multiplayer/long-session acceptance",
+    "Approach had106.2ms worst frame; consistent smoothness not established",
+    "No map/source changes or performance improvement claimed"
+  ]
+}
