@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-26",
+  "checkpoint": "checkpoints/CashCity_39Floors_saved_20261026T103750.rbxl",
+  "sha256": "C5B59E8A36443A2910EE1D31E729FE2DF80BA1F6CA284F45748193A7AD4CE272",
+  "reopenedStudioId": "8391d5d3-a4f8-440e-aa37-0ee5a6a2d264",
+  "editInspection": {
+    "lights": 76,
+    "floors": 39,
+    "sourceChecks": {
+      "ResidentialRemainingFloors": true,
+      "Arena": true,
+      "ResidentialFloorA01": true,
+      "ResidentialStairWayfinding": true
+    },
+    "missingFloors": [],
+    "baseParts": 15756,
+    "upperStairs": 38,
+    "signs": 76,
+    "previewPresent": true
+  },
+  "sourceComparison": {
+    "different": [],
+    "matching": {
+      "1": "Arena",
+      "2": "ResidentialAccess",
+      "3": "ResidentialApartmentFinish",
+      "4": "ResidentialCorridorFinish",
+      "5": "ResidentialFloorA01",
+      "6": "ResidentialFloorBatch",
+      "7": "ResidentialLift",
+      "8": "ResidentialLivingFinish",
+      "9": "ResidentialRemainingFloors",
+      "10": "ResidentialStairWayfinding"
+    },
+    "readOnly": true
+  },
+  "originalWorkingScenePreserved": true,
+  "limitations": [
+    "Read-only reopened Edit inspection, not a new gameplay/performance test",
+    "Comparison normalizes CRLF and trailing whitespace",
+    "Original saved place and immutable checkpoint not modified"
+  ]
+}

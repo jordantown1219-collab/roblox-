@@ -2,7 +2,7 @@
 
 Current work should start with [[START HERE]], [[CURRENT STATUS]] and [[WORKING RULES]]. The 39 Tower A floor layouts are already copied; do not repeat that work.
 
-1. Reopen or otherwise validate the newly saved local checkpoint at a safe boundary; preserve the current scene until persistence is confirmed.
+1. **Done 2026-10-26:** reopened the immutable checkpoint separately; 39 floors and ten key scripts verified, original scene preserved. No new gameplay/release acceptance was claimed.
 2. Get the owner's visual acceptance of the residential rooms, stairs, signs and lighting, and identify actual Map 1 gaps rather than adding another district.
 3. Investigate the Renaissance Center approach's frame spike only with reproducible foreground measurements and existing profiling tools. No speculative geometry deletion or new capture harness.
 4. Complete remaining full-size/descent route and real player interaction acceptance; only revisit existing doors on a demonstrated regression, not as a repeated routine task.

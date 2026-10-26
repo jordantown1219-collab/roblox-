@@ -7,7 +7,7 @@ This checkpoint supersedes the older unsaved-state entries preserved in the hand
 - Size: **839,313 bytes**.
 - SHA256: `C5B59E8A36443A2910EE1D31E729FE2DF80BA1F6CA284F45748193A7AD4CE272`.
 - Immutable copy: `checkpoints/CashCity_39Floors_saved_20261026T103750.rbxl`.
-- Native Edit check before backup: 39 floor models; preview, workspace and all preview descendants Archivable; current remaining-floor source present. Disk reload has not been tested.
+- Native Edit check before backup: 39 floor models; preview, workspace and all preview descendants Archivable; current remaining-floor source present. Immutable checkpoint reopened on 2026-10-26: 39 floors and ten key scripts verified read-only; original working scene preserved. See docs/CHECKPOINT_REOPEN_VERIFICATION_20261026.json.
 - Tower A contains 39 furnished floor layouts / 156 apartment layouts and stairs through Level 39. Other towers and the whole Renaissance Center are not thereby finished.
 - Source syntax, startup and 22% route evidence are in `docs/REMAINING_APARTMENTS_RESULTS.json`; lighting evidence is in `docs/RESIDENTIAL_STAIR_WAYFINDING_RESULTS.json`.
 - Outdoor stationary desktop samples: about 60.1 FPS RiverWalk and 58.1 FPS approach, with a 106 ms worst frame in the latter. Device, multiplayer, actual interaction and visual acceptance remain distinct pending work.
